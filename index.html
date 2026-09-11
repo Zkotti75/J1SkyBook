@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>J.League Broadcast Portal</title>
+  <style>
+    :root {
+      --bg: #0d1117; --card-bg: #161b22; --text: #f0f6fc; --muted: #8b949e;
+      --border: #30363d; --urawa-red: #D80C18; --okayama-wine: #7A0026;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background: var(--bg); color: var(--text); padding: 10px; }
+    
+    .fixture-bar { display: flex; gap: 8px; margin-bottom: 10px; }
+    .team-btn {
+      flex: 1; padding: 12px; border: 2px solid var(--border); background: var(--card-bg);
+      color: #fff; font-weight: bold; border-radius: 6px; cursor: pointer; text-align: center; font-size: 1rem;
+    }
+    .team-btn.urawa.active { background: var(--urawa-red); border-color: #fff; }
+    .team-btn.okayama.active { background: var(--okayama-wine); border-color: #D4AF37; }
+
+    .portal-layout { display: grid; grid-template-columns: 280px 1fr; gap: 10px; }
+    .roster-box { background: var(--card-bg); border: 1px solid var(--border); border-radius: 6px; padding: 8px; max-height: 88vh; overflow-y: auto; }
+    .player-row {
+      display: flex; justify-content: space-between; align-items: center; padding: 10px; background: #21262d;
+      border-radius: 4px; margin-bottom: 4px; cursor: pointer; font-size: 0.9rem;
+    }
+    .player-row.selected { border: 1px solid #58a6ff; background: #2f363d; }
+
+    .profile-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 6px; padding: 16px; min-height: 88vh; overflow-y: auto; }
+    .urawa-header { background: linear-gradient(135deg, #D80C18, #111111); border-left: 6px solid #FFD700; padding: 14px; border-radius: 6px; }
+    .okayama-header { background: linear-gradient(135deg, #7A0026, #0F1C3F); border-left: 6px solid #D4AF37; padding: 14px; border-radius: 6px; }
+
+    .vitals-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; background: #21262d; padding: 10px; margin: 12px 0; border-radius: 6px; font-size: 0.85rem; }
+    .table-data { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 0.85rem; }
+    .table-data th, .table-data td { border: 1px solid var(--border); padding: 8px; text-align: left; }
+    .table-data th { background: #21262d; color: #58a6ff; }
+    
+    .section-title { color: #58a6ff; margin-top: 16px; margin-bottom: 6px; font-size: 0.95rem; text-transform: uppercase; border-bottom: 1px solid var(--border); padding-bottom: 4px; font-weight: bold; }
+    .bullet-list { padding-left: 18px; margin-top: 6px; font-size: 0.88rem; line-height: 1.5; }
+    .bullet-list li { margin-bottom: 4px; }
+  </style>
+</head>
+<body>
+
+  <div class="fixture-bar">
+    <button class="team-btn urawa active" onclick="switchTeam('浦和紅鑽')">浦和紅鑽 (Urawa)</button>
+    <button class="team-btn okayama" onclick="switchTeam('岡山綠雉')">岡山綠雉 (Okayama)</button>
+  </div>
+
+  <div class="portal-layout">
+    <div class="roster-box" id="roster-list">載入 GitHub 資料中...</div>
+    <div class="profile-card" id="profile-display">請選擇球員以檢視 Nishikawa 完整檔案</div>
+  </div>
+
+  <script>
+    const GITHUB_JSON_URL = 'https://raw.githubusercontent.com/Zkotti75/J1SkyBook/refs/heads/main/players_db.json'; 
+    let allPlayersData = [];
+    let currentTeamPlayers = [];
+    let currentTeamName = '浦和紅鑽';
+
+    async function initPortal() {
+      try {
+        const response = await fetch(GITHUB_JSON_URL);
+        allPlayersData = await response.json();
+        switchTeam('浦和紅鑽');
+      } catch (e) {
+        document.getElementById('roster-list').innerHTML = '<div style="padding:10px; color:#f85149;">GitHub 資料讀取失敗，請確認網路連線。</div>';
+      }
+    }
+
+    function switchTeam(teamName) {
+      currentTeamName = teamName;
+      document.querySelectorAll('.team-btn').forEach(b => b.classList.remove('active'));
+      const activeBtn = document.querySelector(`.team-btn.${teamName === '浦和紅鑽' ? 'urawa' : 'okayama'}`);
+      if (activeBtn) activeBtn.classList.add('active');
+
+      currentTeamPlayers = allPlayersData.filter(p => p.club === teamName);
+      renderRoster();
+      if (currentTeamPlayers.length > 0) renderNishikawaProfile(0);
+    }
+
+    function renderRoster() {
+      document.getElementById('roster-list').innerHTML = currentTeamPlayers.map((p, idx) => `
+        <div class="player-row ${idx === 0 ? 'selected' : ''}" onclick="renderNishikawaProfile(${idx})">
+          <span><strong>#${p.number}</strong> ${p.name_zh}</span>
+          <span style="color:var(--muted); font-size:0.8rem;">${p.position}</span>
+        </div>
+      `).join('');
+    }
+
+    function renderNishikawaProfile(idx) {
+      document.querySelectorAll('.player-row').forEach((r, i) => r.classList.toggle('selected', i === idx));
+      const p = currentTeamPlayers[idx];
+      if (!p) return;
+
+      const isUrawa = currentTeamName === '浦和紅鑽';
+
+      // Build Timeline Rows
+      const timelineHtml = p.timeline && p.timeline.length > 0 ? p.timeline.map(t => `
+        <tr>
+          <td style="white-space:nowrap;"><strong>${t.period}</strong></td>
+          <td>${t.team}</td>
+          <td><span style="color:var(--muted);">${t.category}</span></td>
+          <td>${t.milestone}</td>
+        </tr>
+      `).join('') : '<tr><td colspan="4">尚無時間軸資料</td></tr>';
+
+      // Build Honors
+      const honorsHtml = p.honors && p.honors.length > 0 
+        ? `<ul class="bullet-list">${p.honors.map(h => `<li>${h}</li>`).join('')}</ul>`
+        : '<p style="font-size:0.85rem; color:var(--muted);">尚無榮譽紀錄</p>';
+
+      // Build Tactical Traits
+      const traitsHtml = p.tactical_traits && p.tactical_traits.length > 0 
+        ? `<ul class="bullet-list">${p.tactical_traits.map(t => `<li>${t}</li>`).join('')}</ul>`
+        : '<p style="font-size:0.85rem; color:var(--muted);">尚無戰術特質紀錄</p>';
+
+      document.getElementById('profile-display').innerHTML = `
+        <div class="${isUrawa ? 'urawa-header' : 'okayama-header'}">
+          <h2>#${p.number} ${p.name_zh} (${p.name_en})</h2>
+          <p>${p.position} • ${p.club}</p>
+        </div>
+
+        <div class="vitals-grid">
+          <div><label style="color:var(--muted);">出生日期 / 年齡</label><br><strong>${p.dob || '-'} (${p.age || '-'}歲)</strong></div>
+          <div><label style="color:var(--muted);">國籍 / 慣用腳</label><br><strong>${p.nationality || '-'} / ${p.foot || '-'}</strong></div>
+          <div><label style="color:var(--muted);">身高 / 體重</label><br><strong>${p.height || '-'} cm / ${p.weight || '-'} kg</strong></div>
+          <div><label style="color:var(--muted);">加盟年份</label><br><strong>${p.joined || '-'}年</strong></div>
+          <div><label style="color:var(--muted);">前屬球會</label><br><strong>${p.prev_club || '-'}</strong></div>
+          <div><label style="color:var(--muted);">檔案狀態</label><br><strong style="color:#3fb950;">Nishikawa Template Validated</strong></div>
+        </div>
+
+        <div class="section-title">簡介與戰術定位</div>
+        <p style="font-size:0.9rem; line-height:1.5; margin:6px 0;">${p.intro || '無簡介資料'}</p>
+
+        <div class="section-title">完整生涯與青訓發展時間軸</div>
+        <table class="table-data">
+          <thead>
+            <tr>
+              <th>期間</th>
+              <th>效力球隊 / 層級</th>
+              <th>類別</th>
+              <th>關鍵里程碑與青訓發展</th>
+            </tr>
+          </thead>
+          <tbody>${timelineHtml}</tbody>
+        </table>
+
+        <div class="section-title">生涯主要榮譽</div>
+        ${honorsHtml}
+
+        <div class="section-title">青訓成長與技術發展特質</div>
+        ${traitsHtml}
+      `;
+    }
+
+    // Launch
+    initPortal();
+  </script>
+</body>
+</html>
