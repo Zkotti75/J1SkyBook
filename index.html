@@ -29,16 +29,8 @@
       padding-bottom: 16px;
     }
 
-    h1 {
-      margin: 0 0 8px 0;
-      font-size: 1.8rem;
-      color: var(--text-main);
-    }
-
-    .subtitle {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-    }
+    h1 { margin: 0 0 8px 0; font-size: 1.8rem; }
+    .subtitle { color: var(--text-muted); font-size: 0.95rem; }
 
     #portal-grid {
       display: grid;
@@ -89,24 +81,9 @@
       border-radius: 6px;
     }
 
-    .meta-item strong {
-      color: var(--text-muted);
-    }
-
-    .section-title {
-      font-weight: bold;
-      color: var(--accent-color);
-      margin-top: 12px;
-      margin-bottom: 4px;
-      font-size: 0.95rem;
-    }
-
-    ul, ol {
-      margin: 4px 0 12px 20px;
-      padding: 0;
-      font-size: 0.9rem;
-      color: #cbd5e1;
-    }
+    .meta-item strong { color: var(--text-muted); }
+    .section-title { font-weight: bold; color: var(--accent-color); margin-top: 12px; margin-bottom: 4px; font-size: 0.95rem; }
+    ul { margin: 4px 0 12px 20px; padding: 0; font-size: 0.9rem; color: #cbd5e1; }
 
     .trivia-box {
       background-color: rgba(245, 158, 11, 0.1);
@@ -117,12 +94,13 @@
       border-radius: 0 6px 6px 0;
     }
 
-    .error-msg {
-      color: #f87171;
+    .error-card {
       background: rgba(239, 68, 68, 0.1);
-      padding: 16px;
-      border-radius: 8px;
       border: 1px solid #ef4444;
+      padding: 20px;
+      border-radius: 8px;
+      color: #f87171;
+      grid-column: 1 / -1;
     }
   </style>
 </head>
@@ -140,13 +118,34 @@
   <script>
     async function loadPortalData() {
       const grid = document.getElementById('portal-grid');
+      const targetFile = 'players_db.json';
+
+      // Check if file is opened directly without a web server
+      if (window.location.protocol === 'file:') {
+        grid.innerHTML = `
+          <div class="error-card">
+            <h3>⚠️ 本地檔案存取限制 (CORS Error)</h3>
+            <p>您直接以雙擊開啟了 HTML 檔案 (<code>file://</code>)，瀏覽器安全性規則限制存取 local JSON。</p>
+            <p><strong>解決方法：</strong></p>
+            <ul>
+              <li>在 VS Code 中使用 <strong>Live Server</strong> 擴充功能開啟此頁面。</li>
+              <li>或在終端機執行 <code>python -m http.server 8000</code> 並存取 <code>http://localhost:8000</code>。</li>
+            </ul>
+          </div>
+        `;
+        return;
+      }
+
       try {
-        const response = await fetch('data.json');
-        if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
+        const response = await fetch(targetFile);
+        if (!response.ok) {
+          throw new Error(`找不到檔案 ${targetFile} (HTTP Status: ${response.status})`);
+        }
+
         const items = await response.json();
 
         grid.innerHTML = items.map(item => {
-          // Render Team Card
+          // Team Card
           if (item.type === "team_info") {
             return `
               <article class="card">
@@ -162,21 +161,13 @@
                 </div>
                 <div class="section-title">隊名由來</div>
                 <p style="font-size: 0.9rem; color: #cbd5e1; margin-top: 4px;">${item.name_history}</p>
-                
                 <div class="section-title">隊史榮譽</div>
-                <ul>
-                  ${(item.performance_history || []).map(h => `<li>${h}</li>`).join('')}
-                </ul>
-
-                <div class="section-title">球場亮點</div>
-                <ul>
-                  ${(item.stadium_info?.interesting_facts || []).map(f => `<li>${f}</li>`).join('')}
-                </ul>
+                <ul>${(item.performance_history || []).map(h => `<li>${h}</li>`).join('')}</ul>
               </article>
             `;
           }
 
-          // Render Player Card
+          // Player Card
           const posClass = `badge-${(item.position || '').toLowerCase()}`;
           return `
             <article class="card">
@@ -189,36 +180,19 @@
                 <div class="meta-item"><strong>國籍/註冊:</strong> ${item.nationality} (${item.registration_status})</div>
                 <div class="meta-item"><strong>年齡/生日:</strong> ${item.age}歲 (${item.dob})</div>
                 <div class="meta-item"><strong>身高/體重:</strong> ${item.height}cm / ${item.weight}kg</div>
-                <div class="meta-item"><strong>慣用腳:</strong> ${item.foot}</div>
-                <div class="meta-item"><strong>前屬球隊:</strong> ${item.prev_club}</div>
               </div>
-
-              ${item.intro ? `<p style="font-size: 0.9rem; margin-top: 8px;">${item.intro}</p>` : ''}
-
-              ${item.tactical_traits?.length ? `
-                <div class="section-title">戰術特徵</div>
-                <ul>${item.tactical_traits.map(t => `<li>${t}</li>`).join('')}</ul>
-              ` : ''}
-
-              ${item.timeline?.length ? `
-                <div class="section-title">職涯時間軸</div>
-                <ul>${item.timeline.map(t => `<li><strong>${t.period} (${t.team}):</strong> ${t.milestone}</li>`).join('')}</ul>
-              ` : ''}
-
-              ${item.quirky_trivia ? `
-                <div class="trivia-box">
-                  <strong>播報花絮:</strong> ${item.quirky_trivia}
-                </div>
-              ` : ''}
+              ${item.intro ? `<p style="font-size: 0.9rem;">${item.intro}</p>` : ''}
+              ${item.quirky_trivia ? `<div class="trivia-box"><strong>播報花絮:</strong> ${item.quirky_trivia}</div>` : ''}
             </article>
           `;
         }).join('');
 
       } catch (err) {
         grid.innerHTML = `
-          <div class="error-msg">
-            <strong>資料載入失敗:</strong> 無法解析 data.json。請檢查 JSON 語法是否正確。<br>
-            <small>${err.message}</small>
+          <div class="error-card">
+            <h3>❌ 資料載入失敗</h3>
+            <p>${err.message}</p>
+            <p><small>請確認 <code>players_db.json</code> 與 <code>index.html</code> 位於同一資料夾，且 JSON 格式已被 <code>[</code> 與 <code>]</code> 正確包裹。</small></p>
           </div>
         `;
       }
