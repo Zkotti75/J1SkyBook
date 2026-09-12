@@ -1,395 +1,245 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-HK">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>J1 League Commentary Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>J.League Broadcast Portal</title>
   <style>
     :root {
-      --bg-color: #0f172a;
-      --card-bg: #1e293b;
-      --card-border: #334155;
-      --accent-color: #0284c7;
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --highlight: #f59e0b;
-
-      /* Dynamic Team Color Variables */
-      --team-a-primary: #8b0000;   /* Default Okayama Wine Red / Fagi Red */
-      --team-a-secondary: #1c2469; /* Okayama Navy Accent */
-      --team-b-primary: #e4032e;   /* Default Urawa Red */
-      --team-b-secondary: #000000; /* Urawa Black Accent */
+      --bg: #0d1117; --card-bg: #161b22; --text: #f0f6fc; --muted: #8b949e;
+      --border: #30363d; --urawa-red: #D80C18; --okayama-wine: #7A0026;
+      --gold: #D4AF37; --accent-blue: #58a6ff;
     }
-
-    * { box-sizing: border-box; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-main);
-      margin: 0;
-      padding: 24px;
-    }
-
-    /* Header Bar with Top Right Selectors */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin-bottom: 24px;
-      border-bottom: 2px solid var(--card-border);
-      padding-bottom: 16px;
-    }
-
-    .header-title h1 { margin: 0 0 6px 0; font-size: 1.8rem; }
-    .header-title .subtitle { color: var(--text-muted); font-size: 0.95rem; }
-
-    .team-selectors {
-      display: flex;
-      gap: 16px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .selector-group {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .selector-group label {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    select {
-      background-color: var(--card-bg);
-      color: var(--text-main);
-      border: 1px solid var(--accent-color);
-      padding: 8px 14px;
-      border-radius: 8px;
-      font-size: 0.95rem;
-      font-weight: bold;
-      cursor: pointer;
-      outline: none;
-    }
-
-    /* Dual Side-by-Side Main Layout */
-    .dual-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-      gap: 28px;
-    }
-
-    .team-column {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    /* Team Headers with Team Custom Branding Colors */
-    .column-header {
-      font-size: 1.4rem;
-      font-weight: bold;
-      padding: 12px 16px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    }
-
-    #header-team-a {
-      background: linear-gradient(135deg, var(--team-a-primary), var(--team-a-secondary));
-      border-left: 6px solid #ffcc00;
-    }
-
-    #header-team-b {
-      background: linear-gradient(135deg, var(--team-b-primary), var(--team-b-secondary));
-      border-left: 6px solid #ffffff;
-    }
-
-    /* Baseline Player Card Styling */
-    .card {
-      background-color: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-      transition: transform 0.2s ease, border-color 0.2s ease;
-    }
-
-    .card:hover {
-      border-color: var(--accent-color);
-      transform: translateY(-2px);
-    }
-
-    .card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 14px;
-      border-bottom: 1px solid var(--card-border);
-      padding-bottom: 10px;
-    }
-
-    .card-header h2 {
-      margin: 0;
-      font-size: 1.25rem;
-      color: var(--text-main);
-    }
-
-    .badge {
-      color: #fff;
-      font-weight: bold;
-      padding: 4px 10px;
-      border-radius: 9999px;
-      font-size: 0.85rem;
-    }
-
-    .badge-fw { background-color: #e11d48; }
-    .badge-mf { background-color: #10b981; }
-    .badge-df { background-color: #2563eb; }
-    .badge-gk { background-color: #d97706; }
-    .badge-manager { background-color: #64748b; }
-    .badge-team { background-color: #8b5cf6; }
-
-    /* Nishikawa Metadata Field Grid */
-    .meta-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 8px;
-      margin-bottom: 14px;
-      font-size: 0.88rem;
-      background-color: rgba(0, 0, 0, 0.25);
-      padding: 12px;
-      border-radius: 8px;
-    }
-
-    .meta-item strong { color: var(--text-muted); }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background: var(--bg); color: var(--text); padding: 10px; }
     
-    .section-title { 
-      font-weight: bold; 
-      color: var(--accent-color); 
-      margin-top: 14px; 
-      margin-bottom: 6px; 
-      font-size: 0.95rem; 
-      border-bottom: 1px dashed var(--card-border);
-      padding-bottom: 2px;
+    .fixture-bar { display: flex; gap: 8px; margin-bottom: 10px; }
+    .team-btn {
+      flex: 1; padding: 12px; border: 2px solid var(--border); background: var(--card-bg);
+      color: #fff; font-weight: bold; border-radius: 6px; cursor: pointer; text-align: center; font-size: 1rem;
     }
+    .team-btn.urawa.active { background: var(--urawa-red); border-color: #fff; }
+    .team-btn.okayama.active { background: var(--okayama-wine); border-color: var(--gold); }
 
-    ul { margin: 4px 0 12px 20px; padding: 0; font-size: 0.9rem; color: #cbd5e1; }
-    ul li { margin-bottom: 3px; }
-
-    .trivia-box {
-      background-color: rgba(245, 158, 11, 0.1);
-      border-left: 4px solid var(--highlight);
-      padding: 10px 14px;
-      font-size: 0.88rem;
-      margin-top: 14px;
-      border-radius: 0 8px 8px 0;
-      color: #fef08a;
+    .portal-layout { display: grid; grid-template-columns: 280px 1fr; gap: 10px; }
+    .roster-box { background: var(--card-bg); border: 1px solid var(--border); border-radius: 6px; padding: 8px; max-height: 88vh; overflow-y: auto; }
+    .player-row {
+      display: flex; justify-content: space-between; align-items: center; padding: 10px; background: #21262d;
+      border-radius: 4px; margin-bottom: 4px; cursor: pointer; font-size: 0.9rem;
     }
+    .player-row.selected { border: 1px solid var(--accent-blue); background: #2f363d; }
+    .team-overview-row { background: #1c2128; border: 1px dashed var(--accent-blue); font-weight: bold; color: var(--accent-blue); }
 
-    .empty-card {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px dashed var(--card-border);
-      padding: 40px;
-      border-radius: 12px;
-      text-align: center;
-      color: var(--text-muted);
-    }
+    .profile-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 6px; padding: 16px; min-height: 88vh; overflow-y: auto; }
+    .urawa-header { background: linear-gradient(135deg, #D80C18, #111111); border-left: 6px solid #FFD700; padding: 14px; border-radius: 6px; }
+    .okayama-header { background: linear-gradient(135deg, #7A0026, #0F1C3F); border-left: 6px solid var(--gold); padding: 14px; border-radius: 6px; }
+
+    .vitals-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; background: #21262d; padding: 10px; margin: 12px 0; border-radius: 6px; font-size: 0.85rem; }
+    .table-data { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 0.85rem; }
+    .table-data th, .table-data td { border: 1px solid var(--border); padding: 8px; text-align: left; }
+    .table-data th { background: #21262d; color: var(--accent-blue); }
+    
+    .section-title { color: var(--accent-blue); margin-top: 16px; margin-bottom: 6px; font-size: 0.95rem; text-transform: uppercase; border-bottom: 1px solid var(--border); padding-bottom: 4px; font-weight: bold; }
+    .bullet-list { padding-left: 18px; margin-top: 6px; font-size: 0.88rem; line-height: 1.5; }
+    .bullet-list li { margin-bottom: 4px; }
+    
+    .badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; background: #238636; color: #fff; margin-left: 6px; }
+    .badge-gold { background: #9e6a03; color: #fff; }
+    .trivia-box { background: #1f242c; border-left: 4px solid var(--gold); padding: 10px; font-size: 0.88rem; margin-top: 6px; border-radius: 0 4px 4px 0; line-height: 1.5; }
   </style>
 </head>
 <body>
 
-  <header>
-    <div class="header-title">
-      <h1>J1 League 賽事播報資料庫</h1>
-      <div class="subtitle">即時雙隊球員卡對照與戰術播報門戶</div>
-    </div>
+  <div class="fixture-bar">
+    <button class="team-btn urawa active" onclick="switchTeam('浦和紅鑽')">浦和紅鑽 (Urawa)</button>
+    <button class="team-btn okayama" onclick="switchTeam('岡山綠雉')">岡山綠雉 (Okayama)</button>
+  </div>
 
-    <div class="team-selectors">
-      <div class="selector-group">
-        <label for="select-team-a">主隊選擇 (Team A)</label>
-        <select id="select-team-a"></select>
-      </div>
-      <div class="selector-group">
-        <label for="select-team-b">客隊選擇 (Team B)</label>
-        <select id="select-team-b"></select>
-      </div>
-    </div>
-  </header>
-
-  <main class="dual-grid">
-    <!-- Left Main Column: Team A -->
-    <section class="team-column">
-      <div class="column-header" id="header-team-a">
-        <span id="label-team-a">岡山綠雉</span>
-        <span class="badge badge-team">HOME</span>
-      </div>
-      <div id="container-team-a">載入中...</div>
-    </section>
-
-    <!-- Right Main Column: Team B -->
-    <section class="team-column">
-      <div class="column-header" id="header-team-b">
-        <span id="label-team-b">浦和紅鑽</span>
-        <span class="badge badge-team">AWAY</span>
-      </div>
-      <div id="container-team-b">載入中...</div>
-    </section>
-  </main>
+  <div class="portal-layout">
+    <div class="roster-box" id="roster-list">載入 GitHub 資料中...</div>
+    <div class="profile-card" id="profile-display">請選擇項目以檢視檔案</div>
+  </div>
 
   <script>
-    const ALL_J1_TEAMS = [
-      "岡山綠雉", "浦和紅鑽", "柏太陽王", "神戶勝利船", "鹿島鹿角",
-      "川崎前鋒", "橫濱F水手", "FC東京", "廣島三箭", "大阪鋼巴",
-      "大阪櫻花", "名古屋鯨魚", "町田澤維亞", "福岡黃蜂", "京都帝王",
-      "湘南比馬", "新潟天鵝", "磐田喜悅", "東京綠景", "橫濱FC"
-    ];
+    const GITHUB_JSON_URL = 'https://raw.githubusercontent.com/Zkotti75/J1SkyBook/refs/heads/main/players_db.json'; 
+    let allData = [];
+    let currentTeamPlayers = [];
+    let currentTeamInfo = null;
+    let currentTeamName = '浦和紅鑽';
 
-    // Official Team Colors Scheme Mapping
-    const TEAM_COLORS = {
-      "岡山綠雉": { primary: "#7a0026", secondary: "#1c2469" },
-      "浦和紅鑽": { primary: "#e4032e", secondary: "#000000" },
-      "柏太陽王": { primary: "#facc15", secondary: "#111827" },
-      "神戶勝利船": { primary: "#991b1b", secondary: "#0f172a" },
-      "DEFAULT": { primary: "#1e293b", secondary: "#334155" }
-    };
-
-    let globalDatabase = [];
-
-    function populateDropdowns() {
-      const selectA = document.getElementById('select-team-a');
-      const selectB = document.getElementById('select-team-b');
-
-      selectA.innerHTML = '';
-      selectB.innerHTML = '';
-
-      ALL_J1_TEAMS.forEach(team => {
-        const optA = document.createElement('option');
-        optA.value = team;
-        optA.textContent = team;
-        if (team === "岡山綠雉") optA.selected = true;
-        selectA.appendChild(optA);
-
-        const optB = document.createElement('option');
-        optB.value = team;
-        optB.textContent = team;
-        if (team === "浦和紅鑽") optB.selected = true;
-        selectB.appendChild(optB);
-      });
-
-      selectA.addEventListener('change', renderPortal);
-      selectB.addEventListener('change', renderPortal);
+    async function initPortal() {
+      try {
+        const response = await fetch(GITHUB_JSON_URL);
+        allData = await response.json();
+        switchTeam('浦和紅鑽');
+      } catch (e) {
+        document.getElementById('roster-list').innerHTML = '<div style="padding:10px; color:#f85149;">GitHub 資料讀取失敗，請確認網路連線。</div>';
+      }
     }
 
-    // Baseline Model Card HTML Generator
-    function buildBaselineCardHTML(item) {
-      if (item.type === "team_info") {
-        return `
-          <article class="card">
-            <div class="card-header">
-              <h2>${item.club} (${item.club_en})</h2>
-              <span class="badge badge-team">球隊資訊</span>
-            </div>
-            <div class="meta-list">
-              <div class="meta-item"><strong>主場城市:</strong> ${item.hometown || '-'}</div>
-              <div class="meta-item"><strong>城市人口:</strong> ${item.hometown_population || '-'}</div>
-              <div class="meta-item"><strong>主場球場:</strong> ${item.stadium_info?.name || '-'}</div>
-              <div class="meta-item"><strong>球場容量:</strong> ${item.stadium_info?.capacity?.toLocaleString() || '-'} 人</div>
-            </div>
-            ${item.name_history ? `<div class="section-title">隊名由來</div><p style="font-size:0.9rem; color:#cbd5e1; margin-top:4px;">${item.name_history}</p>` : ''}
-            ${item.performance_history ? `<div class="section-title">隊史榮譽</div><ul>${item.performance_history.map(h => `<li>${h}</li>`).join('')}</ul>` : ''}
-          </article>
-        `;
+    function switchTeam(teamName) {
+      currentTeamName = teamName;
+      document.querySelectorAll('.team-btn').forEach(b => b.classList.remove('active'));
+      const activeBtn = document.querySelector(`.team-btn.${teamName === '浦和紅鑽' ? 'urawa' : 'okayama'}`);
+      if (activeBtn) activeBtn.classList.add('active');
+
+      currentTeamInfo = allData.find(item => item.club === teamName && item.type === 'team_info');
+      currentTeamPlayers = allData.filter(item => item.club === teamName && item.type !== 'team_info');
+
+      renderRoster();
+      
+      if (currentTeamInfo) {
+        renderTeamCard();
+      } else if (currentTeamPlayers.length > 0) {
+        renderPlayerProfile(0);
       }
+    }
 
-      const pos = (item.position || '').toLowerCase();
-      const posClass = `badge-${pos}`;
-      const posDisplay = item.position === 'MANAGER' ? '總教練' : item.position;
+    function renderRoster() {
+      let html = `
+        <div class="player-row team-overview-row selected" onclick="renderTeamCard()">
+          <span>🏛️ 球隊概覽 (Team Info)</span>
+        </div>
+      `;
 
-      return `
-        <article class="card">
-          <div class="card-header">
-            <h2>#${item.number || '-'} ${item.name_zh || item.name_en} (${item.name_en})</h2>
-            <span class="badge ${posClass}">${posDisplay}</span>
+      html += currentTeamPlayers.map((p, idx) => `
+        <div class="player-row" id="p-row-${idx}" onclick="renderPlayerProfile(${idx})">
+          <span><strong>#${p.number}</strong> ${p.name_zh}</span>
+          <span style="color:var(--muted); font-size:0.8rem;">${p.position}</span>
+        </div>
+      `).join('');
+
+      document.getElementById('roster-list').innerHTML = html;
+    }
+
+    function highlightRow(elementId) {
+      document.querySelectorAll('.player-row').forEach(r => r.classList.remove('selected'));
+      if (elementId) {
+        const el = document.getElementById(elementId);
+        if (el) el.classList.add('selected');
+      } else {
+        document.querySelector('.team-overview-row')?.classList.add('selected');
+      }
+    }
+
+    function renderTeamCard() {
+      highlightRow(null);
+      if (!currentTeamInfo) return;
+      const t = currentTeamInfo;
+      const isUrawa = currentTeamName === '浦和紅鑽';
+
+      const perfHtml = t.performance_history ? t.performance_history.map(item => `<li>${item}</li>`).join('') : '';
+      const stadiumFactsHtml = t.stadium_info && t.stadium_info.interesting_facts ? t.stadium_info.interesting_facts.map(fact => `<li>${fact}</li>`).join('') : '';
+
+      document.getElementById('profile-display').innerHTML = `
+        <div class="${isUrawa ? 'urawa-header' : 'okayama-header'}" style="display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <h2>${t.club} (${t.club_en})</h2>
+            <p>J1 聯賽球會檔案 • 隊名由來與場館數據</p>
           </div>
-          <div class="meta-list">
-            <div class="meta-item"><strong>效力球隊:</strong> ${item.club}</div>
-            <div class="meta-item"><strong>國籍/註冊:</strong> ${item.nationality} (${item.registration_status})</div>
-            <div class="meta-item"><strong>年齡/生日:</strong> ${item.age}歲 (${item.dob || '-'})</div>
-            <div class="meta-item"><strong>身高/體重:</strong> ${item.height ? item.height + 'cm' : '-'} / ${item.weight ? item.weight + 'kg' : '-'}</div>
-            <div class="meta-item"><strong>慣用腳:</strong> ${item.foot || '-'}</div>
-            <div class="meta-item"><strong>在隊資歷:</strong> ${item.tenure_status || '-'}</div>
-            <div class="meta-item"><strong>國家隊履歷:</strong> ${item.national_team_detail || '-'}</div>
-            <div class="meta-item"><strong>前屬球會:</strong> ${item.prev_club || '-'}</div>
-          </div>
-          ${item.intro ? `<p style="font-size: 0.9rem; color: #e2e8f0; line-height:1.5;">${item.intro}</p>` : ''}
-          ${item.timeline?.length ? `<div class="section-title">職業生涯履歷</div><ul>${item.timeline.map(t => `<li><strong>${t.period} (${t.team}):</strong> ${t.milestone}</li>`).join('')}</ul>` : ''}
-          ${item.honors?.length ? `<div class="section-title">榮譽與獎項</div><ul>${item.honors.map(h => `<li>${h}</li>`).join('')}</ul>` : ''}
-          ${item.tactical_traits?.length ? `<div class="section-title">戰術特點分析</div><ul>${item.tactical_traits.map(tt => `<li>${tt}</li>`).join('')}</ul>` : ''}
-          ${item.quirky_trivia ? `<div class="trivia-box"><strong>播報花絮:</strong> ${item.quirky_trivia}</div>` : ''}
-        </article>
+          ${t.logo_url ? `<img src="${t.logo_url}" alt="${t.club}" style="height:60px; max-width:80px; filter:drop-shadow(0 2px 4px rgba(0,0,0,0.5));">` : ''}
+        </div>
+
+        <div class="vitals-grid">
+          <div><label style="color:var(--muted);">主場城市 / 人口</label><br><strong>${t.hometown} (${t.hometown_population})</strong></div>
+          <div><label style="color:var(--muted);">主場球場</label><br><strong>${t.stadium_info ? t.stadium_info.name : '-'}</strong></div>
+          <div><label style="color:var(--muted);">球場容量 / 建成年份</label><br><strong>${t.stadium_info ? t.stadium_info.capacity.toLocaleString() : '-'} 人 (${t.stadium_info ? t.stadium_info.year_built : '-'}年)</strong></div>
+        </div>
+
+        <div class="section-title">隊名歷史與由來</div>
+        <p style="font-size:0.9rem; line-height:1.5; margin:6px 0;">${t.name_history || '-'}</p>
+
+        <div class="section-title">球會發展簡史</div>
+        <p style="font-size:0.9rem; line-height:1.5; margin:6px 0;">${t.team_history || '-'}</p>
+
+        <div class="section-title">主要榮譽紀錄</div>
+        <ul class="bullet-list">${perfHtml}</ul>
+
+        <div class="section-title">主場球場資訊與趣聞</div>
+        <ul class="bullet-list">${stadiumFactsHtml}</ul>
       `;
     }
 
-    function updateTeamColors(teamA, teamB) {
-      const colorA = TEAM_COLORS[teamA] || TEAM_COLORS["DEFAULT"];
-      const colorB = TEAM_COLORS[teamB] || TEAM_COLORS["DEFAULT"];
+    function renderPlayerProfile(idx) {
+      highlightRow(`p-row-${idx}`);
+      const p = currentTeamPlayers[idx];
+      if (!p) return;
 
-      document.documentElement.style.setProperty('--team-a-primary', colorA.primary);
-      document.documentElement.style.setProperty('--team-a-secondary', colorA.secondary);
-      document.documentElement.style.setProperty('--team-b-primary', colorB.primary);
-      document.documentElement.style.setProperty('--team-b-secondary', colorB.secondary);
+      const isUrawa = currentTeamName === '浦和紅鑽';
+
+      // Build Timeline Rows
+      const timelineHtml = p.timeline && p.timeline.length > 0 ? p.timeline.map(t => `
+        <tr>
+          <td style="white-space:nowrap;"><strong>${t.period}</strong></td>
+          <td>${t.team}</td>
+          <td><span style="color:var(--muted);">${t.category}</span></td>
+          <td>${t.milestone}</td>
+        </tr>
+      `).join('') : '<tr><td colspan="4">尚無時間軸資料</td></tr>';
+
+      // Build Honors
+      const honorsHtml = p.honors && p.honors.length > 0 
+        ? `<ul class="bullet-list">${p.honors.map(h => `<li>${h}</li>`).join('')}</ul>`
+        : '<p style="font-size:0.85rem; color:var(--muted);">尚無榮譽紀錄</p>';
+
+      // Build Milestones
+      const milestonesHtml = p.milestones && p.milestones.length > 0 
+        ? `<ul class="bullet-list">${p.milestones.map(m => `<li><span class="badge badge-gold">里程碑</span> ${m}</li>`).join('')}</ul>`
+        : '';
+
+      // Build Tactical Traits
+      const traitsHtml = p.tactical_traits && p.tactical_traits.length > 0 
+        ? `<ul class="bullet-list">${p.tactical_traits.map(t => `<li>${t}</li>`).join('')}</ul>`
+        : '<p style="font-size:0.85rem; color:var(--muted);">尚無戰術特質紀錄</p>';
+
+      document.getElementById('profile-display').innerHTML = `
+        <div class="${isUrawa ? 'urawa-header' : 'okayama-header'}">
+          <h2>#${p.number} ${p.name_zh} (${p.name_en}) <span class="badge">${p.registration_status || '常規登錄'}</span></h2>
+          <p>${p.position} • ${p.club} <span style="margin-left:10px; color:var(--gold); font-size:0.85rem;">[ID: ${p.id}]</span></p>
+        </div>
+
+        <div class="vitals-grid">
+          <div><label style="color:var(--muted);">出生日期 / 年齡</label><br><strong>${p.dob || '-'} (${p.age || '-'}歲)</strong></div>
+          <div><label style="color:var(--muted);">國籍 / 慣用腳</label><br><strong>${p.nationality || '-'} / ${p.foot || '-'}</strong></div>
+          <div><label style="color:var(--muted);">身高 / 體重</label><br><strong>${p.height || '-'} cm / ${p.weight || '-'} kg</strong></div>
+          <div><label style="color:var(--muted);">加盟狀態</label><br><strong>${p.joined || '-'}年 (${p.tenure_status || '-'})</strong></div>
+          <div><label style="color:var(--muted);">前屬球會</label><br><strong>${p.prev_club || '-'}</strong></div>
+          <div><label style="color:var(--muted);">國家隊隊歷</label><br><strong style="color:#58a6ff;">${p.national_team_detail || '無'}</strong></div>
+        </div>
+
+        <div class="section-title">簡介與戰術定位</div>
+        <p style="font-size:0.9rem; line-height:1.5; margin:6px 0;">${p.intro || '無簡介資料'}</p>
+
+        ${milestonesHtml ? `<div class="section-title">美式數據紀錄與即將達成里程碑</div>${milestonesHtml}` : ''}
+
+        ${p.quirky_trivia ? `
+          <div class="section-title">個人趣聞與出身背景</div>
+          <div class="trivia-box">💡 ${p.quirky_trivia}</div>
+        ` : ''}
+
+        <div class="section-title">完整生涯與青訓發展時間軸</div>
+        <table class="table-data">
+          <thead>
+            <tr>
+              <th>期間</th>
+              <th>效力球隊 / 層級</th>
+              <th>類別</th>
+              <th>關鍵里程碑與青訓發展</th>
+            </tr>
+          </thead>
+          <tbody>${timelineHtml}</tbody>
+        </table>
+
+        <div class="section-title">生涯主要榮譽細節</div>
+        ${honorsHtml}
+
+        <div class="section-title">青訓成長與技術發展特質</div>
+        ${traitsHtml}
+      `;
     }
 
-    function renderTeam(teamName, containerId, labelId) {
-      const container = document.getElementById(containerId);
-      document.getElementById(labelId).textContent = teamName;
-
-      const teamItems = globalDatabase.filter(item => item.club === teamName);
-
-      if (teamItems.length === 0) {
-        container.innerHTML = `
-          <div class="empty-card">
-            <h3>⚠️ 陣容資料建置中</h3>
-            <p><strong>${teamName}</strong> 的完整 Baseline 陣容尚未加入 JSON 檔案。</p>
-          </div>
-        `;
-        return;
-      }
-
-      container.innerHTML = teamItems.map(item => buildBaselineCardHTML(item)).join('');
-    }
-
-    function renderPortal() {
-      const teamA = document.getElementById('select-team-a').value;
-      const teamB = document.getElementById('select-team-b').value;
-
-      updateTeamColors(teamA, teamB);
-      renderTeam(teamA, 'container-team-a', 'label-team-a');
-      renderTeam(teamB, 'container-team-b', 'label-team-b');
-    }
-
-    async function loadPortalData() {
-      try {
-        const response = await fetch('players_db.json');
-        globalDatabase = await response.json();
-        populateDropdowns();
-        renderPortal();
-      } catch (err) {
-        console.error("Data load failed:", err);
-      }
-    }
-
-    document.addEventListener('DOMContentLoaded', loadPortalData);
+    // Initialize
+    initPortal();
   </script>
 </body>
 </html>
