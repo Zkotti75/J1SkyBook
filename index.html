@@ -7,170 +7,256 @@
   <style>
     :root {
       --bg-color: #0f172a;
-      --card-bg: #1e293b;
+      --panel-bg: #1e293b;
       --card-border: #334155;
       --accent-color: #0284c7;
+      --accent-hover: #0369a1;
       --text-main: #f8fafc;
       --text-muted: #94a3b8;
       --highlight: #f59e0b;
     }
+
+    * { box-sizing: border-box; }
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background-color: var(--bg-color);
       color: var(--text-main);
       margin: 0;
-      padding: 24px;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
     }
 
+    /* Top Navigation Header */
     header {
+      background-color: var(--panel-bg);
+      border-bottom: 2px solid var(--card-border);
+      padding: 12px 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin-bottom: 24px;
-      border-bottom: 2px solid var(--card-border);
-      padding-bottom: 16px;
+      flex-shrink: 0;
     }
 
-    .header-title h1 { margin: 0 0 6px 0; font-size: 1.8rem; }
-    .header-title .subtitle { color: var(--text-muted); font-size: 0.95rem; }
+    .header-title h1 { margin: 0; font-size: 1.4rem; color: var(--text-main); }
+    .header-title .subtitle { color: var(--text-muted); font-size: 0.85rem; }
 
     .team-selectors {
       display: flex;
       gap: 16px;
       align-items: center;
-      flex-wrap: wrap;
     }
 
     .selector-group {
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 2px;
     }
 
     .selector-group label {
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       color: var(--text-muted);
       font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
     }
 
     select {
-      background-color: var(--card-bg);
+      background-color: var(--bg-color);
       color: var(--text-main);
       border: 1px solid var(--accent-color);
-      padding: 8px 14px;
-      border-radius: 8px;
-      font-size: 0.95rem;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.9rem;
       font-weight: bold;
       cursor: pointer;
       outline: none;
     }
 
-    select:focus {
-      box-shadow: 0 0 0 2px var(--accent-color);
+    /* Main Dual-Pane Layout */
+    .app-container {
+      display: flex;
+      flex: 1;
+      height: calc(100vh - 65px);
+      overflow: hidden;
     }
 
-    .dual-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-      gap: 28px;
-    }
-
-    .team-column {
+    /* Left Column: Player Cards Navigation */
+    .sidebar-column {
+      width: 340px;
+      background-color: var(--panel-bg);
+      border-right: 1px solid var(--card-border);
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      flex-shrink: 0;
     }
 
-    .column-header {
-      font-size: 1.3rem;
-      font-weight: bold;
-      padding-bottom: 8px;
-      border-bottom: 2px solid var(--accent-color);
-      color: var(--accent-color);
-    }
-
-    .card {
-      background-color: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-    }
-
-    .card-header {
+    .sidebar-header {
+      padding: 14px 16px;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-bottom: 1px solid var(--card-border);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 12px;
-      border-bottom: 1px solid var(--card-border);
-      padding-bottom: 8px;
     }
 
-    .card-header h2 {
-      margin: 0;
-      font-size: 1.25rem;
+    .sidebar-header h3 { margin: 0; font-size: 1.05rem; color: var(--accent-color); }
+
+    .team-toggle-tabs {
+      display: flex;
+      background-color: var(--bg-color);
+      padding: 4px;
+      border-radius: 6px;
+      gap: 4px;
+      margin: 10px 16px;
     }
 
-    .badge {
+    .tab-btn {
+      flex: 1;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      padding: 6px 8px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .tab-btn.active {
       background-color: var(--accent-color);
       color: #fff;
-      font-weight: bold;
-      padding: 4px 10px;
-      border-radius: 9999px;
-      font-size: 0.85rem;
     }
 
-    .badge-fw { background-color: #e11d48; }
-    .badge-mf { background-color: #10b981; }
-    .badge-df { background-color: #2563eb; }
-    .badge-gk { background-color: #d97706; }
-    .badge-manager { background-color: #64748b; }
-    .badge-team { background-color: #8b5cf6; }
-
-    .meta-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+    .player-list {
+      flex: 1;
+      overflow-y: auto;
+      padding: 12px 16px;
+      display: flex;
+      flex-direction: column;
       gap: 8px;
-      margin-bottom: 12px;
-      font-size: 0.88rem;
-      background-color: rgba(0, 0, 0, 0.2);
-      padding: 10px;
-      border-radius: 6px;
     }
 
-    .meta-item strong { color: var(--text-muted); }
-    .section-title { font-weight: bold; color: var(--accent-color); margin-top: 12px; margin-bottom: 4px; font-size: 0.95rem; }
-    ul { margin: 4px 0 12px 20px; padding: 0; font-size: 0.9rem; color: #cbd5e1; }
+    /* Individual Player List Item / Quick Card */
+    .player-nav-card {
+      background-color: var(--bg-color);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.15s ease-in-out;
+    }
+
+    .player-nav-card:hover {
+      border-color: var(--accent-color);
+      transform: translateX(2px);
+    }
+
+    .player-nav-card.active {
+      border-color: var(--accent-color);
+      background-color: rgba(2, 132, 199, 0.15);
+    }
+
+    .player-number {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: var(--highlight);
+      width: 36px;
+    }
+
+    .player-info {
+      flex: 1;
+    }
+
+    .player-name-zh { font-weight: bold; font-size: 0.95rem; }
+    .player-name-en { font-size: 0.75rem; color: var(--text-muted); }
+
+    .badge-sm {
+      font-size: 0.7rem;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+
+    .badge-fw { background-color: #e11d48; color: #fff; }
+    .badge-mf { background-color: #10b981; color: #fff; }
+    .badge-df { background-color: #2563eb; color: #fff; }
+    .badge-gk { background-color: #d97706; color: #fff; }
+    .badge-hc { background-color: #64748b; color: #fff; }
+
+    /* Right Column: Full Detailed View */
+    .main-detail-view {
+      flex: 1;
+      overflow-y: auto;
+      padding: 28px;
+      background-color: var(--bg-color);
+    }
+
+    .detail-card {
+      background-color: var(--panel-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px;
+      max-width: 900px;
+      margin: 0 auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--card-border);
+      padding-bottom: 14px;
+      margin-bottom: 16px;
+    }
+
+    .card-title-row h2 { margin: 0; font-size: 1.6rem; color: var(--text-main); }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      background-color: rgba(0, 0, 0, 0.25);
+      padding: 14px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+    }
+
+    .meta-item strong { color: var(--text-muted); display: block; font-size: 0.75rem; text-transform: uppercase; }
+
+    .section-head {
+      font-size: 1rem;
+      font-weight: bold;
+      color: var(--accent-color);
+      margin-top: 18px;
+      margin-bottom: 8px;
+    }
+
+    ul.detail-list { margin: 6px 0 16px 20px; padding: 0; color: #cbd5e1; font-size: 0.92rem; }
+    ul.detail-list li { margin-bottom: 4px; }
 
     .trivia-box {
       background-color: rgba(245, 158, 11, 0.1);
-      border-left: 3px solid var(--highlight);
-      padding: 8px 12px;
-      font-size: 0.85rem;
-      margin-top: 12px;
-      border-radius: 0 6px 6px 0;
+      border-left: 4px solid var(--highlight);
+      padding: 12px 16px;
+      font-size: 0.9rem;
+      margin-top: 20px;
+      border-radius: 0 8px 8px 0;
     }
 
-    .empty-card {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px dashed var(--card-border);
-      padding: 30px;
-      border-radius: 12px;
+    .empty-state {
       text-align: center;
       color: var(--text-muted);
-    }
-
-    .error-card {
-      background: rgba(239, 68, 68, 0.1);
-      border: 1px solid #ef4444;
-      padding: 20px;
-      border-radius: 8px;
-      color: #f87171;
+      margin-top: 80px;
     }
   </style>
 </head>
@@ -194,17 +280,30 @@
     </div>
   </header>
 
-  <main class="dual-grid">
-    <section class="team-column">
-      <div class="column-header" id="header-team-a">主隊 / Team A</div>
-      <div id="container-team-a">載入中...</div>
-    </section>
+  <div class="app-container">
+    <!-- Left Sidebar: Player Selection List -->
+    <aside class="sidebar-column">
+      <div class="sidebar-header">
+        <h3>對陣球員名單</h3>
+      </div>
+      
+      <div class="team-toggle-tabs">
+        <button class="tab-btn active" id="tab-team-a" onclick="switchSidebarTeam('A')">主隊</button>
+        <button class="tab-btn" id="tab-team-b" onclick="switchSidebarTeam('B')">客隊</button>
+      </div>
 
-    <section class="team-column">
-      <div class="column-header" id="header-team-b">客隊 / Team B</div>
-      <div id="container-team-b">載入中...</div>
-    </section>
-  </main>
+      <div class="player-list" id="player-list-container">
+        <!-- Dynamically rendered player cards list -->
+      </div>
+    </aside>
+
+    <!-- Right Main View: Detailed Player/Team Card -->
+    <main class="main-detail-view" id="main-detail-container">
+      <div class="empty-state">
+        <h2>請從左側名單點擊選擇球員資訊卡</h2>
+      </div>
+    </main>
+  </div>
 
   <script>
     const ALL_J1_TEAMS = [
@@ -215,6 +314,8 @@
     ];
 
     let globalDatabase = [];
+    let currentActiveSidebarTeam = 'A';
+    let selectedPlayerId = null;
 
     function populateDropdowns() {
       const selectA = document.getElementById('select-team-a');
@@ -237,120 +338,127 @@
         selectB.appendChild(optB);
       });
 
-      selectA.addEventListener('change', renderPortal);
-      selectB.addEventListener('change', renderPortal);
+      selectA.addEventListener('change', () => { updateTabNames(); renderSidebarList(); });
+      selectB.addEventListener('change', () => { updateTabNames(); renderSidebarList(); });
+      
+      updateTabNames();
     }
 
-    function buildCardHTML(item) {
-      if (item.type === "team_info") {
-        return `
-          <article class="card">
-            <div class="card-header">
-              <h2>${item.club} (${item.club_en})</h2>
-              <span class="badge badge-team">球隊資訊</span>
-            </div>
-            <div class="meta-list">
-              <div class="meta-item"><strong>主場城市:</strong> ${item.hometown || '-'}</div>
-              <div class="meta-item"><strong>城市人口:</strong> ${item.hometown_population || '-'}</div>
-              <div class="meta-item"><strong>球場名稱:</strong> ${item.stadium_info?.name || '-'}</div>
-              <div class="meta-item"><strong>容納人數:</strong> ${item.stadium_info?.capacity?.toLocaleString() || '-'} 人</div>
-            </div>
-            ${item.name_history ? `<div class="section-title">隊名由來</div><p style="font-size:0.9rem; color:#cbd5e1; margin-top:4px;">${item.name_history}</p>` : ''}
-            ${item.performance_history ? `<div class="section-title">隊史榮譽</div><ul>${item.performance_history.map(h => `<li>${h}</li>`).join('')}</ul>` : ''}
-          </article>
-        `;
+    function updateTabNames() {
+      const teamA = document.getElementById('select-team-a').value;
+      const teamB = document.getElementById('select-team-b').value;
+      document.getElementById('tab-team-a').textContent = teamA;
+      document.getElementById('tab-team-b').textContent = teamB;
+    }
+
+    function switchSidebarTeam(tab) {
+      currentActiveSidebarTeam = tab;
+      document.getElementById('tab-team-a').classList.toggle('active', tab === 'A');
+      document.getElementById('tab-team-b').classList.toggle('active', tab === 'B');
+      renderSidebarList();
+    }
+
+    function renderSidebarList() {
+      const container = document.getElementById('player-list-container');
+      const teamName = document.getElementById(currentActiveSidebarTeam === 'A' ? 'select-team-a' : 'select-team-b').value;
+      
+      const teamItems = globalDatabase.filter(item => item.club === teamName);
+
+      if (teamItems.length === 0) {
+        container.innerHTML = `<div style="padding:16px; color:var(--text-muted); text-align:center;">⚠️ 陣容建置中</div>`;
+        return;
       }
 
-      const pos = (item.position || '').toLowerCase();
-      const posClass = `badge-${pos}`;
-      const posDisplay = item.position === 'MANAGER' ? '總教練' : item.position;
+      container.innerHTML = teamItems.map(item => {
+        const pos = (item.position || 'team').toLowerCase();
+        const numDisplay = item.number ? `#${item.number}` : '隊';
+        const nameDisplay = item.name_zh || item.club;
+        const subDisplay = item.name_en || item.club_en;
+        const isActive = item.id === selectedPlayerId ? 'active' : '';
 
-      return `
-        <article class="card">
-          <div class="card-header">
+        return `
+          <div class="player-nav-card ${isActive}" onclick="selectPlayer('${item.id}')">
+            <span class="player-number">${numDisplay}</span>
+            <div class="player-info">
+              <div class="player-name-zh">${nameDisplay}</div>
+              <div class="player-name-en">${subDisplay}</div>
+            </div>
+            <span class="badge-sm badge-${pos}">${item.position || 'INFO'}</span>
+          </div>
+        `;
+      }).join('');
+
+      // Auto-select first item if none selected
+      if (!selectedPlayerId && teamItems.length > 0) {
+        selectPlayer(teamItems[0].id);
+      }
+    }
+
+    function selectPlayer(id) {
+      selectedPlayerId = id;
+      renderSidebarList();
+      
+      const item = globalDatabase.find(x => x.id === id);
+      const detailContainer = document.getElementById('main-detail-container');
+
+      if (!item) return;
+
+      if (item.type === "team_info") {
+        detailContainer.innerHTML = `
+          <article class="detail-card">
+            <div class="card-title-row">
+              <h2>${item.club} (${item.club_en})</h2>
+              <span class="badge-sm badge-hc" style="font-size:0.85rem; padding:4px 10px;">球隊概況</span>
+            </div>
+            <div class="meta-grid">
+              <div class="meta-item"><strong>主場城市</strong>${item.hometown || '-'}</div>
+              <div class="meta-item"><strong>城市人口</strong>${item.hometown_population || '-'}</div>
+              <div class="meta-item"><strong>主場球場</strong>${item.stadium_info?.name || '-'}</div>
+              <div class="meta-item"><strong>球場容量</strong>${item.stadium_info?.capacity?.toLocaleString() || '-'} 人</div>
+            </div>
+            ${item.name_history ? `<div class="section-head">隊名由來</div><p style="color:#cbd5e1; font-size:0.95rem;">${item.name_history}</p>` : ''}
+            ${item.performance_history ? `<div class="section-head">主要榮譽紀錄</div><ul class="detail-list">${item.performance_history.map(h => `<li>${h}</li>`).join('')}</ul>` : ''}
+          </article>
+        `;
+        return;
+      }
+
+      const posClass = `badge-${(item.position || '').toLowerCase()}`;
+      detailContainer.innerHTML = `
+        <article class="detail-card">
+          <div class="card-title-row">
             <h2>#${item.number || '-'} ${item.name_zh || item.name_en} (${item.name_en})</h2>
-            <span class="badge ${posClass}">${posDisplay}</span>
+            <span class="badge-sm ${posClass}" style="font-size:0.85rem; padding:4px 10px;">${item.position}</span>
           </div>
-          <div class="meta-list">
-            <div class="meta-item"><strong>效力球隊:</strong> ${item.club}</div>
-            <div class="meta-item"><strong>國籍/註冊:</strong> ${item.nationality} (${item.registration_status})</div>
-            <div class="meta-item"><strong>年齡/生日:</strong> ${item.age}歲 (${item.dob || '-'})</div>
-            <div class="meta-item"><strong>身高/體重:</strong> ${item.height ? item.height + 'cm' : '-'} / ${item.weight ? item.weight + 'kg' : '-'}</div>
-            <div class="meta-item"><strong>慣用腳:</strong> ${item.foot || '-'}</div>
-            <div class="meta-item"><strong>在隊資歷:</strong> ${item.tenure_status || '-'}</div>
-            <div class="meta-item"><strong>國家隊履歷:</strong> ${item.national_team_detail || '-'}</div>
-            <div class="meta-item"><strong>前屬球會:</strong> ${item.prev_club || '-'}</div>
+          <div class="meta-grid">
+            <div class="meta-item"><strong>效力球隊</strong>${item.club}</div>
+            <div class="meta-item"><strong>國籍 / 註冊</strong>${item.nationality} (${item.registration_status})</div>
+            <div class="meta-item"><strong>年齡 / 生日</strong>${item.age}歲 (${item.dob || '-'})</div>
+            <div class="meta-item"><strong>身高 / 體重</strong>${item.height ? item.height + 'cm' : '-'} / ${item.weight ? item.weight + 'kg' : '-'}</div>
+            <div class="meta-item"><strong>慣用腳</strong>${item.foot || '-'}</div>
+            <div class="meta-item"><strong>在隊資歷</strong>${item.tenure_status || '-'}</div>
+            <div class="meta-item"><strong>國家隊履歷</strong>${item.national_team_detail || '-'}</div>
+            <div class="meta-item"><strong>前屬球隊</strong>${item.prev_club || '-'}</div>
           </div>
-          ${item.intro ? `<p style="font-size: 0.9rem;">${item.intro}</p>` : ''}
-          ${item.timeline?.length ? `<div class="section-title">職業生涯履歷</div><ul>${item.timeline.map(t => `<li><strong>${t.period} (${t.team}):</strong> ${t.milestone}</li>`).join('')}</ul>` : ''}
-          ${item.honors?.length ? `<div class="section-title">個人與團隊榮譽</div><ul>${item.honors.map(h => `<li>${h}</li>`).join('')}</ul>` : ''}
-          ${item.tactical_traits?.length ? `<div class="section-title">戰術特點</div><ul>${item.tactical_traits.map(tt => `<li>${tt}</li>`).join('')}</ul>` : ''}
-          ${item.quirky_trivia ? `<div class="trivia-box"><strong>播報花絮:</strong> ${item.quirky_trivia}</div>` : ''}
+          ${item.intro ? `<div class="section-head">球員簡介</div><p style="color:#cbd5e1; font-size:0.95rem; line-height:1.5;">${item.intro}</p>` : ''}
+          ${item.timeline?.length ? `<div class="section-head">職業生涯履歷</div><ul class="detail-list">${item.timeline.map(t => `<li><strong>${t.period} (${t.team}):</strong> ${t.milestone}</li>`).join('')}</ul>` : ''}
+          ${item.honors?.length ? `<div class="section-head">榮譽與獎項</div><ul class="detail-list">${item.honors.map(h => `<li>${h}</li>`).join('')}</ul>` : ''}
+          ${item.tactical_traits?.length ? `<div class="section-head">戰術特點分析</div><ul class="detail-list">${item.tactical_traits.map(tt => `<li>${tt}</li>`).join('')}</ul>` : ''}
+          ${item.quirky_trivia ? `<div class="trivia-box"><strong>播報花絮 / 趣味記憶點:</strong> ${item.quirky_trivia}</div>` : ''}
         </article>
       `;
     }
 
-    function renderTeam(teamName, containerId, headerId) {
-      const container = document.getElementById(containerId);
-      const header = document.getElementById(headerId);
-      header.textContent = teamName;
-
-      const teamItems = globalDatabase.filter(item => item.club === teamName);
-
-      if (teamItems.length === 0) {
-        container.innerHTML = `
-          <div class="empty-card">
-            <h3>⚠️ 資料建置中</h3>
-            <p><strong>${teamName}</strong> 的完整陣容資料尚未加入 <code>players_db.json</code>。</p>
-          </div>
-        `;
-        return;
-      }
-
-      container.innerHTML = teamItems.map(item => buildCardHTML(item)).join('');
-    }
-
-    function renderPortal() {
-      const teamA = document.getElementById('select-team-a').value;
-      const teamB = document.getElementById('select-team-b').value;
-
-      renderTeam(teamA, 'container-team-a', 'header-team-a');
-      renderTeam(teamB, 'container-team-b', 'header-team-b');
-    }
-
     async function loadPortalData() {
-      const containerA = document.getElementById('container-team-a');
-      const containerB = document.getElementById('container-team-b');
-
-      if (window.location.protocol === 'file:') {
-        const errorHTML = `
-          <div class="error-card">
-            <h3>⚠️ 本地檔案存取限制 (CORS Error)</h3>
-            <p>請使用 <strong>Live Server</strong> 或執行 <code>python -m http.server 8000</code> 開啟此頁面。</p>
-          </div>
-        `;
-        containerA.innerHTML = errorHTML;
-        containerB.innerHTML = errorHTML;
-        return;
-      }
-
       try {
         const response = await fetch('players_db.json');
-        if (!response.ok) {
-          throw new Error(`無法讀取 players_db.json (HTTP ${response.status})`);
-        }
         globalDatabase = await response.json();
         populateDropdowns();
-        renderPortal();
+        renderSidebarList();
       } catch (err) {
-        const errHTML = `
-          <div class="error-card">
-            <h3>❌ 資料載入失敗</h3>
-            <p>${err.message}</p>
-          </div>
+        document.getElementById('main-detail-container').innerHTML = `
+          <div style="color:#ef4444; padding:20px;">❌ 資料讀取失敗: ${err.message}</div>
         `;
-        containerA.innerHTML = errHTML;
-        containerB.innerHTML = errHTML;
       }
     }
 
