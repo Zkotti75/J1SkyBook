@@ -1076,6 +1076,7 @@
     ],
     "quirky_trivia": "出自廣島三箭名門青訓，場上能勝任左右邊後衛、邊翼衛及邊鋒共5個位置，是名副其實的「戰術萬金油」。"
   },
+[
   {
     "id": "team_fagiano_okayama",
     "type": "team_info",
@@ -1139,6 +1140,41 @@
       "德系門線反應與封擋：手腳並用封擋近距離射門能力優異。"
     ],
     "quirky_trivia": "精通德語、英語與法語，來到日本後僅用兩個月便學會了基本的日語防守喊話。"
+  },
+  {
+    "id": "1607141",
+    "club": "岡山綠雉",
+    "number": "4",
+    "name_zh": "阿部 海大",
+    "name_en": "Kaito Abe",
+    "position": "DF",
+    "dob": "1999-09-18",
+    "age": 26,
+    "height": 182,
+    "weight": 75,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2018,
+    "prev_club": "東福岡高中",
+    "registration_status": "常規登錄（一隊）",
+    "tenure_status": "效力第9季",
+    "national_team_detail": "日本 U-20 國家代表隊 🇯🇵",
+    "intro": "阿部海大為岡山綠雉後防線的骨幹老將，出身高中足球名門東福岡，具備優異的對抗卡位與補位意識。",
+    "timeline": [
+      { "period": "2015–2017", "team": "東福岡高中", "category": "高中校隊", "milestone": "隊長與後防核心，率隊勇奪全國高校總體冠軍。" },
+      { "period": "2018–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "高中畢業加盟岡山，隨隊一路進步並於2024年達成升甲目標。" }
+    ],
+    "honors": [
+      "1次 全國高校總體足球錦標賽冠軍（2016 [東福岡]）",
+      "1次 J2 升級附加賽冠軍（2024 [岡山綠雉]）"
+    ],
+    "milestones": [
+      "代表岡山綠雉出場突破 100 場里程碑"
+    ],
+    "tactical_traits": [
+      "名門東福岡戰術紀律：正面一對一防守判斷精準。"
+    ],
+    "quirky_trivia": "高中時期曾擔任東福岡隊長，被譽為「博多之壁」，場上作風極度頑強。"
   },
   {
     "id": "1634590",
@@ -1422,6 +1458,40 @@
     "quirky_trivia": "有一個雙胞胎兄弟田部井悠亦為足球員，兩人曾一同在第96屆高中錦標賽決賽中並肩作戰奪冠。"
   },
   {
+    "id": "1630138",
+    "club": "岡山綠雉",
+    "number": "15",
+    "name_zh": "本山 遙",
+    "name_en": "Haruka Motoyama",
+    "position": "DF",
+    "dob": "1999-06-05",
+    "age": 27,
+    "height": 175,
+    "weight": 71,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2022,
+    "prev_club": "關西學院大學",
+    "registration_status": "常規登錄（一隊）",
+    "tenure_status": "效力第5季",
+    "national_team_detail": "無",
+    "intro": "本山遙為岡山防線的邊路多面手，可勝任右邊後衛與中場，體能與對抗性兼備。",
+    "timeline": [
+      { "period": "2018–2021", "team": "關西學院大學", "category": "大學校隊", "milestone": "關西大學聯賽主力後衛，防守穩健。" },
+      { "period": "2022–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "2022年加盟岡山，作為防線不可或缺的拼圖。" }
+    ],
+    "honors": [
+      "1次 關西大學足球聯賽最佳陣容（2021 [關學大]）"
+    ],
+    "milestones": [
+      "代表岡山聯賽登場突破 80 場"
+    ],
+    "tactical_traits": [
+      "大學體系防守：位置感好，協防補位能力優異。"
+    ],
+    "quirky_trivia": "出身神戶飛腳梯隊，大學期間靠極佳戰術紀律獲岡山球探青睞簽約。"
+  },
+  {
     "id": "1624853",
     "club": "岡山綠雉",
     "number": "17",
@@ -1492,6 +1562,40 @@
     "quirky_trivia": "堪稱 J2 升級錦囊，凡他加盟並擔任主力的球會（長崎、新潟、岡山）最終都實現了升甲夢想。"
   },
   {
+    "id": "1632779",
+    "club": "岡山綠雉",
+    "number": "19",
+    "name_zh": "岩渕 弘人",
+    "name_en": "Hiroto Iwabuchi",
+    "position": "FW",
+    "dob": "1997-09-17",
+    "age": 28,
+    "height": 169,
+    "weight": 65,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2024,
+    "prev_club": "磐城FC",
+    "registration_status": "常規登錄（一隊）",
+    "tenure_status": "效力第3季",
+    "national_team_detail": "無",
+    "intro": "岩渕弘人為前場的靈巧突破型影子前鋒，跑位敏銳且門前把握機會能力強。",
+    "timeline": [
+      { "period": "2020–2023", "team": "磐城FC", "category": "J3/J2職業隊", "milestone": "磐城進攻核心，單季進球達雙位數助隊連升兩級。" },
+      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "2024年加盟岡山綠雉，作為前場關鍵得分點。" }
+    ],
+    "honors": [
+      "1次 J3 聯賽冠軍（2022 [磐城FC]）"
+    ],
+    "milestones": [
+      "J3/J2 單季轟入 10 球以上的靈巧型神射手"
+    ],
+    "tactical_traits": [
+      "靈敏二波搶點：擅長在禁區內利用快頻率擺脫完成射門。"
+    ],
+    "quirky_trivia": "出身仙台大學，在磐城FC受肉搏戰訓練洗練，肢體對抗力遠超同身材球員。"
+  },
+  {
     "id": "1632775",
     "club": "岡山綠雉",
     "number": "20",
@@ -1524,6 +1628,39 @@
       "門前刺客：無球跑位與第二落點捕捉敏銳。"
     ],
     "quirky_trivia": "16歲破門時因還在讀高中，比賽結束後翌日清晨還得趕搭新幹線回學校參加期中考試。"
+  },
+  {
+    "id": "1635898",
+    "club": "岡山綠雉",
+    "number": "21",
+    "name_zh": "川井 大地",
+    "name_en": "Taichi Kawai",
+    "position": "GK",
+    "dob": "2006-04-20",
+    "age": 20,
+    "height": 185,
+    "weight": 78,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "岡山綠雉 Youth",
+    "registration_status": "U-21 青年球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "無",
+    "intro": "川井大地為岡山綠雉梯隊培養的青年門將，反應敏捷、撲救動作規範。",
+    "timeline": [
+      { "period": "2025–至今", "team": "岡山綠雉", "category": "J1職業隊", "milestone": "升上一線隊隨隊訓練。" }
+    ],
+    "honors": [
+      "岡山綠雉青訓一線隊升格"
+    ],
+    "milestones": [
+      "18歲簽署職業合約"
+    ],
+    "tactical_traits": [
+      "門線反應：門前反應時間短，近距離封擋表現穩定。"
+    ],
+    "quirky_trivia": "岡山在地出生長大的土生土長小將，目標是成為岡山的主力門將。"
   },
   {
     "id": "1600259",
@@ -1627,6 +1764,73 @@
       "中場鎖鏈：下腳搶斷極度乾淨且覆蓋面廣。"
     ],
     "quirky_trivia": "出自慶應義塾大學名門，是 J 聯賽少數高學歷出身的硬派防守中場。"
+  },
+  {
+    "id": "1634595",
+    "club": "岡山綠雉",
+    "number": "25",
+    "name_zh": "太田 龍之介",
+    "name_en": "Ryunosuke Ota",
+    "position": "FW",
+    "dob": "2002-04-01",
+    "age": 24,
+    "height": 185,
+    "weight": 79,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2024,
+    "prev_club": "明治大學",
+    "registration_status": "常規登錄（一隊）",
+    "tenure_status": "效力第3季",
+    "national_team_detail": "全日本大學選拔代表 🇯🇵",
+    "intro": "太田龍之介為出身明治大學的高大柱石型中鋒，身高 185 公分，禁區搶點與制空頭槌能力優異。",
+    "timeline": [
+      { "period": "2020–2023", "team": "明治大學", "category": "大學校隊", "milestone": "關西/關東名門明治大學主力中鋒，單季轟入雙位數進球。" },
+      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "2024年加盟岡山，作為前場高空進攻要角。" }
+    ],
+    "honors": [
+      "1次 全日本大學足球錦標賽冠軍（2023 [明治大學]）"
+    ],
+    "milestones": [
+      "大學錦標賽決賽頭槌破門"
+    ],
+    "tactical_traits": [
+      "明治中鋒基因：身材魁梧，背身護球與爭頂制空突出。"
+    ],
+    "quirky_trivia": "大學時期專門練過拳擊核心力量，抗衡後衛撞擊時身體重心極穩。"
+  },
+  {
+    "id": "1624858",
+    "club": "岡山綠雉",
+    "number": "27",
+    "name_zh": "木村 太哉",
+    "name_en": "Takaya Kimura",
+    "position": "MF",
+    "dob": "1998-07-08",
+    "age": 28,
+    "height": 170,
+    "weight": 66,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2021,
+    "prev_club": "甲南大學",
+    "registration_status": "常規登錄（一隊）",
+    "tenure_status": "效力第6季",
+    "national_team_detail": "無",
+    "intro": "木村太哉為岡山邊路的拼命三郎型翼衛／邊鋒，以極高跑動頻率與無球逼搶著稱。",
+    "timeline": [
+      { "period": "2021–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "大學畢業加盟岡山，長年擔任邊路主力輪換，累計出場超 100 場。" }
+    ],
+    "honors": [
+      "岡山綠雉聯賽百場登場紀錄"
+    ],
+    "milestones": [
+      "單場邊路高強度衝刺次數隊內前列"
+    ],
+    "tactical_traits": [
+      "極致高位逼搶：90 分鐘不間斷壓迫敵方邊後衛。"
+    ],
+    "quirky_trivia": "場上奔跑極度瘋狂，被岡山球迷暱稱為「日立台衝刺狂人」。"
   },
   {
     "id": "1630002",
@@ -1737,6 +1941,40 @@
     "quirky_trivia": "身高 191 公分，是日本近年極為少見的高大長人中後衛，曾於2019年代表日本出戰美洲盃。"
   },
   {
+    "id": "1639892",
+    "club": "岡山綠雉",
+    "number": "49",
+    "name_zh": "若月 大和",
+    "name_en": "Yamato Wakatsuki",
+    "position": "FW",
+    "dob": "2002-01-18",
+    "age": 24,
+    "height": 170,
+    "weight": 65,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2024,
+    "prev_club": "湘南比馬",
+    "registration_status": "常規登錄（一隊）",
+    "tenure_status": "效力第3季",
+    "national_team_detail": "日本 U-17 國家代表隊 🇯🇵（U-17 世界盃代表）",
+    "intro": "若月大火為具備恐怖縱向加速爆發力的鋒線快馬，曾遠赴瑞士超級聯賽挑戰旅歐。",
+    "timeline": [
+      { "period": "2020–2021", "team": "錫永（FC Sion）", "category": "瑞超職業隊", "milestone": "高中畢業後租借瑞士豪門錫永，瑞士超登場 16 場攻入 1 球。" },
+      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "2024年加盟岡山，作為前場反擊的第一縱向箭頭。" }
+    ],
+    "honors": [
+      "1次 U-17 世界盃日本代表（2019 [日本 U-17]）"
+    ],
+    "milestones": [
+      "18 歲於瑞士超級聯賽完成職業破門"
+    ],
+    "tactical_traits": [
+      "瑞超歷練快馬：瞬間加速度極快，反擊時能直線打穿防線。"
+    ],
+    "quirky_trivia": "桐生第一高中出身，在 2019 年 U-17 世界盃對對陣荷蘭時梅開二度震撼歐洲球探。"
+  },
+  {
     "id": "1500295",
     "club": "岡山綠雉",
     "number": "51",
@@ -1769,6 +2007,40 @@
       "極致體能與爆發力：單場衝刺次數頂尖，能90分鐘不間斷套外插上。"
     ],
     "quirky_trivia": "在 J 聯賽以「跑不死的超級右後衛」著稱，單場衝刺次數曾高達 40 次以上。"
+  },
+  {
+    "id": "1635899",
+    "club": "岡山綠雉",
+    "number": "55",
+    "name_zh": "田中 雄大",
+    "name_en": "Yudai Tanaka",
+    "position": "GK",
+    "dob": "1995-11-17",
+    "age": 30,
+    "height": 187,
+    "weight": 78,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2026,
+    "prev_club": "廣島三箭",
+    "registration_status": "常規登錄（一隊）",
+    "tenure_status": "新加盟（2026首季）",
+    "national_team_detail": "無",
+    "intro": "田中雄大為經驗豐富的高大門將，具備優異的高空球判斷與門線撲救穩定度。",
+    "timeline": [
+      { "period": "2018–2022", "team": "秋田藍閃電", "category": "J3/J2職業隊", "milestone": "秋田功勳門將，2020賽季全勤率隊奪得 J3 冠軍。" },
+      { "period": "2026–至今", "team": "岡山綠雉", "category": "J1職業隊", "milestone": "2026年加盟岡山綠雉，強勢鞏固門線深度。" }
+    ],
+    "honors": [
+      "1次 J3 聯賽 MVP / 冠軍（2020 [秋田藍閃電]）"
+    ],
+    "milestones": [
+      "J3 冠軍賽季創下連續 22 零封歷史紀錄"
+    ],
+    "tactical_traits": [
+      "門線防空：高空球奪取極佳，門線一對一抗壓沉穩。"
+    ],
+    "quirky_trivia": "在秋田時期曾創下單季僅失 18 球的防守壁壘神話。"
   },
   {
     "id": "1624852",
@@ -1840,7 +2112,6 @@
     "quirky_trivia": "體格極為魁梧，下半場替補上陣時對對方疲憊的後衛群簡直是「噩夢級的衝擊力」。"
   }
 ]
-[
   {
     "id": "team_kashiwa_reysol",
     "type": "team_info",
