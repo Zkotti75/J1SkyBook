@@ -8,11 +8,12 @@
     :root {
       --bg-main: #0b0f19;
       --panel-bg: #151c2c;
-      --card-bg: #1b2438;
-      --border-color: #2a364f;
+      --card-bg: #161b26;
+      --border-color: #232b3e;
       --text-main: #f8fafc;
       --text-muted: #94a3b8;
-      --highlight: #f59e0b;
+      --highlight-gold: #f59e0b;
+      --section-blue: #38bdf8;
       --active-team-color: #e4032e;
     }
 
@@ -30,7 +31,7 @@
       overflow: hidden;
     }
 
-    /* Top Control Header */
+    /* Header Bar */
     header {
       background-color: var(--panel-bg);
       border-bottom: 1px solid var(--border-color);
@@ -73,11 +74,11 @@
       outline: none;
     }
 
-    /* Match Fixture Bar (Big Team Buttons) */
+    /* Team Switch Buttons */
     .match-fixture-bar {
       display: flex;
       gap: 12px;
-      padding: 12px 16px;
+      padding: 10px 16px;
       background-color: var(--bg-main);
       border-bottom: 1px solid var(--border-color);
       flex-shrink: 0;
@@ -85,13 +86,13 @@
 
     .team-btn {
       flex: 1;
-      padding: 10px 16px;
+      padding: 8px 16px;
       font-size: 1.05rem;
       font-weight: bold;
       color: var(--text-main);
       background-color: var(--panel-bg);
       border: 1px solid var(--border-color);
-      border-radius: 8px;
+      border-radius: 6px;
       cursor: pointer;
       text-align: center;
       transition: all 0.2s ease;
@@ -101,14 +102,13 @@
       background-color: var(--active-team-color);
       border-color: var(--active-team-color);
       color: #ffffff;
-      box-shadow: 0 0 12px rgba(228, 3, 46, 0.4);
     }
 
-    /* App Viewport */
+    /* Main Viewport */
     .app-viewport {
       display: flex;
       flex: 1;
-      height: calc(100vh - 110px);
+      height: calc(100vh - 100px);
       overflow: hidden;
     }
 
@@ -125,24 +125,23 @@
     .nav-scroll {
       flex: 1;
       overflow-y: auto;
-      padding: 8px;
+      padding: 6px;
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 2px;
     }
 
     .nav-item {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 9px 12px;
-      border-radius: 6px;
+      padding: 8px 12px;
+      border-radius: 4px;
       background-color: transparent;
       border: 1px solid transparent;
       color: var(--text-main);
       cursor: pointer;
-      font-size: 0.9rem;
-      transition: all 0.15s ease;
+      font-size: 0.88rem;
     }
 
     .nav-item:hover {
@@ -150,7 +149,7 @@
     }
 
     .nav-item.active {
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: rgba(255, 255, 255, 0.08);
       border-color: var(--border-color);
       border-left: 4px solid var(--active-team-color);
       font-weight: bold;
@@ -158,8 +157,7 @@
 
     .nav-item .number {
       font-weight: bold;
-      color: #64748b;
-      margin-right: 8px;
+      color: #94a3b8;
       width: 32px;
       display: inline-block;
     }
@@ -168,9 +166,7 @@
       color: var(--text-main);
     }
 
-    .nav-item .name {
-      flex: 1;
-    }
+    .nav-item .name { flex: 1; }
 
     .nav-item .pos-tag {
       font-size: 0.7rem;
@@ -184,68 +180,66 @@
       margin-bottom: 6px;
     }
 
-    /* Right Nishikawa Template Detail View */
+    /* Right Main Nishikawa Template View */
     .detail-view {
       flex: 1;
       overflow-y: auto;
-      padding: 24px;
+      padding: 20px;
       background-color: var(--bg-main);
     }
 
     .card {
-      background-color: var(--panel-bg);
+      background-color: var(--card-bg);
       border: 1px solid var(--border-color);
-      border-radius: 10px;
-      padding: 24px;
-      max-width: 1000px;
-    }
-
-    .card-banner {
-      background: linear-gradient(90deg, var(--active-team-color), transparent);
-      padding: 16px 20px;
       border-radius: 8px;
-      margin-bottom: 20px;
+      padding: 20px;
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+
+    /* Red Title Banner */
+    .card-banner {
+      background: linear-gradient(90deg, var(--active-team-color) 0%, rgba(228, 3, 46, 0.2) 100%);
+      padding: 16px 20px;
+      border-radius: 6px;
+      margin-bottom: 18px;
+    }
+
+    .banner-top {
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      gap: 12px;
     }
 
-    .card-banner h2 {
+    .banner-top h2 {
       margin: 0;
-      font-size: 1.5rem;
-      color: #fff;
+      font-size: 1.4rem;
+      color: #ffffff;
     }
 
-    .card-banner .subtext {
-      font-size: 0.85rem;
-      color: rgba(255, 255, 255, 0.8);
-      margin-top: 4px;
-    }
-
-    .badge {
-      color: #fff;
+    .badge-reg {
+      background-color: #10b981;
+      color: #ffffff;
+      font-size: 0.75rem;
       font-weight: bold;
-      padding: 4px 10px;
-      border-radius: 9999px;
-      font-size: 0.82rem;
-      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 4px;
     }
 
-    .badge-fw { background-color: #e11d48; }
-    .badge-mf { background-color: #10b981; }
-    .badge-df { background-color: #2563eb; }
-    .badge-gk { background-color: #d97706; }
-    .badge-manager { background-color: #64748b; }
-    .badge-team { background-color: #8b5cf6; }
+    .banner-subtext {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.85);
+      margin-top: 6px;
+    }
 
-    /* Nishikawa Full Grid System */
+    /* 3-Column Metadata Grid */
     .meta-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-      background-color: rgba(0, 0, 0, 0.3);
-      padding: 16px;
-      border-radius: 8px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      background-color: rgba(0, 0, 0, 0.25);
+      padding: 14px 18px;
+      border-radius: 6px;
       margin-bottom: 20px;
       font-size: 0.88rem;
     }
@@ -258,9 +252,7 @@
     .meta-grid label {
       color: var(--text-muted);
       font-size: 0.75rem;
-      margin-bottom: 3px;
-      font-weight: bold;
-      text-transform: uppercase;
+      margin-bottom: 4px;
     }
 
     .meta-grid span {
@@ -268,14 +260,13 @@
       color: var(--text-main);
     }
 
+    /* Section Headings */
     .section-title {
       font-size: 0.95rem;
       font-weight: bold;
-      color: #38bdf8;
+      color: var(--section-blue);
       margin-top: 22px;
       margin-bottom: 8px;
-      border-bottom: 1px dashed var(--border-color);
-      padding-bottom: 4px;
     }
 
     .section-content {
@@ -284,35 +275,53 @@
       line-height: 1.6;
     }
 
-    /* Structured Career Timeline Table */
+    /* Milestone Inline Badge */
+    .milestone-badge {
+      background-color: #d97706;
+      color: #ffffff;
+      font-size: 0.72rem;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin-right: 8px;
+    }
+
+    /* Trivia Lightbulb Box */
+    .trivia-box {
+      background-color: rgba(245, 158, 11, 0.08);
+      border-left: 3px solid var(--highlight-gold);
+      padding: 10px 14px;
+      font-size: 0.88rem;
+      margin-top: 8px;
+      color: #fef08a;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 0 4px 4px 0;
+    }
+
+    /* Timeline Table */
     .nishikawa-table {
       width: 100%;
       border-collapse: collapse;
-      margin: 8px 0 16px 0;
+      margin: 10px 0 16px 0;
       font-size: 0.88rem;
       background-color: rgba(0, 0, 0, 0.2);
-      border-radius: 6px;
-      overflow: hidden;
     }
 
     .nishikawa-table th {
-      background-color: rgba(255, 255, 255, 0.05);
-      color: var(--text-muted);
+      background-color: rgba(255, 255, 255, 0.04);
+      color: var(--section-blue);
       text-align: left;
-      padding: 8px 12px;
-      font-size: 0.78rem;
-      text-transform: uppercase;
+      padding: 10px 12px;
+      font-size: 0.8rem;
       border-bottom: 1px solid var(--border-color);
     }
 
     .nishikawa-table td {
-      padding: 8px 12px;
+      padding: 10px 12px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.04);
       color: #cbd5e1;
-    }
-
-    .nishikawa-table tr:last-child td {
-      border-bottom: none;
     }
 
     ul.detail-bullets {
@@ -322,19 +331,7 @@
       color: #cbd5e1;
     }
 
-    ul.detail-bullets li {
-      margin-bottom: 4px;
-    }
-
-    .trivia-box {
-      background-color: rgba(245, 158, 11, 0.1);
-      border-left: 4px solid var(--highlight);
-      padding: 12px 16px;
-      font-size: 0.88rem;
-      margin-top: 20px;
-      border-radius: 0 6px 6px 0;
-      color: #fef08a;
-    }
+    ul.detail-bullets li { margin-bottom: 4px; }
 
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: var(--panel-bg); }
@@ -343,7 +340,7 @@
 </head>
 <body>
 
-  <!-- Top Navigation Header -->
+  <!-- Header -->
   <header>
     <div class="header-title">J1 League 賽事播報門戶</div>
     <div class="selector-bar">
@@ -358,7 +355,7 @@
     </div>
   </header>
 
-  <!-- Match Fixture Buttons Bar -->
+  <!-- Team Switch Buttons -->
   <nav class="match-fixture-bar">
     <button class="team-btn active" id="btn-team-a" onclick="setActiveTeam('A')">浦和紅鑽 (Urawa)</button>
     <button class="team-btn" id="btn-team-b" onclick="setActiveTeam('B')">岡山綠雉 (Okayama)</button>
@@ -366,12 +363,10 @@
 
   <!-- Main Viewport -->
   <div class="app-viewport">
-    <!-- Left Navigation Sidebar -->
     <aside class="sidebar">
       <div class="nav-scroll" id="sidebar-nav-list"></div>
     </aside>
 
-    <!-- Right Nishikawa Display Card -->
     <main class="detail-view" id="main-card-container"></main>
   </div>
 
@@ -515,22 +510,20 @@
       const detailContainer = document.getElementById('main-card-container');
       if (!item) return;
 
-      // 1. Team Info Rendering
+      // Team Info Card
       if (item.type === "team_info") {
         detailContainer.innerHTML = `
           <article class="card">
             <div class="card-banner">
-              <div>
+              <div class="banner-top">
                 <h2>${item.club} (${item.club_en})</h2>
-                <div class="subtext">J1 聯賽球會檔案 • 隊名由來與場館數據</div>
               </div>
-              <span class="badge badge-team">球會資訊</span>
+              <div class="banner-subtext">J1 聯賽球會檔案 • 隊名由來與場館數據</div>
             </div>
             <div class="meta-grid">
-              <div><label>主場城市</label><span>${item.hometown || '-'}</span></div>
-              <div><label>城市人口</label><span>${item.hometown_population || '-'}</span></div>
+              <div><label>主場城市 / 人口</label><span>${item.hometown || '-'} (${item.hometown_population || '-'})</span></div>
               <div><label>主場球場</label><span>${item.stadium_info?.name || '-'}</span></div>
-              <div><label>球場容量 / 改建</label><span>${item.stadium_info?.capacity?.toLocaleString() || '-'} 人 (${item.stadium_info?.year_renovated || '-'})</span></div>
+              <div><label>球場容量 / 改建年份</label><span>${item.stadium_info?.capacity?.toLocaleString() || '-'} 人 (${item.stadium_info?.year_renovated || '-'})</span></div>
             </div>
             ${item.name_history ? `<div class="section-title">隊名歷史與由來</div><div class="section-content">${item.name_history}</div>` : ''}
             ${item.team_history ? `<div class="section-title">球會發展歷史</div><div class="section-content">${item.team_history}</div>` : ''}
@@ -541,46 +534,79 @@
         return;
       }
 
-      // 2. Full Nishikawa Template Standard Rendering (Complete Metadata & Tables)
-      const posClass = `badge-${(item.position || '').toLowerCase()}`;
-      const posDisplay = item.position === 'MANAGER' ? '總教練' : item.position;
-
+      // Exact Nishikawa Standard Player View
       detailContainer.innerHTML = `
         <article class="card">
+          <!-- Top Red Header Banner -->
           <div class="card-banner">
-            <div>
+            <div class="banner-top">
               <h2>#${item.number || '-'} ${item.name_zh || item.name_en} (${item.name_en})</h2>
-              <div class="subtext">${item.club} • ${posDisplay}</div>
+              <span class="badge-reg">${item.registration_status || '本國球員'}</span>
             </div>
-            <span class="badge ${posClass}">${posDisplay}</span>
+            <div class="banner-subtext">${item.position} • ${item.club} &nbsp;&nbsp;<span style="opacity:0.6;">[ID: ${item.id}]</span></div>
           </div>
 
-          <!-- Complete Baseline Metadata Grid -->
+          <!-- 3-Column Metadata Grid -->
           <div class="meta-grid">
-            <div><label>效力球隊</label><span>${item.club}</span></div>
-            <div><label>註冊身分</label><span>${item.registration_status || '-'}</span></div>
-            <div><label>國籍</label><span>${item.nationality || '-'}</span></div>
-            <div><label>在隊資歷</label><span>${item.tenure_status || '-'}</span></div>
-            <div><label>年齡 / 生日</label><span>${item.age ? item.age + '歲' : '-'} (${item.dob || '-'})</span></div>
-            <div><label>身高 / 體重</label><span>${item.height ? item.height + 'cm' : '-'} / ${item.weight ? item.weight + 'kg' : '-'}</span></div>
-            <div><label>慣用腳</label><span>${item.foot || '-'}</span></div>
-            <div><label>加盟年份</label><span>${item.joined ? item.joined + '年' : '-'}</span></div>
-            <div><label>前屬球會</label><span>${item.prev_club || '-'}</span></div>
-            <div><label>國家隊資歷</label><span>${item.national_team_detail || '-'}</span></div>
+            <div>
+              <label>出生日期 / 年齡</label>
+              <span>${item.dob || '-'} (${item.age ? item.age + '歲' : '-'})</span>
+            </div>
+            <div>
+              <label>國籍 / 慣用腳</label>
+              <span>${item.nationality || '-'} / ${item.foot || '-'}</span>
+            </div>
+            <div>
+              <label>身高 / 體重</label>
+              <span>${item.height ? item.height + ' cm' : '-'} / ${item.weight ? item.weight + ' kg' : '-'}</span>
+            </div>
+            <div>
+              <label>加盟狀態</label>
+              <span>${item.joined ? item.joined + '年' : '-'} (${item.tenure_status || '-'})</span>
+            </div>
+            <div>
+              <label>前屬球會</label>
+              <span>${item.prev_club || '-'}</span>
+            </div>
+            <div>
+              <label>國家隊履歷</label>
+              <span>${item.national_team_detail || '無'}</span>
+            </div>
           </div>
 
-          ${item.intro ? `<div class="section-title">個人簡介</div><div class="section-content">${item.intro}</div>` : ''}
-          
-          <!-- Career Timeline Table -->
+          <!-- 1. 簡介與戰術定位 -->
+          ${item.intro ? `
+            <div class="section-title">簡介與戰術定位</div>
+            <div class="section-content" style="font-weight: bold; color: #f8fafc;">${item.intro}</div>
+          ` : ''}
+
+          <!-- 2. 美式數據紀錄與即將達成里程碑 -->
+          ${item.milestones?.length ? `
+            <div class="section-title">美式數據紀錄與即將達成里程碑</div>
+            <ul class="detail-bullets">
+              ${item.milestones.map(m => `<li><span class="milestone-badge">里程碑</span>${m}</li>`).join('')}
+            </ul>
+          ` : ''}
+
+          <!-- 3. 個人趣聞與出身背景 -->
+          ${item.quirky_trivia ? `
+            <div class="section-title">個人趣聞與出身背景</div>
+            <div class="trivia-box">
+              <span>💡</span>
+              <div>${item.quirky_trivia}</div>
+            </div>
+          ` : ''}
+
+          <!-- 4. 完整生涯與青訓發展時間軸 -->
           ${item.timeline?.length ? `
-            <div class="section-title">職業生涯履歷 (Career Timeline)</div>
+            <div class="section-title">完整生涯與青訓發展時間軸</div>
             <table class="nishikawa-table">
               <thead>
                 <tr>
-                  <th style="width: 18%;">時期</th>
-                  <th style="width: 25%;">效力球隊</th>
-                  <th style="width: 20%;">賽事層級</th>
-                  <th style="width: 37%;">重要里程碑</th>
+                  <th style="width: 25%;">期間</th>
+                  <th style="width: 25%;">效力球隊 / 層級</th>
+                  <th style="width: 15%;">類別</th>
+                  <th style="width: 35%;">關鍵里程碑與青訓發展</th>
                 </tr>
               </thead>
               <tbody>
@@ -588,7 +614,7 @@
                   <tr>
                     <td><strong>${t.period}</strong></td>
                     <td>${t.team}</td>
-                    <td>${t.category}</td>
+                    <td>${t.category || 'J1職業隊'}</td>
                     <td>${t.milestone}</td>
                   </tr>
                 `).join('')}
@@ -596,15 +622,22 @@
             </table>
           ` : ''}
 
-          <!-- Honors & Milestones -->
-          ${item.honors?.length ? `<div class="section-title">榮譽與成就 (Honors & Titles)</div><ul class="detail-bullets">${item.honors.map(h => `<li>${h}</li>`).join('')}</ul>` : ''}
-          ${item.milestones?.length ? `<div class="section-title">個人重要里程碑 (Milestones)</div><ul class="detail-bullets">${item.milestones.map(m => `<li>${m}</li>`).join('')}</ul>` : ''}
-          
-          <!-- Tactical Analysis -->
-          ${item.tactical_traits?.length ? `<div class="section-title">戰術特點分析 (Tactical Traits)</div><ul class="detail-bullets">${item.tactical_traits.map(tt => `<li>${tt}</li>`).join('')}</ul>` : ''}
-          
-          <!-- Commentary Trivia Box -->
-          ${item.quirky_trivia ? `<div class="trivia-box"><strong>播報花絮 / 趣味記憶點:</strong> ${item.quirky_trivia}</div>` : ''}
+          <!-- 5. 生涯主要榮譽細節 -->
+          ${item.honors?.length ? `
+            <div class="section-title">生涯主要榮譽細節</div>
+            <ul class="detail-bullets">
+              ${item.honors.map(h => `<li>${h}</li>`).join('')}
+            </ul>
+          ` : ''}
+
+          <!-- 6. 青訓成長與技術發展特質 -->
+          ${item.tactical_traits?.length ? `
+            <div class="section-title">青訓成長與技術發展特質</div>
+            <ul class="detail-bullets">
+              ${item.tactical_traits.map(tt => `<li>${tt}</li>`).join('')}
+            </ul>
+          ` : ''}
+
         </article>
       `;
     }
