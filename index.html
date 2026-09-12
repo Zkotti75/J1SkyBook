@@ -32,7 +32,7 @@
       overflow: hidden;
     }
 
-    /* Top Control Header with Selectors */
+    /* Top Control Header */
     header {
       background-color: var(--panel-bg);
       border-bottom: 1px solid var(--border-color);
@@ -75,7 +75,7 @@
       outline: none;
     }
 
-    /* Top Match Fixture Bar (Home / Away Big Buttons) */
+    /* Match Fixture Bar (Big Team Buttons) */
     .match-fixture-bar {
       display: flex;
       gap: 12px;
@@ -106,7 +106,7 @@
       box-shadow: 0 0 12px rgba(228, 3, 46, 0.4);
     }
 
-    /* App Main Layout: Left Sidebar + Right Detail Panel */
+    /* App Viewport */
     .app-viewport {
       display: flex;
       flex: 1;
@@ -114,7 +114,7 @@
       overflow: hidden;
     }
 
-    /* Left Sidebar Navigation */
+    /* Left Navigation Sidebar */
     .sidebar {
       width: 280px;
       background-color: var(--panel-bg);
@@ -261,6 +261,37 @@
       line-height: 1.6;
     }
 
+    /* Styled Tables for Timeline & Milestones */
+    .nishikawa-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 8px 0 16px 0;
+      font-size: 0.88rem;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .nishikawa-table th {
+      background-color: rgba(255, 255, 255, 0.05);
+      color: var(--text-muted);
+      text-align: left;
+      padding: 8px 12px;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .nishikawa-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      color: #cbd5e1;
+    }
+
+    .nishikawa-table tr:last-child td {
+      border-bottom: none;
+    }
+
     ul.detail-bullets {
       margin: 6px 0 16px 20px;
       padding: 0;
@@ -328,7 +359,7 @@
 
   <script>
     const ALL_J1_TEAMS = [
-      "岡山綠雉", "浦和紅鑽", "柏太陽王", "神戶勝利船", "鹿島鹿角",
+      "浦和紅鑽", "岡山綠雉", "柏太陽王", "神戶勝利船", "鹿島鹿角",
       "川崎前鋒", "橫濱F水手", "FC東京", "廣島三箭", "大阪鋼巴",
       "大阪櫻花", "名古屋鯨魚", "町田澤維亞", "福岡黃蜂", "京都帝王",
       "湘南比馬", "新潟天鵝", "磐田喜悅", "東京綠景", "橫濱FC"
@@ -456,7 +487,7 @@
 
       sidebarContainer.innerHTML = sidebarHTML;
 
-      // Default selection to team info or first player
+      // Default selection to team info or first item
       if (!activeSelectedId) {
         if (teamInfo) selectItem(teamInfo.id);
         else if (players.length > 0) selectItem(players[0].id);
@@ -471,7 +502,7 @@
       const detailContainer = document.getElementById('main-card-container');
       if (!item) return;
 
-      // Render Nishikawa Template Style Card
+      // Render Team Info View
       if (item.type === "team_info") {
         detailContainer.innerHTML = `
           <article class="card">
@@ -495,7 +526,7 @@
         return;
       }
 
-      // Nishikawa Player Template
+      // Standard Nishikawa Player Template (Full Timeline & Milestones restored)
       detailContainer.innerHTML = `
         <article class="card">
           <div class="card-banner">
@@ -515,9 +546,34 @@
             <div><label>前屬球會</label><span>${item.prev_club || '-'}</span></div>
           </div>
           ${item.intro ? `<div class="section-title">個人簡介</div><div class="section-content">${item.intro}</div>` : ''}
-          ${item.timeline?.length ? `<div class="section-title">職業生涯履歷</div><ul class="detail-bullets">${item.timeline.map(t => `<li><strong>${t.period} (${t.team}):</strong> ${t.milestone}</li>`).join('')}</ul>` : ''}
-          ${item.honors?.length ? `<div class="section-title">榮譽與獎項</div><ul class="detail-bullets">${item.honors.map(h => `<li>${h}</li>`).join('')}</ul>` : ''}
-          ${item.tactical_traits?.length ? `<div class="section-title">戰術特點分析</div><ul class="detail-bullets">${item.tactical_traits.map(tt => `<li>${tt}</li>`).join('')}</ul>` : ''}
+          
+          ${item.timeline?.length ? `
+            <div class="section-title">職業生涯履歷 (Career Timeline)</div>
+            <table class="nishikawa-table">
+              <thead>
+                <tr>
+                  <th style="width: 20%;">時期</th>
+                  <th style="width: 25%;">球隊</th>
+                  <th style="width: 20%;">賽事層級</th>
+                  <th style="width: 35%;">重要里程碑</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${item.timeline.map(t => `
+                  <tr>
+                    <td><strong>${t.period}</strong></td>
+                    <td>${t.team}</td>
+                    <td>${t.category}</td>
+                    <td>${t.milestone}</td>
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+          ` : ''}
+
+          ${item.honors?.length ? `<div class="section-title">榮譽與獎項 (Honors)</div><ul class="detail-bullets">${item.honors.map(h => `<li>${h}</li>`).join('')}</ul>` : ''}
+          ${item.milestones?.length ? `<div class="section-title">重要紀錄與里程碑 (Milestones)</div><ul class="detail-bullets">${item.milestones.map(m => `<li>${m}</li>`).join('')}</ul>` : ''}
+          ${item.tactical_traits?.length ? `<div class="section-title">戰術特點分析 (Tactical Traits)</div><ul class="detail-bullets">${item.tactical_traits.map(tt => `<li>${tt}</li>`).join('')}</ul>` : ''}
           ${item.quirky_trivia ? `<div class="trivia-box"><strong>播報花絮 / 趣味記憶點:</strong> ${item.quirky_trivia}</div>` : ''}
         </article>
       `;
