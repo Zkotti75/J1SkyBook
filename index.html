@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>日本職業足球聯賽J1天書</title>
+  <title>日職J1天書 2026-27版</title>
   <style>
     :root {
       --bg-main: #0b0f19;
@@ -15,6 +15,7 @@
       --highlight-gold: #f59e0b;
       --section-blue: #38bdf8;
       --active-team-color: #e4032e;
+      --banner-text-color: #ffffff;
     }
 
     * { box-sizing: border-box; }
@@ -101,7 +102,7 @@
     .team-btn.active {
       background-color: var(--active-team-color);
       border-color: var(--active-team-color);
-      color: #ffffff;
+      color: var(--banner-text-color);
     }
 
     /* Main Viewport */
@@ -197,9 +198,9 @@
       margin: 0 auto;
     }
 
-    /* Red Title Banner with Top-Right Logo Area */
+    /* Dynamic Title Banner with Logo Placement */
     .card-banner {
-      background: linear-gradient(90deg, var(--active-team-color) 0%, rgba(228, 3, 46, 0.25) 100%);
+      background: linear-gradient(90deg, var(--active-team-color) 0%, rgba(0, 0, 0, 0.4) 100%);
       padding: 16px 20px;
       border-radius: 6px;
       margin-bottom: 18px;
@@ -223,7 +224,7 @@
     .banner-top h2 {
       margin: 0;
       font-size: 1.4rem;
-      color: #ffffff;
+      color: var(--banner-text-color);
     }
 
     .badge-reg {
@@ -237,7 +238,8 @@
 
     .banner-subtext {
       font-size: 0.85rem;
-      color: rgba(255, 255, 255, 0.85);
+      color: var(--banner-text-color);
+      opacity: 0.9;
       margin-top: 2px;
     }
 
@@ -246,7 +248,7 @@
       width: 52px;
       height: 52px;
       object-fit: contain;
-      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
       flex-shrink: 0;
     }
 
@@ -360,7 +362,7 @@
 
   <!-- Header -->
   <header>
-    <div class="header-title">日本職業足球聯賽 J1 天書 （評述員用）</div>
+    <div class="header-title">日職J1天書 2026-27版 （評述員用）</div>
     <div class="selector-bar">
       <div class="selector-group">
         <label for="select-team-a">主隊:</label>
@@ -375,8 +377,8 @@
 
   <!-- Team Switch Buttons -->
   <nav class="match-fixture-bar">
-    <button class="team-btn active" id="btn-team-a" onclick="setActiveTeam('A')">浦和紅鑽 (Urawa)</button>
-    <button class="team-btn" id="btn-team-b" onclick="setActiveTeam('B')">岡山綠雉 (Okayama)</button>
+    <button class="team-btn active" id="btn-team-a" onclick="setActiveTeam('A')">柏太陽王 (Kashiwa)</button>
+    <button class="team-btn" id="btn-team-b" onclick="setActiveTeam('B')">浦和紅鑽 (Urawa)</button>
   </nav>
 
   <!-- Main Viewport -->
@@ -390,25 +392,42 @@
 
   <script>
     const ALL_J1_TEAMS = [
-      "浦和紅鑽", "岡山綠雉", "柏太陽王", "神戶勝利船", "鹿島鹿角",
+      "柏太陽王", "浦和紅鑽", "岡山綠雉", "神戶勝利船", "鹿島鹿角",
       "川崎前鋒", "橫濱F水手", "FC東京", "廣島三箭", "大阪鋼巴",
       "大阪櫻花", "名古屋鯨魚", "町田澤維亞", "福岡黃蜂", "京都帝王",
       "湘南比馬", "新潟天鵝", "磐田喜悅", "東京綠景", "橫濱FC"
     ];
 
+    // J1 Home Kit Colors Matrix
     const TEAM_COLORS = {
-      "浦和紅鑽": "#e4032e",
-      "岡山綠雉": "#7a0026",
-      "柏太陽王": "#facc15",
-      "神戶勝利船": "#991b1b",
-      "DEFAULT": "#0284c7"
+      "柏太陽王": { bg: "#fff100", text: "#111827" },
+      "浦和紅鑽": { bg: "#e6002d", text: "#ffffff" },
+      "岡山綠雉": { bg: "#b6003d", text: "#ffffff" },
+      "神戶勝利船": { bg: "#a9002e", text: "#ffffff" },
+      "鹿島鹿角": { bg: "#b8193f", text: "#ffffff" },
+      "川崎前鋒": { bg: "#38a1db", text: "#ffffff" },
+      "橫濱F水手": { bg: "#004098", text: "#ffffff" },
+      "FC東京": { bg: "#11216c", text: "#ffffff" },
+      "廣島三箭": { bg: "#51318f", text: "#ffffff" },
+      "大阪鋼巴": { bg: "#00458d", text: "#ffffff" },
+      "大阪櫻花": { bg: "#da005c", text: "#ffffff" },
+      "名古屋鯨魚": { bg: "#e6002d", text: "#ffffff" },
+      "町田澤維亞": { bg: "#0054a7", text: "#ffffff" },
+      "福岡黃蜂": { bg: "#001b5b", text: "#ffffff" },
+      "京都帝王": { bg: "#750069", text: "#ffffff" },
+      "湘南比馬": { bg: "#82c039", text: "#ffffff" },
+      "新潟天鵝": { bg: "#ea5504", text: "#ffffff" },
+      "磐田喜悅": { bg: "#6c9bd2", text: "#ffffff" },
+      "東京綠景": { bg: "#006d30", text: "#ffffff" },
+      "橫濱FC": { bg: "#00a0e9", text: "#ffffff" },
+      "DEFAULT": { bg: "#0284c7", text: "#ffffff" }
     };
 
     // File name mapping for local logos in logos/ directory
     const TEAM_LOGOS = {
+      "柏太陽王": "logos/japan_kashiwa-reysol.football-logos.cc.svg",
       "浦和紅鑽": "logos/japan_urawa-reds.football-logos.cc.svg",
       "岡山綠雉": "logos/japan_fagiano-okayama.football-logos.cc.svg",
-      "柏太陽王": "logos/japan_kashiwa-reysol.football-logos.cc.svg",
       "神戶勝利船": "logos/japan_vissel-kobe.football-logos.cc.svg",
       "鹿島鹿角": "logos/japan_kashima-antlers.football-logos.cc.svg",
       "川崎前鋒": "logos/japan_kawasaki-frontale.football-logos.cc.svg",
@@ -440,13 +459,13 @@
         const optA = document.createElement('option');
         optA.value = team;
         optA.textContent = team;
-        if (team === "浦和紅鑽") optA.selected = true;
+        if (team === "柏太陽王") optA.selected = true;
         selectA.appendChild(optA);
 
         const optB = document.createElement('option');
         optB.value = team;
         optB.textContent = team;
-        if (team === "岡山綠雉") optB.selected = true;
+        if (team === "浦和紅鑽") optB.selected = true;
         selectB.appendChild(optB);
       });
 
@@ -472,8 +491,10 @@
       document.getElementById('btn-team-b').classList.toggle('active', slot === 'B');
 
       const currentTeamName = document.getElementById(slot === 'A' ? 'select-team-a' : 'select-team-b').value;
-      const teamColor = TEAM_COLORS[currentTeamName] || TEAM_COLORS["DEFAULT"];
-      document.documentElement.style.setProperty('--active-team-color', teamColor);
+      const theme = TEAM_COLORS[currentTeamName] || TEAM_COLORS["DEFAULT"];
+      
+      document.documentElement.style.setProperty('--active-team-color', theme.bg);
+      document.documentElement.style.setProperty('--banner-text-color', theme.text);
 
       renderActiveTeamView();
     }
@@ -496,8 +517,8 @@
       }
 
       const teamInfo = teamItems.find(i => i.type === "team_info");
-      const manager = teamItems.find(i => i.position === "MANAGER");
-      const players = teamItems.filter(i => i.position !== "MANAGER" && i.type !== "team_info")
+      const manager = teamItems.find(i => i.position === "HC" || i.position === "MANAGER");
+      const players = teamItems.filter(i => i.position !== "HC" && i.position !== "MANAGER" && i.type !== "team_info")
                                .sort((a, b) => parseInt(a.number) - parseInt(b.number));
 
       let sidebarHTML = '';
@@ -517,7 +538,7 @@
           <div class="nav-item ${isActive}" onclick="selectItem('${manager.id}')">
             <span class="number">#HC</span>
             <span class="name">${manager.name_zh || manager.name_en}</span>
-            <span class="pos-tag">MANAGER</span>
+            <span class="pos-tag">HC</span>
           </div>
         `;
       }
@@ -567,7 +588,7 @@
             <div class="meta-grid">
               <div><label>主場城市 / 人口</label><span>${item.hometown || '-'} (${item.hometown_population || '-'})</span></div>
               <div><label>主場球場</label><span>${item.stadium_info?.name || '-'}</span></div>
-              <div><label>球場容量 / 改建年份</label><span>${item.stadium_info?.capacity?.toLocaleString() || '-'} 人 (${item.stadium_info?.year_renovated || '-'})</span></div>
+              <div><label>球場容量 / 建成年份</label><span>${item.stadium_info?.capacity?.toLocaleString() || '-'} 人 (${item.stadium_info?.year_built || '-'}年)</span></div>
             </div>
             ${item.name_history ? `<div class="section-title">隊名歷史與由來</div><div class="section-content">${item.name_history}</div>` : ''}
             ${item.team_history ? `<div class="section-title">球會發展歷史</div><div class="section-content">${item.team_history}</div>` : ''}
@@ -578,10 +599,10 @@
         return;
       }
 
-      // Exact Nishikawa Standard Player View with Top-Right Logo Placement
+      // Exact Nishikawa Standard Player View
       detailContainer.innerHTML = `
         <article class="card">
-          <!-- Top Red Header Banner with Right Aligned Team Logo -->
+          <!-- Header Banner -->
           <div class="card-banner">
             <div class="banner-left">
               <div class="banner-top">
