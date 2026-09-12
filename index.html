@@ -13,8 +13,6 @@
       --text-main: #f8fafc;
       --text-muted: #94a3b8;
       --highlight: #f59e0b;
-
-      /* Dynamic Theme Colors */
       --active-team-color: #e4032e;
     }
 
@@ -32,7 +30,6 @@
       overflow: hidden;
     }
 
-    /* Top Control Header */
     header {
       background-color: var(--panel-bg);
       border-bottom: 1px solid var(--border-color);
@@ -75,7 +72,6 @@
       outline: none;
     }
 
-    /* Match Fixture Bar (Big Team Buttons) */
     .match-fixture-bar {
       display: flex;
       gap: 12px;
@@ -106,7 +102,6 @@
       box-shadow: 0 0 12px rgba(228, 3, 46, 0.4);
     }
 
-    /* App Viewport */
     .app-viewport {
       display: flex;
       flex: 1;
@@ -114,7 +109,6 @@
       overflow: hidden;
     }
 
-    /* Left Navigation Sidebar */
     .sidebar {
       width: 280px;
       background-color: var(--panel-bg);
@@ -186,7 +180,6 @@
       margin-bottom: 6px;
     }
 
-    /* Right Nishikawa Template Detail View */
     .detail-view {
       flex: 1;
       overflow-y: auto;
@@ -224,27 +217,20 @@
       margin-top: 4px;
     }
 
-    .meta-grid {
+    /* Baseline Meta-List Grid Layout */
+    .meta-list {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      background-color: rgba(0, 0, 0, 0.3);
-      padding: 14px 18px;
-      border-radius: 8px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
       margin-bottom: 20px;
-      font-size: 0.88rem;
+      font-size: 0.9rem;
+      background-color: rgba(0, 0, 0, 0.25);
+      padding: 14px;
+      border-radius: 8px;
     }
 
-    .meta-grid label {
-      display: block;
+    .meta-item strong {
       color: var(--text-muted);
-      font-size: 0.75rem;
-      margin-bottom: 2px;
-    }
-
-    .meta-grid span {
-      font-weight: bold;
-      color: var(--text-main);
     }
 
     .section-title {
@@ -261,7 +247,6 @@
       line-height: 1.6;
     }
 
-    /* Styled Tables for Timeline & Milestones */
     .nishikawa-table {
       width: 100%;
       border-collapse: collapse;
@@ -313,7 +298,6 @@
       color: #fef08a;
     }
 
-    /* Custom Scrollbar */
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: var(--panel-bg); }
     ::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 3px; }
@@ -321,7 +305,6 @@
 </head>
 <body>
 
-  <!-- Top Control Bar -->
   <header>
     <div class="header-title">J1 League 賽事播報門戶</div>
     <div class="selector-bar">
@@ -336,25 +319,17 @@
     </div>
   </header>
 
-  <!-- Main Fixture Team Buttons Bar -->
   <nav class="match-fixture-bar">
     <button class="team-btn active" id="btn-team-a" onclick="setActiveTeam('A')">浦和紅鑽 (Urawa)</button>
     <button class="team-btn" id="btn-team-b" onclick="setActiveTeam('B')">岡山綠雉 (Okayama)</button>
   </nav>
 
-  <!-- Main Viewport -->
   <div class="app-viewport">
-    <!-- Left Navigation Sidebar -->
     <aside class="sidebar">
-      <div class="nav-scroll" id="sidebar-nav-list">
-        <!-- Rendered dynamically -->
-      </div>
+      <div class="nav-scroll" id="sidebar-nav-list"></div>
     </aside>
 
-    <!-- Right Nishikawa Display Card -->
-    <main class="detail-view" id="main-card-container">
-      <!-- Active player details rendered here -->
-    </main>
+    <main class="detail-view" id="main-card-container"></main>
   </div>
 
   <script>
@@ -374,7 +349,7 @@
     };
 
     let globalDatabase = [];
-    let activeTeamSlot = 'A'; // 'A' or 'B'
+    let activeTeamSlot = 'A';
     let activeSelectedId = null;
 
     function populateDropdowns() {
@@ -414,7 +389,7 @@
 
     function setActiveTeam(slot) {
       activeTeamSlot = slot;
-      activeSelectedId = null; // reset selected item when toggling teams
+      activeSelectedId = null;
 
       document.getElementById('btn-team-a').classList.toggle('active', slot === 'A');
       document.getElementById('btn-team-b').classList.toggle('active', slot === 'B');
@@ -443,7 +418,6 @@
         return;
       }
 
-      // Separate team info, manager, and players (sorted by number)
       const teamInfo = teamItems.find(i => i.type === "team_info");
       const manager = teamItems.find(i => i.position === "MANAGER");
       const players = teamItems.filter(i => i.position !== "MANAGER" && i.type !== "team_info")
@@ -451,7 +425,6 @@
 
       let sidebarHTML = '';
 
-      // 1. Team Info Entry
       if (teamInfo) {
         const isActive = activeSelectedId === teamInfo.id ? 'active' : '';
         sidebarHTML += `
@@ -461,7 +434,6 @@
         `;
       }
 
-      // 2. Manager Entry
       if (manager) {
         const isActive = activeSelectedId === manager.id ? 'active' : '';
         sidebarHTML += `
@@ -473,7 +445,6 @@
         `;
       }
 
-      // 3. Players list sorted by jersey number
       players.forEach(p => {
         const isActive = activeSelectedId === p.id ? 'active' : '';
         sidebarHTML += `
@@ -487,7 +458,6 @@
 
       sidebarContainer.innerHTML = sidebarHTML;
 
-      // Default selection to team info or first item
       if (!activeSelectedId) {
         if (teamInfo) selectItem(teamInfo.id);
         else if (players.length > 0) selectItem(players[0].id);
@@ -502,7 +472,6 @@
       const detailContainer = document.getElementById('main-card-container');
       if (!item) return;
 
-      // Render Team Info View
       if (item.type === "team_info") {
         detailContainer.innerHTML = `
           <article class="card">
@@ -512,10 +481,11 @@
                 <div class="subtext">J1 聯賽球會檔案 • 隊名由來與場館數據</div>
               </div>
             </div>
-            <div class="meta-grid">
-              <div><label>主場城市 / 人口</label><span>${item.hometown || '-'} (${item.hometown_population || '-'})</span></div>
-              <div><label>主場球場</label><span>${item.stadium_info?.name || '-'}</span></div>
-              <div><label>球場容量 / 建成年份</label><span>${item.stadium_info?.capacity?.toLocaleString() || '-'} 人 (${item.stadium_info?.year_built || '-'})</span></div>
+            <div class="meta-list">
+              <div class="meta-item"><strong>主場城市:</strong> ${item.hometown || '-'}</div>
+              <div class="meta-item"><strong>城市人口:</strong> ${item.hometown_population || '-'}</div>
+              <div class="meta-item"><strong>主場球場:</strong> ${item.stadium_info?.name || '-'}</div>
+              <div class="meta-item"><strong>球場容量:</strong> ${item.stadium_info?.capacity?.toLocaleString() || '-'} 人</div>
             </div>
             ${item.name_history ? `<div class="section-title">隊名歷史與由來</div><div class="section-content">${item.name_history}</div>` : ''}
             ${item.team_history ? `<div class="section-title">球會發展歷史</div><div class="section-content">${item.team_history}</div>` : ''}
@@ -526,7 +496,7 @@
         return;
       }
 
-      // Standard Nishikawa Player Template (Full Timeline & Milestones restored)
+      // Restored Baseline Model Meta-List Grid & Full Nishikawa Template View
       detailContainer.innerHTML = `
         <article class="card">
           <div class="card-banner">
@@ -535,20 +505,20 @@
               <div class="subtext">${item.club} • ${item.position === 'MANAGER' ? '總教練' : item.position}</div>
             </div>
           </div>
-          <div class="meta-grid">
-            <div><label>效力球隊</label><span>${item.club}</span></div>
-            <div><label>國籍 / 註冊狀態</label><span>${item.nationality} (${item.registration_status})</span></div>
-            <div><label>年齡 / 出生日期</label><span>${item.age} 歲 (${item.dob || '-'})</span></div>
-            <div><label>身高 / 體重</label><span>${item.height ? item.height + 'cm' : '-'} / ${item.weight ? item.weight + 'kg' : '-'}</span></div>
-            <div><label>慣用腳</label><span>${item.foot || '-'}</span></div>
-            <div><label>在隊資歷</label><span>${item.tenure_status || '-'}</span></div>
-            <div><label>國家隊履歷</label><span>${item.national_team_detail || '-'}</span></div>
-            <div><label>前屬球會</label><span>${item.prev_club || '-'}</span></div>
+          <div class="meta-list">
+            <div class="meta-item"><strong>效力球隊:</strong> ${item.club}</div>
+            <div class="meta-item"><strong>國籍/註冊:</strong> ${item.nationality} (${item.registration_status})</div>
+            <div class="meta-item"><strong>年齡/生日:</strong> ${item.age}歲 (${item.dob || '-'})</div>
+            <div class="meta-item"><strong>身高/體重:</strong> ${item.height ? item.height + 'cm' : '-'} / ${item.weight ? item.weight + 'kg' : '-'}</div>
+            <div class="meta-item"><strong>慣用腳:</strong> ${item.foot || '-'}</div>
+            <div class="meta-item"><strong>在隊資歷:</strong> ${item.tenure_status || '-'}</div>
+            <div class="meta-item"><strong>國家隊履歷:</strong> ${item.national_team_detail || '-'}</div>
+            <div class="meta-item"><strong>前屬球會:</strong> ${item.prev_club || '-'}</div>
           </div>
           ${item.intro ? `<div class="section-title">個人簡介</div><div class="section-content">${item.intro}</div>` : ''}
           
           ${item.timeline?.length ? `
-            <div class="section-title">職業生涯履歷 (Career Timeline)</div>
+            <div class="section-title">職業生涯履歷</div>
             <table class="nishikawa-table">
               <thead>
                 <tr>
@@ -571,10 +541,10 @@
             </table>
           ` : ''}
 
-          ${item.honors?.length ? `<div class="section-title">榮譽與獎項 (Honors)</div><ul class="detail-bullets">${item.honors.map(h => `<li>${h}</li>`).join('')}</ul>` : ''}
-          ${item.milestones?.length ? `<div class="section-title">重要紀錄與里程碑 (Milestones)</div><ul class="detail-bullets">${item.milestones.map(m => `<li>${m}</li>`).join('')}</ul>` : ''}
-          ${item.tactical_traits?.length ? `<div class="section-title">戰術特點分析 (Tactical Traits)</div><ul class="detail-bullets">${item.tactical_traits.map(tt => `<li>${tt}</li>`).join('')}</ul>` : ''}
-          ${item.quirky_trivia ? `<div class="trivia-box"><strong>播報花絮 / 趣味記憶點:</strong> ${item.quirky_trivia}</div>` : ''}
+          ${item.honors?.length ? `<div class="section-title">榮譽與獎項</div><ul class="detail-bullets">${item.honors.map(h => `<li>${h}</li>`).join('')}</ul>` : ''}
+          ${item.milestones?.length ? `<div class="section-title">重要紀錄與里程碑</div><ul class="detail-bullets">${item.milestones.map(m => `<li>${m}</li>`).join('')}</ul>` : ''}
+          ${item.tactical_traits?.length ? `<div class="section-title">戰術特點分析</div><ul class="detail-bullets">${item.tactical_traits.map(tt => `<li>${tt}</li>`).join('')}</ul>` : ''}
+          ${item.quirky_trivia ? `<div class="trivia-box"><strong>播報花絮:</strong> ${item.quirky_trivia}</div>` : ''}
         </article>
       `;
     }
