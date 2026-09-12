@@ -1,204 +1,192 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>J1 League Commentary Portal</title>
-  <style>
-    :root {
-      --bg-color: #0f172a;
-      --card-bg: #1e293b;
-      --card-border: #334155;
-      --accent-color: #0284c7;
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --highlight: #f59e0b;
+<script>
+  // Added cache-buster to bypass GitHub CDN caching
+  const GITHUB_JSON_URL = 'https://raw.githubusercontent.com/Zkotti75/J1SkyBook/refs/heads/main/players_db.json?v=' + Date.now(); 
+  let allData = [];
+  let currentTeamPlayers = [];
+  let currentTeamInfo = null;
+  let currentTeamName = '浦和紅鑽';
+
+  async function initPortal() {
+    try {
+      const response = await fetch(GITHUB_JSON_URL);
+      allData = await response.json();
+      switchTeam('浦和紅鑽');
+    } catch (e) {
+      document.getElementById('roster-list').innerHTML = '<div style="padding:10px; color:#f85149;">GitHub 資料讀取失敗，請確認網路連線與 JSON 格式。</div>';
+    }
+  }
+
+  function switchTeam(teamName) {
+    currentTeamName = teamName;
+    document.querySelectorAll('.team-btn').forEach(b => b.classList.remove('active'));
+    const activeBtn = document.querySelector(`.team-btn.${teamName === '浦和紅鑽' ? 'urawa' : 'okayama'}`);
+    if (activeBtn) activeBtn.classList.add('active');
+
+    currentTeamInfo = allData.find(item => item.club === teamName && item.type === 'team_info');
+    currentTeamPlayers = allData.filter(item => item.club === teamName && item.type !== 'team_info');
+
+    renderRoster();
+    
+    if (currentTeamInfo) {
+      renderTeamCard();
+    } else if (currentTeamPlayers.length > 0) {
+      renderPlayerProfile(0);
+    } else {
+      document.getElementById('profile-display').innerHTML = '<div style="padding:20px; color:var(--muted);">未找到球隊或球員資料。</div>';
+    }
+  }
+
+  function renderRoster() {
+    let html = `
+      <div class="player-row team-overview-row selected" onclick="renderTeamCard()">
+        <span>🏛️ 球隊概覽 (Team Info)</span>
+      </div>
+    `;
+
+    html += currentTeamPlayers.map((p, idx) => `
+      <div class="player-row" id="p-row-${idx}" onclick="renderPlayerProfile(${idx})">
+        <span><strong>#${p.number || ''}</strong> ${p.name_zh || '未知球員'}</span>
+        <span style="color:var(--muted); font-size:0.8rem;">${p.position || ''}</span>
+      </div>
+    `).join('');
+
+    document.getElementById('roster-list').innerHTML = html;
+  }
+
+  function highlightRow(elementId) {
+    document.querySelectorAll('.player-row').forEach(r => r.classList.remove('selected'));
+    if (elementId) {
+      const el = document.getElementById(elementId);
+      if (el) el.classList.add('selected');
+    } else {
+      document.querySelector('.team-overview-row')?.classList.add('selected');
+    }
+  }
+
+  function renderTeamCard() {
+    highlightRow(null);
+
+    if (!currentTeamInfo) {
+      document.getElementById('profile-display').innerHTML = 
+        '<div style="padding:20px; color:#f85149;">⚠️ 找不到球隊概覽資料。請確認 GitHub 上的 players_db.json 已更新包含 type: "team_info" 條目。</div>';
+      return;
     }
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-main);
-      margin: 0;
-      padding: 24px;
-    }
+    const t = currentTeamInfo;
+    const isUrawa = currentTeamName === '浦和紅鑽';
 
-    header {
-      margin-bottom: 24px;
-      border-bottom: 2px solid var(--card-border);
-      padding-bottom: 16px;
-    }
+    const perfHtml = Array.isArray(t.performance_history) 
+      ? t.performance_history.map(item => `<li>${item}</li>`).join('') 
+      : '<li>尚無紀錄</li>';
 
-    h1 { margin: 0 0 8px 0; font-size: 1.8rem; }
-    .subtitle { color: var(--text-muted); font-size: 0.95rem; }
+    const stadiumFactsHtml = (t.stadium_info && Array.isArray(t.stadium_info.interesting_facts))
+      ? t.stadium_info.interesting_facts.map(fact => `<li>${fact}</li>`).join('') 
+      : '<li>尚無紀錄</li>';
 
-    #portal-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-      gap: 20px;
-    }
+    const capacityStr = t.stadium_info?.capacity ? Number(t.stadium_info.capacity).toLocaleString() : '-';
 
-    .card {
-      background-color: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-    }
+    document.getElementById('profile-display').innerHTML = `
+      <div class="${isUrawa ? 'urawa-header' : 'okayama-header'}" style="display:flex; justify-content:space-between; align-items:center;">
+        <div>
+          <h2>${t.club || ''} (${t.club_en || ''})</h2>
+          <p>J1 聯賽球會檔案 • 隊名由來與場館數據</p>
+        </div>
+        ${t.logo_url ? `<img src="${t.logo_url}" alt="${t.club || ''}" style="height:60px; max-width:80px; filter:drop-shadow(0 2px 4px rgba(0,0,0,0.5));">` : ''}
+      </div>
 
-    .card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 12px;
-      border-bottom: 1px solid var(--card-border);
-      padding-bottom: 8px;
-    }
+      <div class="vitals-grid">
+        <div><label style="color:var(--muted);">主場城市 / 人口</label><br><strong>${t.hometown || '-'} (${t.hometown_population || '-'})</strong></div>
+        <div><label style="color:var(--muted);">主場球場</label><br><strong>${t.stadium_info?.name || '-'}</strong></div>
+        <div><label style="color:var(--muted);">球場容量 / 建成年份</label><br><strong>${capacityStr} 人 (${t.stadium_info?.year_built || '-'}年)</strong></div>
+      </div>
 
-    .badge {
-      background-color: var(--accent-color);
-      color: #fff;
-      font-weight: bold;
-      padding: 4px 10px;
-      border-radius: 9999px;
-      font-size: 0.85rem;
-    }
+      <div class="section-title">隊名歷史與由來</div>
+      <p style="font-size:0.9rem; line-height:1.5; margin:6px 0;">${t.name_history || '-'}</p>
 
-    .badge-fw { background-color: #e11d48; }
-    .badge-mf { background-color: #10b981; }
-    .badge-df { background-color: #2563eb; }
-    .badge-gk { background-color: #d97706; }
-    .badge-team { background-color: #8b5cf6; }
+      <div class="section-title">球會發展簡史</div>
+      <p style="font-size:0.9rem; line-height:1.5; margin:6px 0;">${t.team_history || '-'}</p>
 
-    .meta-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 8px;
-      margin-bottom: 12px;
-      font-size: 0.9rem;
-      background-color: rgba(0, 0, 0, 0.2);
-      padding: 10px;
-      border-radius: 6px;
-    }
+      <div class="section-title">主要榮譽紀錄</div>
+      <ul class="bullet-list">${perfHtml}</ul>
 
-    .meta-item strong { color: var(--text-muted); }
-    .section-title { font-weight: bold; color: var(--accent-color); margin-top: 12px; margin-bottom: 4px; font-size: 0.95rem; }
-    ul { margin: 4px 0 12px 20px; padding: 0; font-size: 0.9rem; color: #cbd5e1; }
+      <div class="section-title">主場球場資訊與趣聞</div>
+      <ul class="bullet-list">${stadiumFactsHtml}</ul>
+    `;
+  }
 
-    .trivia-box {
-      background-color: rgba(245, 158, 11, 0.1);
-      border-left: 3px solid var(--highlight);
-      padding: 8px 12px;
-      font-size: 0.85rem;
-      margin-top: 12px;
-      border-radius: 0 6px 6px 0;
-    }
+  function renderPlayerProfile(idx) {
+    highlightRow(`p-row-${idx}`);
+    const p = currentTeamPlayers[idx];
+    if (!p) return;
 
-    .error-card {
-      background: rgba(239, 68, 68, 0.1);
-      border: 1px solid #ef4444;
-      padding: 20px;
-      border-radius: 8px;
-      color: #f87171;
-      grid-column: 1 / -1;
-    }
-  </style>
-</head>
-<body>
+    const isUrawa = currentTeamName === '浦和紅鑽';
 
-  <header>
-    <h1>J1 League 賽事播報資料庫</h1>
-    <div class="subtitle">即時球員個人檔案與球隊戰術資訊調閱門戶</div>
-  </header>
+    const timelineHtml = (p.timeline && p.timeline.length > 0) ? p.timeline.map(t => `
+      <tr>
+        <td style="white-space:nowrap;"><strong>${t.period || '-'}</strong></td>
+        <td>${t.team || '-'}</td>
+        <td><span style="color:var(--muted);">${t.category || '-'}</span></td>
+        <td>${t.milestone || '-'}</td>
+      </tr>
+    `).join('') : '<tr><td colspan="4">尚無時間軸資料</td></tr>';
 
-  <main id="portal-grid">
-    <div>載入資料中...</div>
-  </main>
+    const honorsHtml = (p.honors && p.honors.length > 0) 
+      ? `<ul class="bullet-list">${p.honors.map(h => `<li>${h}</li>`).join('')}</ul>`
+      : '<p style="font-size:0.85rem; color:var(--muted);">尚無榮譽紀錄</p>';
 
-  <script>
-    async function loadPortalData() {
-      const grid = document.getElementById('portal-grid');
-      const targetFile = 'players_db.json';
+    const milestonesHtml = (p.milestones && p.milestones.length > 0) 
+      ? `<ul class="bullet-list">${p.milestones.map(m => `<li><span class="badge badge-gold">里程碑</span> ${m}</li>`).join('')}</ul>`
+      : '';
 
-      // Check if file is opened directly without a web server
-      if (window.location.protocol === 'file:') {
-        grid.innerHTML = `
-          <div class="error-card">
-            <h3>⚠️ 本地檔案存取限制 (CORS Error)</h3>
-            <p>您直接以雙擊開啟了 HTML 檔案 (<code>file://</code>)，瀏覽器安全性規則限制存取 local JSON。</p>
-            <p><strong>解決方法：</strong></p>
-            <ul>
-              <li>在 VS Code 中使用 <strong>Live Server</strong> 擴充功能開啟此頁面。</li>
-              <li>或在終端機執行 <code>python -m http.server 8000</code> 並存取 <code>http://localhost:8000</code>。</li>
-            </ul>
-          </div>
-        `;
-        return;
-      }
+    const traitsHtml = (p.tactical_traits && p.tactical_traits.length > 0) 
+      ? `<ul class="bullet-list">${p.tactical_traits.map(t => `<li>${t}</li>`).join('')}</ul>`
+      : '<p style="font-size:0.85rem; color:var(--muted);">尚無戰術特質紀錄</p>';
 
-      try {
-        const response = await fetch(targetFile);
-        if (!response.ok) {
-          throw new Error(`找不到檔案 ${targetFile} (HTTP Status: ${response.status})`);
-        }
+    document.getElementById('profile-display').innerHTML = `
+      <div class="${isUrawa ? 'urawa-header' : 'okayama-header'}">
+        <h2>#${p.number || ''} ${p.name_zh || ''} (${p.name_en || ''}) <span class="badge">${p.registration_status || '常規登錄'}</span></h2>
+        <p>${p.position || ''} • ${p.club || ''} <span style="margin-left:10px; color:var(--gold); font-size:0.85rem;">[ID: ${p.id || ''}]</span></p>
+      </div>
 
-        const items = await response.json();
+      <div class="vitals-grid">
+        <div><label style="color:var(--muted);">出生日期 / 年齡</label><br><strong>${p.dob || '-'} (${p.age || '-'}歲)</strong></div>
+        <div><label style="color:var(--muted);">國籍 / 慣用腳</label><br><strong>${p.nationality || '-'} / ${p.foot || '-'}</strong></div>
+        <div><label style="color:var(--muted);">身高 / 體重</label><br><strong>${p.height || '-'} cm / ${p.weight || '-'} kg</strong></div>
+        <div><label style="color:var(--muted);">加盟狀態</label><br><strong>${p.joined || '-'}年 (${p.tenure_status || '-'})</strong></div>
+        <div><label style="color:var(--muted);">前屬球會</label><br><strong>${p.prev_club || '-'}</strong></div>
+        <div><label style="color:var(--muted);">國家隊隊歷</label><br><strong style="color:#58a6ff;">${p.national_team_detail || '無'}</strong></div>
+      </div>
 
-        grid.innerHTML = items.map(item => {
-          // Team Card
-          if (item.type === "team_info") {
-            return `
-              <article class="card">
-                <div class="card-header">
-                  <h2>${item.club} (${item.club_en})</h2>
-                  <span class="badge badge-team">球隊資訊</span>
-                </div>
-                <div class="meta-list">
-                  <div class="meta-item"><strong>主場城市:</strong> ${item.hometown}</div>
-                  <div class="meta-item"><strong>城市人口:</strong> ${item.hometown_population}</div>
-                  <div class="meta-item"><strong>球場名稱:</strong> ${item.stadium_info?.name || 'N/A'}</div>
-                  <div class="meta-item"><strong>容納人數:</strong> ${item.stadium_info?.capacity?.toLocaleString() || 'N/A'} 人</div>
-                </div>
-                <div class="section-title">隊名由來</div>
-                <p style="font-size: 0.9rem; color: #cbd5e1; margin-top: 4px;">${item.name_history}</p>
-                <div class="section-title">隊史榮譽</div>
-                <ul>${(item.performance_history || []).map(h => `<li>${h}</li>`).join('')}</ul>
-              </article>
-            `;
-          }
+      <div class="section-title">簡介與戰術定位</div>
+      <p style="font-size:0.9rem; line-height:1.5; margin:6px 0;">${p.intro || '無簡介資料'}</p>
 
-          // Player Card
-          const posClass = `badge-${(item.position || '').toLowerCase()}`;
-          return `
-            <article class="card">
-              <div class="card-header">
-                <h2>#${item.number || '-'} ${item.name_zh || item.name_en} (${item.name_en})</h2>
-                <span class="badge ${posClass}">${item.position || 'N/A'}</span>
-              </div>
-              <div class="meta-list">
-                <div class="meta-item"><strong>效力球隊:</strong> ${item.club}</div>
-                <div class="meta-item"><strong>國籍/註冊:</strong> ${item.nationality} (${item.registration_status})</div>
-                <div class="meta-item"><strong>年齡/生日:</strong> ${item.age}歲 (${item.dob})</div>
-                <div class="meta-item"><strong>身高/體重:</strong> ${item.height}cm / ${item.weight}kg</div>
-              </div>
-              ${item.intro ? `<p style="font-size: 0.9rem;">${item.intro}</p>` : ''}
-              ${item.quirky_trivia ? `<div class="trivia-box"><strong>播報花絮:</strong> ${item.quirky_trivia}</div>` : ''}
-            </article>
-          `;
-        }).join('');
+      ${milestonesHtml ? `<div class="section-title">美式數據紀錄與即將達成里程碑</div>${milestonesHtml}` : ''}
 
-      } catch (err) {
-        grid.innerHTML = `
-          <div class="error-card">
-            <h3>❌ 資料載入失敗</h3>
-            <p>${err.message}</p>
-            <p><small>請確認 <code>players_db.json</code> 與 <code>index.html</code> 位於同一資料夾，且 JSON 格式已被 <code>[</code> 與 <code>]</code> 正確包裹。</small></p>
-          </div>
-        `;
-      }
-    }
+      ${p.quirky_trivia ? `
+        <div class="section-title">個人趣聞與出身背景</div>
+        <div class="trivia-box">💡 ${p.quirky_trivia}</div>
+      ` : ''}
 
-    document.addEventListener('DOMContentLoaded', loadPortalData);
-  </script>
-</body>
-</html>
+      <div class="section-title">完整生涯與青訓發展時間軸</div>
+      <table class="table-data">
+        <thead>
+          <tr>
+            <th>期間</th>
+            <th>效力球隊 / 層級</th>
+            <th>類別</th>
+            <th>關鍵里程碑與青訓發展</th>
+          </tr>
+        </thead>
+        <tbody>${timelineHtml}</tbody>
+      </table>
+
+      <div class="section-title">生涯主要榮譽細節</div>
+      ${honorsHtml}
+
+      <div class="section-title">青訓成長與技術發展特質</div>
+      ${traitsHtml}
+    `;
+  }
+
+  initPortal();
+</script>
