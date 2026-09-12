@@ -1,1604 +1,478 @@
 [
   {
-    "id": "team_urawa_reds",
-    "type": "team_info",
-    "club": "浦和紅鑽",
-    "club_en": "Urawa Red Diamonds",
-    "logo_url": "https://upload.wikimedia.org/wikipedia/en/2/2e/Urawa_Red_Diamonds_logo.svg",
-    "hometown": "埼玉縣埼玉市",
-    "hometown_population": "1,340,000人",
-    "name_history": "1950年成立於神戶（三菱重工足球部），1958年遷往東京，1992年移師埼玉市浦和區。「紅」（Red）代表三菱集團的企業品牌色，「鑽石」（Diamonds）取自三菱集團標誌中的三顆紅鑽石，象徵團結、堅固與不屈精神。",
-    "stadium_info": {
-      "name": "埼玉2002體育場（埼玉スタジアム2002）",
-      "year_built": 2001,
-      "year_renovated": 2022,
-      "capacity": 63700,
-      "geo_location": "埼玉縣埼玉市綠區（北緯35.9030°，東經139.7176°）",
-      "interesting_facts": [
-        "日本最大的足球專用場館，為2002年世界盃準決賽（德韓之戰）而興建。",
-        "巨型屋頂線條以埼玉縣濕地棲息的白鷺展翅造型設計。",
-        "以強烈的聲學迴音效應聞名，6萬名浦和球迷聚集時組成的「紅牆」聲浪冠絕亞洲。"
-      ]
-    },
-    "team_history": "1965年日本足球聯賽（JSL）創始成員，亦是1993年J聯賽創立時的「Original Ten」之一。由企業球隊成功轉型為日本入場人數最多、商業價值最高的頂級球會。",
-    "performance_history": [
-      "1次 J1 聯賽冠軍 (2006)",
-      "3次 亞冠盃（ACL）冠軍 (2007, 2017, 2022)",
-      "8次 天皇盃冠軍 (J聯賽時期4次: 2005, 2006, 2018, 2021)",
-      "2次 J.League 聯賽盃冠軍 (2003, 2016)"
-    ]
-  },
-  {
-    "id": "400563",
-    "club": "浦和紅鑽",
-    "number": "1",
-    "name_zh": "西川 周作",
-    "name_en": "Shusaku Nishikawa",
-    "position": "GK",
-    "dob": "1986-06-18",
-    "age": 40,
-    "height": 183,
-    "weight": 81,
-    "foot": "左腳",
-    "nationality": "日本",
-    "joined": 2014,
-    "prev_club": "廣島三箭",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "效力第13季",
-    "national_team_detail": "31次 代表日本國家隊大國腳 🇯🇵（2011 亞洲盃冠軍成員、2014 世界盃決賽周陣容）",
-    "intro": "西川周作為日本頂級聯賽最具代表性的門將之一，從小學梯隊轉任門將並一步步成長為國家隊與亞冠冠軍門將，充分展現了日本現代門將「腳下傳控」與「門前指揮」的發展軌跡。",
-    "timeline": [
-      { "period": "1995–1998", "team": "宇佐J.Y.C（宇佐FC）", "category": "基層青訓", "milestone": "小學三年級開始接觸足球，四年級轉任門將，接受大量腳下傳控訓練。" },
-      { "period": "1999–2001", "team": "宇佐FC Jr Youth / 大分U-15", "category": "國中青訓", "milestone": "於地區青訓賽事中培養出優秀短傳能力與比賽閱讀視野。" },
-      { "period": "2002–2004", "team": "大分三神 U-18", "category": "高中梯隊", "milestone": "入住大分三神青訓宿舍，成為 U-18 主力門將，建立高強度戰術紀律。" },
-      { "period": "2005–2009", "team": "大分三神", "category": "J1職業隊", "milestone": "簽署正式職業合約；2005年7月完成 J1 首秀，2008年奪得 J.League 聯賽盃冠軍。" },
-      { "period": "2010–2013", "team": "廣島三箭", "category": "J1職業隊", "milestone": "幫助球隊達成 J1 聯賽兩連霸（2012、2013），連續兩年獲選 J1 最佳陣容。" },
-      { "period": "2014–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "奪得兩次亞冠盃冠軍（2017、2022），職業生涯 J1 出場突破 600 場大關。" }
-    ],
-    "honors": [
-      "6次 J1 最佳陣容（2012, 2013 [廣島三箭], 2014, 2015, 2016, 2023 [浦和紅鑽]）",
-      "3次 J1 公平競技個人獎（2014, 2018, 2023）",
-      "2次 亞冠盃（ACL）冠軍（2017, 2022 [浦和紅鑽]）"
-    ],
-    "milestones": [
-      "J1 聯賽史上守門員出場場次第一名（突破 600 場）",
-      "距離 200 場 J1 零封（Clean Sheet）紀錄僅差 2 場"
-    ],
-    "tactical_traits": [
-      "外場技術底子：早期訓練包含大量外場傳控鍛鍊，為現代清道夫門將（Sweeper-Keeper）典範。",
-      "2種登錄提前對接職業：高三獲 2種登錄 隨一線隊訓練，縮短職業適應期。"
-    ],
-    "quirky_trivia": "小學4年級前擔任中場，這段經歷賦予他極優異的腳下傳球視野；私下極度熱愛甜食，是著名的泡芙狂熱者。"
-  },
-  {
-    "id": "1630133",
-    "club": "浦和紅鑽",
-    "number": "2",
-    "name_zh": "宮本 優太",
-    "name_en": "Yuta Miyamoto",
-    "position": "DF",
-    "dob": "1999-12-15",
-    "age": 26,
-    "height": 171,
-    "weight": 70,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2022,
-    "prev_club": "流通經濟大學",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "效力第5季",
-    "national_team_detail": "日本 U-23 代表隊候補",
-    "intro": "宮本優太為浦和紅鑽防線的防守領袖與多面手，可勝任右後衛及防守中場。體能充沛、一對一對抗極強，具備優異的持球推進能力。",
-    "timeline": [
-      { "period": "2015–2017", "team": "流通經濟大學附屬柏高中", "category": "高中校隊", "milestone": "擔任隊長，率隊勇奪全國高校總體冠軍及全國錦標賽準優勝。" },
-      { "period": "2018–2021", "team": "流通經濟大學", "category": "大學校隊", "milestone": "改造為右後衛，率隊奪得關東大學聯賽冠軍，獲選最佳陣容。" },
-      { "period": "2022–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2022年正式加盟，隨隊勇奪 Super Cup 冠軍；外借京都及比乙後回歸鎖定防線核心。" }
-    ],
-    "honors": [
-      "1次 FUJIFILM SUPER CUP 冠軍（2022 [浦和紅鑽]）",
-      "1次 全國高校總體錦標賽冠軍（2017 [流經大柏]）"
-    ],
-    "milestones": [
-      "大學時期以隊長身分達成關東大學聯賽過人成功率前3名"
-    ],
-    "tactical_traits": [
-      "長友佑都體能企劃發掘：核心與體能特訓奠定極佳對抗底子。",
-      "位置轉換彈性：兼具中場出球視野與邊路追擊跑速。"
-    ],
-    "quirky_trivia": "高中時期曾參加日本球星長友佑都主辦的「體能培訓營」，因展現出怪物級的心肺能力而備受矚目。"
-  },
-  {
-    "id": "1657621",
-    "club": "浦和紅鑽",
-    "number": "3",
-    "name_zh": "丹尼路・保沙",
-    "name_en": "Danilo Boza",
-    "position": "DF",
-    "dob": "1998-05-06",
-    "age": 28,
-    "height": 184,
-    "weight": 72,
-    "foot": "右腳",
-    "nationality": "巴西",
-    "joined": 2025,
-    "prev_club": "祖雲圖德",
-    "registration_status": "外援名額",
-    "tenure_status": "新加盟（第2季）",
-    "national_team_detail": "無",
-    "intro": "丹尼路·保沙為來自巴西的強悍中後衛／右後衛，具備 184 公分身高與優異彈跳力，為定位球防守與頭槌攻門的空中霸主。",
-    "timeline": [
-      { "period": "2021", "team": "山度士（Santos）", "category": "巴甲職業隊", "milestone": "外借至巴西名門山度士，征戰巴甲聯賽累積 22 場頂級經驗。" },
-      { "period": "2022–2024", "team": "祖雲圖德 / 華斯高", "category": "巴甲/巴乙", "milestone": "作為主力中後衛，率隊於巴甲與巴乙賽場打響名號。" },
-      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "登陸 J1，首季登場 35 場攻入 1 球並隨隊出戰世俱盃。" }
-    ],
-    "honors": [
-      "1次 高修州聯賽亞軍（2024 [祖雲圖德]）",
-      "2025 世俱盃（Club World Cup）參賽經歷"
-    ],
-    "milestones": [
-      "巴甲單季頭槌解圍成功率突破 78%"
-    ],
-    "tactical_traits": [
-      "門線解圍專家：具備極強門前危險預判，多次於門線前完成極限救球。",
-      "中後衛/右後衛兼修：兼具中央制空力與邊路帶球推進能力。"
-    ],
-    "quirky_trivia": "出生於巴西足球世家，私底下是一名熱情的高爾夫球愛好者，常在休賽期與隊友切磋球技。"
-  },
-  {
-    "id": "1634589",
-    "club": "浦和紅鑽",
-    "number": "5",
-    "name_zh": "根本 健太",
-    "name_en": "Kenta Nemoto",
-    "position": "DF",
-    "dob": "2002-12-13",
-    "age": 23,
-    "height": 184,
-    "weight": 78,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2025,
-    "prev_club": "流通經濟大學",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "新加盟（第2季）",
-    "national_team_detail": "全日本大學選拔代表 🇯🇵",
-    "intro": "根本健太為浦和紅鑽防線的制空新星，具備 184 公分的優異對抗身材與冷靜的腳下出球能力。",
-    "timeline": [
-      { "period": "2021–2024", "team": "流通經濟大學", "category": "大學校隊", "milestone": "鎖定主力中後衛，率隊征戰關東大學聯賽，獲選最佳防守球員之一。" },
-      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2025年正式加盟浦和紅鑽，作為中後衛重點輪換力量。" }
-    ],
-    "honors": [
-      "1次 關東大學足球聯賽最佳陣容（2024 [流經大]）"
-    ],
-    "milestones": [
-      "大學賽季單場最高爭頂成功數 14 次"
-    ],
-    "tactical_traits": [
-      "流經大大學足球防線體系：具備極佳的一對一補位與門前封堵意識。",
-      "長傳發動能力：擅長於後場直接發動高弧度斜長傳。"
-    ],
-    "quirky_trivia": "大學時期專攻運動營養學，對隊友的日常飲食與蛋白質攝取有嚴苛的監督習慣。"
-  },
-  {
-    "id": "1500293",
-    "club": "浦和紅鑽",
-    "number": "6",
-    "name_zh": "山根 視來",
-    "name_en": "Miki Yamane",
-    "position": "DF",
-    "dob": "1993-12-22",
-    "age": 32,
-    "height": 178,
-    "weight": 72,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2026,
-    "prev_club": "洛杉磯銀河",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "新加盟（2026夏季）",
-    "national_team_detail": "16次 代表日本國家隊大國腳 🇯🇵（2022 卡達世界盃參賽成員）",
-    "intro": "山根視來為日本國家級頂級右後衛，具備極強的縱向重疊插上助攻能力與堅韌的防守單挑對抗。",
-    "timeline": [
-      { "period": "2016–2019", "team": "湘南比馬", "category": "J1職業隊", "milestone": "改造為右中後衛/右邊翼衛，隨隊奪得 2018 年 J.League 聯賽盃冠軍。" },
-      { "period": "2020–2023", "team": "川崎前鋒", "category": "J1職業隊", "milestone": "幫助川崎兩奪 J1 冠軍，個人達成 J1 最佳陣容三連霸。" },
-      { "period": "2024–2026", "team": "洛杉磯銀河", "category": "美職聯（MLS）", "milestone": "作為主力右後衛幫助球隊奪得美職聯總冠軍。" },
-      { "period": "2026–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2026年夏季回歸 J1 加盟浦和紅鑽，鎖定右路第一號主力。" }
-    ],
-    "honors": [
-      "3次 J1 最佳陣容（2020, 2021, 2022 [川崎前鋒]）",
-      "2次 J1 聯賽冠軍（2020, 2021 [川崎前鋒]）",
-      "1次 美職聯（MLS）總冠軍（2024 [洛杉磯銀河]）"
-    ],
-    "milestones": [
-      "J1 史上單季助攻最多的右後衛之一（2021賽季 12 次助攻）"
-    ],
-    "tactical_traits": [
-      "位置重塑典範：兼具中場球員的細膩腳下與後衛的對抗力。",
-      "內切與套外多重威脅：擅長與右邊鋒進行套外或內切撞牆配合。"
-    ],
-    "quirky_trivia": "大學畢業前差點放棄足球職業路，最終靠湘南比馬試訓成功逆襲，成為後來的世界盃國腳。"
-  },
-  {
-    "id": "1624851",
-    "club": "浦和紅鑽",
-    "number": "7",
-    "name_zh": "金子 拓郎",
-    "name_en": "Takuro Kaneko",
-    "position": "MF",
-    "dob": "1997-07-30",
-    "age": 28,
-    "height": 178,
-    "weight": 75,
-    "foot": "左腳",
-    "nationality": "日本",
-    "joined": 2025,
-    "prev_club": "KV哥積克",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "效力第2季",
-    "national_team_detail": "日本 A 代表隊候補",
-    "intro": "金子拓郎為日本頂級聯賽最具突破能力的邊路攻擊手之一，以爆發力極強的 1v1 盤帶與精準傳中成為撕開對手防線的核心武器。",
-    "timeline": [
-      { "period": "2019–2024", "team": "札幌岡薩多", "category": "J1職業隊", "milestone": "成為主力邊鋒，累積出賽 123 場攻入 20 球，2021年獲選 J1 優秀選手。" },
-      { "period": "2023–2024", "team": "薩格勒布戴拿模", "category": "克羅地亞甲組", "milestone": "首度旅歐，代表克羅地亞豪門出戰 28 場，幫助球隊奪得雙冠王。" },
-      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2025年回歸加盟浦和紅鑽，成為右邊路不可或缺的進攻大腦。" }
-    ],
-    "honors": [
-      "1次 克羅地亞甲組聯賽冠軍（2023-24 [薩格勒布戴拿模]）",
-      "1次 克羅地亞盃冠軍（2023-24 [薩格勒布戴拿模]）",
-      "1次 世界大學生運動會金牌（2019 [日本大學代表]）"
-    ],
-    "milestones": [
-      "2026/27 賽季目前以 4 次助攻暫居 J1 助攻榜第一名",
-      "J1 聯賽單季成功過人次數破百紀錄（2021賽季）"
-    ],
-    "tactical_traits": [
-      "逆足切入威脅：左腳球員固定於右翼，具備內切射門與外側精準傳中雙重威脅。",
-      "歐戰賽事經驗：在歐洲高對抗體系洗禮後，節奏掌控與對抗能力顯著提升。"
-    ],
-    "quirky_trivia": "效力薩格勒布戴拿模期間因補時階段攻入關鍵絕殺球，被當地球迷暱稱為「歐聯殺手」。"
-  },
-  {
-    "id": "801124",
-    "club": "浦和紅鑽",
-    "number": "8",
-    "name_zh": "水沼 宏太",
-    "name_en": "Kota Mizunuma",
-    "position": "MF",
-    "dob": "1990-02-22",
-    "age": 36,
-    "height": 176,
-    "weight": 70,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2026,
-    "prev_club": "橫濱水手",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "新加盟（2026首季）",
-    "national_team_detail": "2次 代表日本國家隊大國腳 🇯🇵（2022 東亞盃冠軍成員）",
-    "intro": "水沼宏太為日本 J 聯賽最具代表性的傳中大師與功勳右邊鋒，擁有超過 350 場 J1 聯賽經驗，以極高弧度右腳精準傳中與高逼搶跑動著稱。",
-    "timeline": [
-      { "period": "2012–2015", "team": "鳥棲砂岩", "category": "J1職業隊", "milestone": "成為鳥棲進攻核心，4 季攻入 14 球。" },
-      { "period": "2020–2025", "team": "橫濱水手", "category": "J1職業隊", "milestone": "重返母會水手，率隊奪得 2022 年 J1 聯賽冠軍，獲選 J1 最佳陣容。" },
-      { "period": "2026–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2026年加盟浦和紅鑽，提供頂級老將經驗與邊路傳中威脅。" }
-    ],
-    "honors": [
-      "1次 J1 聯賽冠軍（2022 [橫濱水手]）",
-      "1次 J1 最佳陣容（2022 [橫濱水手]）",
-      "1次 天皇盃冠軍（2017 [大阪櫻花]）",
-      "1次 東亞盃冠軍（2022 [日本國家隊]）"
-    ],
-    "milestones": [
-      "J1 聯賽登場次數突破 350 場里程碑"
-    ],
-    "tactical_traits": [
-      "正統右傳中手：不需要過多控球即可在一腳觸球下送出極度貼地的弧線傳中。",
-      "精神領袖：擁有極高的比賽熱情，能持續指揮隊友保持高位壓迫。"
-    ],
-    "quirky_trivia": "父親水沼貴史亦為日本前國腳，父子兩人皆在橫濱水手隊史留名，為日本足壇一段佳話。"
-  },
-  {
-    "id": "1634891",
-    "club": "浦和紅鑽",
-    "number": "10",
-    "name_zh": "馬菲奧斯・沙維奧",
-    "name_en": "Matheus Sávio",
-    "position": "MF",
-    "dob": "1997-04-15",
-    "age": 29,
-    "height": 175,
-    "weight": 74,
-    "foot": "右腳",
-    "nationality": "巴西",
-    "joined": 2025,
-    "prev_club": "柏雷素爾",
-    "registration_status": "外援名額",
-    "tenure_status": "效力第2季",
-    "national_team_detail": "前巴西 U-20 國家代表隊 🇧🇷",
-    "intro": "馬菲奧斯・沙維奧為 J1 頂級巴西籍攻擊中場，出身巴西名門法林明高。具備出色的個人突破、狹小空間發球能力與遠射威脅。",
-    "timeline": [
-      { "period": "2015–2019", "team": "法林明高", "category": "巴甲職業隊", "milestone": "提升至一線隊完成巴甲首秀，曾入選巴西 U-20 國家隊。" },
-      { "period": "2019–2024", "team": "柏雷素爾", "category": "J1/J2職業隊", "milestone": "登陸日本，助柏雷素爾奪得 J2 冠軍升甲，其後成為 J1 頂級進攻中場。" },
-      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "轉投浦和紅鑽，接下 10 號球衣成為前場進攻核心。" }
-    ],
-    "honors": [
-      "2次 J1 聯賽優秀選手賞（2022, 2023 [柏雷素爾]）",
-      "1次 J2 聯賽冠軍（2019 [柏雷素爾]）"
-    ],
-    "milestones": [
-      "2023 賽季 J1 聯賽關鍵傳球（Key Passes）榜首"
-    ],
-    "tactical_traits": [
-      "巴甲名門攻勢大腦：具備極強的節奏變化，能靠一己之力打破對手密集防守。",
-      "融入日式風格：具備高效率防守回追意識。"
-    ],
-    "quirky_trivia": "能說流利的日語，在場上能直接用日語向本土隊友發出戰術指令。"
-  },
-  {
-    "id": "1639891",
-    "club": "浦和紅鑽",
-    "number": "11",
-    "name_zh": "古斯達臣",
-    "name_en": "Samuel Gustafson",
-    "position": "MF",
-    "dob": "1995-01-11",
-    "age": 31,
-    "height": 187,
-    "weight": 79,
-    "foot": "右腳",
-    "nationality": "瑞典",
-    "joined": 2024,
-    "prev_club": "BK赫根",
-    "registration_status": "外援名額",
-    "tenure_status": "效力第3季",
-    "national_team_detail": "13次 代表瑞典國家隊大國腳 🇸🇪（歐洲國家盃外圍賽主力）",
-    "intro": "古斯達臣為瑞典現役國腳單後腰（Anchor），具備頂級的北歐戰術素養、冷靜的大腦與極寬廣的長傳轉移視野。",
-    "timeline": [
-      { "period": "2016–2021", "team": "杜里諾 / 佩魯賈 / 克雷莫納", "category": "意甲/意乙", "milestone": "登陸意甲加盟杜里諾，接受意式防守戰術洗禮。" },
-      { "period": "2021–2023", "team": "赫根（BK Häcken）", "category": "瑞超職業隊", "milestone": "重返赫根並接任隊長，率隊奪得隊史首座瑞超冠軍。" },
-      { "period": "2024–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2024賽季加盟浦和紅鑽，作為後腰絕對核心。" }
-    ],
-    "honors": [
-      "1次 瑞典超級聯賽冠軍（2022 [BK赫根]）",
-      "2次 瑞典盃冠軍（2016, 2023 [BK赫根]）"
-    ],
-    "milestones": [
-      "2022 瑞典超聯賽 MVP 提名"
-    ],
-    "tactical_traits": [
-      "意式防守與北歐制空：具備 187cm 身高，同時擁有嚴密的區域防守站位。",
-      "節拍器：擅長用一腳接傳擺脫對手高位逼搶。"
-    ],
-    "quirky_trivia": "他的雙胞胎兄弟 Simon Gustafson 亦為職業球員，兩人曾一同在瑞典超赫根隊並肩作戰並奪冠。"
-  },
-  {
-    "id": "1630132",
-    "club": "浦和紅鑽",
-    "number": "12",
-    "name_zh": "瀨古 樹",
-    "name_en": "Tatsuki Seko",
-    "position": "MF",
-    "dob": "1997-12-22",
-    "age": 28,
-    "height": 175,
-    "weight": 72,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2025,
-    "prev_club": "史篤城",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "新加盟（2025首季）",
-    "national_team_detail": "無",
-    "intro": "瀨古樹為具備頂級傳球視野與定位球發球能力的組織型中場，歷經明治大學名門洗禮與英格蘭史篤城旅歐經驗。",
-    "timeline": [
-      { "period": "2016–2019", "team": "明治大學", "category": "大學校隊", "milestone": "明治大學的核心大腦，大四率隊達成「三冠王」霸業。" },
-      { "period": "2022–2024", "team": "京都不死鳥", "category": "J1職業隊", "milestone": "轉投京都擔任隊長與中場樞紐，3 季 J1 出場超過 90 場。" },
-      { "period": "2024–2025", "team": "史篤城（Stoke City）", "category": "英冠職業隊", "milestone": "短暫旅英加盟史篤城，吸收英格蘭足球身體對抗經驗。" },
-      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "加盟浦和紅鑽，作為中場重要輪換與出球發起點。" }
-    ],
-    "honors": [
-      "1次 全日本大學足球錦標賽冠軍（2019 [明治大學]）",
-      "1次 總理大臣盃冠軍（2019 [明治大學]）"
-    ],
-    "milestones": [
-      "大學三冠王時期主力中場"
-    ],
-    "tactical_traits": [
-      "明治大學三冠王大腦：傳球腳法精準，主導定位球戰術。",
-      "縱向直塞能力：擅長在中圈附近一腳撕裂對手防線。"
-    ],
-    "quirky_trivia": "在明治大學時期主修商學，對戰術數據與個人跑動分析有極高的研究興趣。"
-  },
-  {
-    "id": "1500294",
-    "club": "浦和紅鑽",
-    "number": "13",
-    "name_zh": "渡邊 凌磨",
-    "name_en": "Ryoma Watanabe",
-    "position": "MF",
-    "dob": "1996-10-02",
-    "age": 29,
-    "height": 176,
-    "weight": 72,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2024,
-    "prev_club": "FC東京",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "效力第3季",
-    "national_team_detail": "日本 U-17 代表隊（U-17 世界盃成員）",
-    "intro": "渡邊凌磨為浦和紅鑽前場的多面手核心，具備靈活的半空間插上能力、逼搶積極度與極高球商。",
-    "timeline": [
-      { "period": "2015–2017", "team": "英哥列斯達二隊", "category": "德甲預備隊", "milestone": "高中畢業後毅然旅德，於德甲預備隊出戰 72 場攻入 12 球。" },
-      { "period": "2021–2023", "team": "FC東京", "category": "J1職業隊", "milestone": "登陸 J1 加盟 FC東京，3 季登場 76 場攻入 12 球。" },
-      { "period": "2024–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2024賽季加盟家鄉球會浦和紅鑽，成為前場攻守不可或缺的核心。" }
-    ],
-    "honors": [
-      "1次 J1 聯賽最佳金球賞（2023 [FC東京]）",
-      "1次 J1 聯賽優秀選手賞（2023 [FC東京]）"
-    ],
-    "milestones": [
-      "2026/27 賽季目前以 3 次助攻暫居 J1 助攻榜第二名"
-    ],
-    "tactical_traits": [
-      "高中旅德歷練：培養出極佳的單挑耐受度與攻守切換節奏。",
-      "前場萬金油：能扮演中路樞紐，亦能扯到邊路進行高品質傳中。"
-    ],
-    "quirky_trivia": "曾於2023賽季對陣陣營轟入一記禁區外凌空抽射世界波，勇奪該季 J1 年度最佳進球。"
-  },
-  {
-    "id": "1632770",
-    "club": "浦和紅鑽",
-    "number": "15",
-    "name_zh": "工藤 孝汰",
-    "name_en": "Kota Kudo",
-    "position": "DF",
-    "dob": "2003-08-13",
-    "age": 23,
-    "height": 180,
-    "weight": 72,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2022,
-    "prev_club": "岡山綠雉",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "效力第5季",
-    "national_team_detail": "日本 U-20 國家代表隊 🇯🇵",
-    "intro": "工藤孝汰為浦和紅鑽自家青訓培養的後防新星，具備極佳的爆發力、速度與半空間纏鬥能力。",
-    "timeline": [
-      { "period": "2019–2021", "team": "浦和紅鑽 Youth", "category": "俱樂部梯隊", "milestone": "高三獲 2種登錄 於 ACL 賽場完成一線隊首秀。" },
-      { "period": "2024–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "外借 J2 藤枝累積經驗後回歸浦和，作為後防多面手備選。" }
-    ],
-    "honors": [
-      "1次 亞冠盃（ACL）冠軍（2022 [浦和紅鑽]）"
-    ],
-    "milestones": [
-      "18歲即完成亞冠盃首秀，為浦和隊史亞冠最年輕先發後衛之一"
-    ],
-    "tactical_traits": [
-      "浦和純正梯隊基因：18 歲即在亞冠賽場先發，具備極高抗壓心態。",
-      "靈活補位速度：靠速度優勢化解對手反擊直塞球。"
-    ],
-    "quirky_trivia": "小學時期原本練習游泳，後因看了浦和紅鑽在亞冠的比賽而立志成為浦和職業球員。"
-  },
-  {
-    "id": "1634895",
-    "club": "浦和紅鑽",
-    "number": "17",
-    "name_zh": "小森 飛絢",
-    "name_en": "Hiiro Komori",
-    "position": "FW",
-    "dob": "2000-08-06",
-    "age": 26,
-    "height": 176,
-    "weight": 68,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2025,
-    "prev_club": "千葉市原",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "效力第2季",
-    "national_team_detail": "日本 A 代表隊候補",
-    "intro": "小森飛絢為日本新一代高效搶點型中鋒，具備頂級的無球跑位嗅覺、冷靜的門前終結力與高壓逼搶積極度。",
-    "timeline": [
-      { "period": "2023–2024", "team": "千葉市原", "category": "J2職業隊", "milestone": "2024賽季以 23 球榮奪 J2 金靴獎，震撼日本足壇。" },
-      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2025賽季轉投浦和紅鑽，首季 J1 即展現極高進球效率。" }
-    ],
-    "honors": [
-      "1次 J2 聯賽神射手/金靴獎（2024 [千葉市原]—23球）",
-      "1次 J2 聯賽最佳陣容（2024 [千葉市原]）"
-    ],
-    "milestones": [
-      "創下 J2 史上大學畢業職業首季連續進球最多場次紀錄"
-    ],
-    "tactical_traits": [
-      "大學足球神射手典範：無球跑位與反越位時機掌握極為精準。",
-      "高效門前終結：不需要過多控球即可在禁區內利用左右腳完成快速起腳。"
-    ],
-    "quirky_trivia": "其名字「飛絢」在日文中寓意為「飛向世界綻放光芒」，是身為足球迷的父親親自取的。"
-  },
-  {
-    "id": "1632771",
-    "club": "浦和紅鑽",
-    "number": "18",
-    "name_zh": "林 幸多郎",
-    "name_en": "Kotaro Hayashi",
-    "position": "DF",
-    "dob": "2000-11-16",
-    "age": 25,
-    "height": 170,
-    "weight": 66,
-    "foot": "左腳",
-    "nationality": "日本",
-    "joined": 2026,
-    "prev_club": "町田澤維亞",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "新加盟（2026首季）",
-    "national_team_detail": "全日本大學選拔代表 🇯🇵",
-    "intro": "林幸多郎為縱向折返跑能力強悍的左邊後衛／翼衛，具備優異的體能、高頻率高弧度傳中與堅韌的邊路防守單挑力。",
-    "timeline": [
-      { "period": "2019–2022", "team": "明治大學", "category": "大學校隊", "milestone": "大四擔任隊長率隊奪得全日本錦標賽冠軍。" },
-      { "period": "2023–2025", "team": "橫濱FC / 町田澤維亞", "category": "J1職業隊", "milestone": "作為町田主力左後衛率隊闖入 J1 前列。" },
-      { "period": "2026–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2026年加盟浦和紅鑽，強化左路攻守深度。" }
-    ],
-    "honors": [
-      "1次 全日本大學足球錦標賽 MVP/冠軍（2022 [明治大學]）",
-      "1次 高圓宮盃 U-18 冠軍（2018 [鳥棲砂岩 U-18]）"
-    ],
-    "milestones": [
-      "職業首季於橫濱FC 達成 29 場 2 球亮眼表現"
-    ],
-    "tactical_traits": [
-      "明治隊長戰術執行力：戰術紀律嚴明，能不間斷完成 90 分鐘高強度折返。",
-      "套外精準傳中：擅長在底線附近送出高品質旋轉弧線球。"
-    ],
-    "quirky_trivia": "出自鳥棲砂岩青年隊，大學時期在日本足球王者明治大學擔任隊長，被譽為「跑不死的左路鐵人」。"
-  },
-  {
-    "id": "1614101",
-    "club": "浦和紅鑽",
-    "number": "23",
-    "name_zh": "福井 光輝",
-    "name_en": "Koki Fukui",
-    "position": "GK",
-    "dob": "1995-11-04",
-    "age": 30,
-    "height": 184,
-    "weight": 78,
-    "foot": "左腳",
-    "nationality": "日本",
-    "joined": 2026,
-    "prev_club": "大阪櫻花",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "新加盟（2026夏季）",
-    "national_team_detail": "無",
-    "intro": "福井光輝為具備優異高空球支配力與防線指揮能力的輪換門將，具備積極的控制範圍與精準左腳發球能力。",
-    "timeline": [
-      { "period": "2018–2023", "team": "FC町田澤維亞", "category": "J2職業隊", "milestone": "2021賽季全勤出賽 42 場，隨隊勇奪 2023 年 J2 聯賽冠軍。" },
-      { "period": "2026–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2026年夏季加盟浦和紅鑽，作為門線堅實後盾。" }
-    ],
-    "honors": [
-      "1次 J2 聯賽冠軍（2023 [町田澤維亞]）"
-    ],
-    "milestones": [
-      "J2 聯賽單季全勤 42 場紀錄（2021賽季）"
-    ],
-    "tactical_traits": [
-      "積極出擊範圍：具備強大的門前高空球判斷力。",
-      "左腳進攻發起：精準的左腳長傳能直接連結前場邊鋒發動快攻。"
-    ],
-    "quirky_trivia": "在町田效力長達 6 年，是町田從 J2 弱旅蛻變為升甲冠軍的靈魂門將之一。"
-  },
-  {
-    "id": "1630131",
-    "club": "浦和紅鑽",
-    "number": "25",
-    "name_zh": "安居 海渡",
-    "name_en": "Kaito Yasui",
-    "position": "MF",
-    "dob": "2000-02-09",
-    "age": 26,
-    "height": 174,
-    "weight": 70,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2022,
-    "prev_club": "流通經濟大學",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "效力第5季",
-    "national_team_detail": "無",
-    "intro": "安居海渡為浦和紅鑽中場的體能引擎與防守屏障，具備極強的奪搶覆蓋面、高強度反搶逼搶與後插上射門能力。",
-    "timeline": [
-      { "period": "2018–2021", "team": "流通經濟大學", "category": "大學校隊", "milestone": "大四率隊奪得關東大學聯賽冠軍並獲選 MVP。" },
-      { "period": "2022–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "正式簽約，同季隨隊勇奪亞冠盃（ACL）冠軍，成為中場主力。" }
-    ],
-    "honors": [
-      "1次 亞冠盃（ACL）冠軍（2022 [浦和紅鑽]）",
-      "1次 FUJIFILM SUPER CUP 冠軍（2022 [浦和紅鑽]）",
-      "1次 關東大學足球聯賽 MVP（2021 [流經大]）"
-    ],
-    "milestones": [
-      "2023 賽季亞冠決賽階段全勤主力中場"
-    ],
-    "tactical_traits": [
-      "本土青訓血統：體能耐受度與戰術執行力極強。",
-      "後插上二波威脅：擅長把握禁區外二波落點完成高質量遠射。"
-    ],
-    "quirky_trivia": "球風極度硬朗，但在場下性格極為謙遜溫和，是浦和休息室裡的開心果。"
-  },
-  {
-    "id": "1635890",
-    "club": "浦和紅鑽",
-    "number": "28",
-    "name_zh": "田中 義峯",
-    "name_en": "Yoshitaka Tanaka",
-    "position": "DF",
-    "dob": "2007-02-10",
-    "age": 19,
-    "height": 181,
-    "weight": 73,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2025,
-    "prev_club": "浦和紅鑽 Youth",
-    "registration_status": "U-21 青年球員",
-    "tenure_status": "效力第2季",
-    "national_team_detail": "無",
-    "intro": "田中義峯為浦和青訓體系自主培育的後防預備力量，具備良好的身體天賦與基礎傳控能力。",
-    "timeline": [
-      { "period": "2019–2024", "team": "浦和紅鑽 Youth", "category": "俱樂部梯隊", "milestone": "高三獲得一線隊登錄資格。" },
-      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "正式簽署職業合約，進入一線隊大名單。" }
-    ],
-    "honors": [
-      "浦和紅鑽青訓一線隊升格（2025）"
-    ],
-    "milestones": [
-      "18歲簽署職業合約升格一線隊"
-    ],
-    "tactical_traits": [
-      "梯隊一貫戰術養成：對浦和防守站位非常熟悉。"
-    ],
-    "quirky_trivia": "土生土長埼玉市人，從小就是浦和紅鑽死忠球迷，小學時曾擔任過浦和主場的球童。"
-  },
-  {
-    "id": "1632769",
-    "club": "浦和紅鑽",
-    "number": "29",
-    "name_zh": "堀內 陽太",
-    "name_en": "Yota Horiuchi",
-    "position": "MF",
-    "dob": "2004-07-08",
-    "age": 22,
-    "height": 177,
-    "weight": 70,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2023,
-    "prev_club": "浦和紅鑽 Youth",
-    "registration_status": "U-21 青年球員",
-    "tenure_status": "效力第4季",
-    "national_team_detail": "日本 U-19 國家代表隊 🇯🇵",
-    "intro": "堀內陽太為浦和紅鑽青訓自主培養的中場攔截新星，具備優異的攻守轉換預判與強悍的對抗粘性。",
-    "timeline": [
-      { "period": "2023–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "升上一線隊，隨隊捧起亞冠冠軍，於盃賽及聯賽累積登場經驗。" }
-    ],
-    "honors": [
-      "1次 亞冠盃（ACL）冠軍（2022 [浦和紅鑽]）"
-    ],
-    "milestones": [
-      "浦和 Youth 隊長時期率隊打入全國青訓錦標賽四強"
-    ],
-    "tactical_traits": [
-      "浦和本土青訓血統：中場防守站位嚴密，具備極高的戰術執行力。"
-    ],
-    "quirky_trivia": "青年隊時期擔任隊長，具備極佳的領袖氣質與場上大聲指揮隊友的習慣。"
-  },
-  {
-    "id": "1400291",
-    "club": "浦和紅鑽",
-    "number": "32",
-    "name_zh": "片山 瑛一",
-    "name_en": "Eiichi Katayama",
-    "position": "DF",
-    "dob": "1991-11-30",
-    "age": 34,
-    "height": 182,
-    "weight": 76,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2026,
-    "prev_club": "柏雷素爾",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "新加盟（2026首季）",
-    "national_team_detail": "無",
-    "intro": "片山瑛一為 J 聯賽極具特色的萬能二刀流老將與手拋球大師，可勝任左右後衛、邊翼衛甚至前鋒。",
-    "timeline": [
-      { "period": "2014–2017", "team": "岡山綠雉", "category": "J2職業隊", "milestone": "4 季登場超過 150 場攻入 16 球，打響「長拋球」名號。" },
-      { "period": "2026–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2026年回歸家鄉加盟浦和紅鑽，提供關鍵戰術變化。" }
-    ],
-    "honors": [
-      "J1/J2 累計登場突破 300 場",
-      "1次 全日本大學足球錦標賽冠軍（2012 [早稻田大學]）"
-    ],
-    "milestones": [
-      "J 聯賽手拋球（Long Throw）直接製造進球數量紀錄保持者之一"
-    ],
-    "tactical_traits": [
-      "超長距離界外球特化：能將界外球直接投射至小禁區製造混戰。",
-      "前鋒轉後衛的衝擊力：具備前鋒的射門嗅覺與後衛的身材。"
-    ],
-    "quirky_trivia": "大學時期原本是主力中鋒，後被改造為邊後衛，其標誌性的手榴彈界外球投擲距離可達 35 米以上。"
-  },
-  {
-    "id": "1635891",
-    "club": "浦和紅鑽",
-    "number": "33",
-    "name_zh": "笹 修大",
-    "name_en": "Shuta Sasa",
-    "position": "MF",
-    "dob": "2006-06-10",
-    "age": 20,
-    "height": 172,
-    "weight": 65,
-    "foot": "左腳",
-    "nationality": "日本",
-    "joined": 2025,
-    "prev_club": "浦和紅鑽 Youth",
-    "registration_status": "U-21 青年球員",
-    "tenure_status": "效力第2季",
-    "national_team_detail": "無",
-    "intro": "笹修大為浦和梯隊提拔的邊路攻擊型中場，具備細膩的左腳持球盤帶與狹小空間過人能力。",
-    "timeline": [
-      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2025年升格一線隊，作為前場邊路重點潛力股。" }
-    ],
-    "honors": [
-      "浦和紅鑽青訓一線隊升格（2025）"
-    ],
-    "milestones": [
-      "浦和 Youth 賽季助攻王"
-    ],
-    "tactical_traits": [
-      "靈巧盤帶節奏：擅長內切尋找遠角射門或送出直塞球。"
-    ],
-    "quirky_trivia": "左腳技術極佳，被青訓教練稱為「埼玉阿仁哥文（Arjen Robben）」。"
-  },
-  {
-    "id": "1635892",
-    "club": "浦和紅鑽",
-    "number": "36",
-    "name_zh": "肥田野 蓮治",
-    "name_en": "Renji Hidano",
-    "position": "FW",
-    "dob": "2007-01-22",
-    "age": 19,
-    "height": 180,
-    "weight": 74,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2025,
-    "prev_club": "浦和紅鑽 Youth",
-    "registration_status": "U-21 青年球員",
-    "tenure_status": "效力第2季",
-    "national_team_detail": "無",
-    "intro": "肥田野蓮治為浦和青訓提拔的禁區搶點型中鋒，身體素質強悍、門前起腳果斷。",
-    "timeline": [
-      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2025年簽署職業合約進入一線隊。" }
-    ],
-    "honors": [
-      "浦和紅鑽青訓一線隊升格（2025）"
-    ],
-    "milestones": [
-      "高圓宮盃 U-18 聯賽隊內神射手"
-    ],
-    "tactical_traits": [
-      "門前衝擊力：擅長背身護球與爭搶第二落點。"
-    ],
-    "quirky_trivia": "崇拜前英格蘭中鋒魯尼，比賽時習慣佩帶黑色的傳統戰術護腿板。"
-  },
-  {
-    "id": "1635893",
-    "club": "浦和紅鑽",
-    "number": "37",
-    "name_zh": "植木 颯",
-    "name_en": "Hayate Ueki",
-    "position": "MF",
-    "dob": "2006-10-15",
-    "age": 19,
-    "height": 175,
-    "weight": 68,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2025,
-    "prev_club": "浦和紅鑽 Youth",
-    "registration_status": "U-21 青年球員",
-    "tenure_status": "效力第2季",
-    "national_team_detail": "無",
-    "intro": "植木颯為具備高覆蓋面跑動與逼搶熱情的全能中場，為浦和青訓中場的新生力量。",
-    "timeline": [
-      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2025年升格一線隊隨隊訓練。" }
-    ],
-    "honors": [
-      "浦和紅鑽青訓一線隊升格（2025）"
-    ],
-    "milestones": [
-      "青年隊單場跑動距離最高紀錄保持者"
-    ],
-    "tactical_traits": [
-      "強悍反搶逼搶：中場奪搶積極度高，能迅速阻斷對手快攻。"
-    ],
-    "quirky_trivia": "體能極佳，高中體測時曾打破浦和青訓營歷來長跑測試紀錄。"
-  },
-  {
-    "id": "1632773",
-    "club": "浦和紅鑽",
-    "number": "39",
-    "name_zh": "早川 隼平",
-    "name_en": "Jumpei Hayakawa",
-    "position": "MF",
-    "dob": "2005-12-05",
-    "age": 20,
-    "height": 170,
-    "weight": 65,
-    "foot": "左腳",
-    "nationality": "日本",
-    "joined": 2023,
-    "prev_club": "浦和紅鑽 Youth",
-    "registration_status": "U-21 青年球員",
-    "tenure_status": "效力第4季",
-    "national_team_detail": "日本 U-20 國家代表隊 🇯🇵",
-    "intro": "早川隼平為浦和紅鑽隊史最年輕一線隊進球紀錄保持者，以極高的足球智商與狹小空間運球突破著稱。",
-    "timeline": [
-      { "period": "2023", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "以 17 歲 4 個月打破隊史最年輕進球紀錄，同季隨隊奪得 ACL 冠軍。" }
-    ],
-    "honors": [
-      "1次 亞冠盃（ACL）冠軍（2022 [浦和紅鑽]）",
-      "浦和紅鑽隊史最年輕官方賽事進球紀錄保持者（17歲4個月）"
-    ],
-    "milestones": [
-      "17歲即在亞冠決賽階段登場亮相"
-    ],
-    "tactical_traits": [
-      "隊史級青訓天賦：具備極佳的第一腳觸球與內切過人節奏。",
-      "大賽心態沉穩：17 歲即在亞冠決賽階段登場。"
-    ],
-    "quirky_trivia": "破紀錄破門當天仍需交高中暑假作業，賽後受訪時直言「明天還要上學」而成為話題。"
-  },
-  {
-    "id": "1635894",
-    "club": "浦和紅鑽",
-    "number": "40",
-    "name_zh": "盧卡・迪杜歷卡",
-    "name_en": "Luka Didulica",
-    "position": "DF",
-    "dob": "2005-10-20",
-    "age": 20,
-    "height": 189,
-    "weight": 82,
-    "foot": "右腳",
-    "nationality": "澳大利亞",
-    "joined": 2025,
-    "prev_club": "墨爾本勝利",
-    "registration_status": "外援名額 / U-21",
-    "tenure_status": "效力第2季",
-    "national_team_detail": "澳大利亞 U-20 國家代表隊 🇦🇺",
-    "intro": "盧卡・迪杜歷卡為具備克羅地亞與澳大利亞雙重國籍的高大中後衛新星，身高達 189 公分。",
-    "timeline": [
-      { "period": "2023–2024", "team": "墨爾本勝利", "category": "澳職聯（A-League）", "milestone": "升上一線隊完成澳職首秀，展現優異空中霸權。" },
-      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2025年加盟浦和紅鑽，作為青年外援重點培育。" }
-    ],
-    "honors": [
-      "澳職 A-League 最年輕先發中後衛之一（2023 [墨爾本勝利]）"
-    ],
-    "milestones": [
-      "18歲完成澳職聯賽先發登場"
-    ],
-    "tactical_traits": [
-      "歐式高大防空特質：承襲克羅地亞防守基因，門前頭槌解圍落點判斷極佳。"
-    ],
-    "quirky_trivia": "父親Joey Didulica曾是前克羅地亞國家隊守門員，曾隨隊參加過2006世界盃。"
-  },
-  {
-    "id": "1632772",
-    "club": "浦和紅鑽",
-    "number": "42",
-    "name_zh": "南野 遙海",
-    "name_en": "Harumi Minamino",
-    "position": "FW",
-    "dob": "2004-05-13",
-    "age": 22,
-    "height": 175,
-    "weight": 68,
-    "foot": "左腳",
-    "nationality": "日本",
-    "joined": 2025,
-    "prev_club": "大阪飛腳",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "效力第2季",
-    "national_team_detail": "日本 U-20 國家代表隊 🇯🇵",
-    "intro": "南野遙海為日本新一代爆發力極強的左腳神射手，具備頂級的重炮遠射能力與門前搶點嗅覺。",
-    "timeline": [
-      { "period": "2024", "team": "栃木SC", "category": "J2職業隊", "milestone": "外借 J2 迎來爆發，單季打入 10 球成為球隊第一射手。" },
-      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2025年夏季轉投浦和紅鑽，擔任前場第一左腳重炮輪換點。" }
-    ],
-    "honors": [
-      "1次 高圓宮盃 U-18 錦標賽神射手（2022 [大阪飛腳 Youth]—21球）"
-    ],
-    "milestones": [
-      "J2 單季 10 球紀錄（2024賽季）"
-    ],
-    "tactical_traits": [
-      "飛腳青訓重炮基因：左腳起腳速度極快，能在禁區外轟出世界波。",
-      "強烈進攻欲望：門前掌握二波落點意識極強。"
-    ],
-    "quirky_trivia": "雖然姓氏同為「南野」，但與國腳南野拓實並無親戚關係，兩人皆出自大阪飛腳名門青訓。"
-  },
-  {
-    "id": "1635895",
-    "club": "浦和紅鑽",
-    "number": "43",
-    "name_zh": "和田 武士",
-    "name_en": "Takeshi Wada",
-    "position": "MF",
-    "dob": "2006-08-18",
-    "age": 20,
-    "height": 174,
-    "weight": 66,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2025,
-    "prev_club": "浦和紅鑽 Youth",
-    "registration_status": "U-21 青年球員",
-    "tenure_status": "效力第2季",
-    "national_team_detail": "無",
-    "intro": "和田武士為浦和青訓出身的中場組織者，具備優異的左右腳傳球發球力與比賽閱讀視野。",
-    "timeline": [
-      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2025年升格一線隊隨隊訓練。" }
-    ],
-    "honors": [
-      "浦和紅鑽青訓一線隊升格（2025）"
-    ],
-    "milestones": [
-      "青年隊傳球成功率高達 88%"
-    ],
-    "tactical_traits": [
-      "視野寬廣：擅長在中圈進行短傳擺脫與轉移攻勢。"
-    ],
-    "quirky_trivia": "熱愛閱讀戰術類書籍，平時喜歡研究歐洲名帥瓜迪奧拉的「傳控足球」體系。"
-  },
-  {
-    "id": "1635896",
-    "club": "浦和紅鑽",
-    "number": "44",
-    "name_zh": "新井 榮聰",
-    "name_en": "Yoshiaki Arai",
-    "position": "GK",
-    "dob": "1995-09-27",
-    "age": 30,
-    "height": 189,
-    "weight": 85,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2026,
-    "prev_club": "町田澤維亞",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "新加盟（2026夏季）",
-    "national_team_detail": "無",
-    "intro": "新井榮聰為出身埼玉縣本土的高大經驗型門將，身高達 189 公分，擁有出色的禁區制空權與聲援帶動能力。",
-    "timeline": [
-      { "period": "2014–2017", "team": "流通經濟大學", "category": "大學校隊", "milestone": "率隊勇奪全日本大學足球錦標賽冠軍，獲選個人最優秀門將。" },
-      { "period": "2026–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2026年夏季回歸故鄉埼玉加盟浦和紅鑽。" }
-    ],
-    "honors": [
-      "1次 全日本大學足球錦標賽最優秀門將（2017 [流經大]）",
-      "1次 全日本大學錦標賽冠軍（2017 [流經大]）"
-    ],
-    "milestones": [
-      "大學時期保持過連續 450 分鐘不失球紀錄"
-    ],
-    "tactical_traits": [
-      "189cm 門線壁壘：利用身材優勢壓制高空威脅。",
-      "團隊氛圍帶動者：戰術指揮清晰，能持續發聲組織防線。"
-    ],
-    "quirky_trivia": "出生於埼玉縣川越市，從小就是浦和紅鑽的忠實球迷，30歲終於實現披上紅鑽戰袍的夢想。"
-  },
-  {
-    "id": "1400290",
-    "club": "浦和紅鑽",
-    "number": "45",
-    "name_zh": "奧拿爾 阿道",
-    "name_en": "Ado Onaiwu",
-    "position": "FW",
-    "dob": "1995-11-08",
-    "age": 30,
-    "height": 180,
-    "weight": 75,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2025,
-    "prev_club": "歐塞爾",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "效力第2季",
-    "national_team_detail": "3次 代表日本國家隊大國腳 🇯🇵（曾單場上演「帽子戲法」）",
-    "intro": "奧拿爾阿道為日本國家級頂級衝鋒型中鋒，具備極強的肢體抗衡力與門前搶點嗅覺，歷經橫濱水手冠軍歲月及法甲法乙洗禮。",
-    "timeline": [
-      { "period": "2020–2021", "team": "橫濱水手", "category": "J1職業隊", "milestone": "迎來生涯高峰，2021賽季半季攻入 12 球，隨後開啟旅歐生涯。" },
-      { "period": "2021–2023", "team": "圖盧茲（Toulouse FC）", "category": "法乙/法甲", "milestone": "助圖盧茲奪得法乙冠軍升甲，並勇奪 2022–23 法國盃冠軍。" },
-      { "period": "2023–2025", "team": "歐塞爾（AJ Auxerre）", "category": "法乙/法甲", "milestone": "效力歐塞爾期間單季轟入 15 球，助隊奪得法乙冠軍再升甲。" },
-      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2025年回歸浦和，成為前場第一重炮手。" }
-    ],
-    "honors": [
-      "1次 法國盃冠軍（2022-23 [圖盧茲]）",
-      "2次 法國乙組聯賽冠軍（2021-22 [圖盧茲], 2023-24 [歐塞爾]）",
-      "1次 J1 聯賽冠軍（2019 [橫濱水手]）"
-    ],
-    "milestones": [
-      "日本國家隊史上少數在世外賽單場完成帽子戲法的球員之一（2021對吉爾吉斯）"
-    ],
-    "tactical_traits": [
-      "混血爆發力與歐戰洗禮：具備強大背身單打與頭槌爭頂實力。",
-      "禁區搶點神射手：擅長門前一腳觸球破門。"
-    ],
-    "quirky_trivia": "父親為尼日利亞人，母親為日本人，父親曾是專業短跑運動員，遺傳給他驚人的瞬間爆發力。"
-  },
-  {
-    "id": "1604778",
-    "club": "浦和紅鑽",
-    "number": "88",
-    "name_zh": "長沼 洋一",
-    "name_en": "Yoichi Naganuma",
-    "position": "MF",
-    "dob": "1997-04-14",
-    "age": 29,
-    "height": 178,
-    "weight": 70,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2024,
-    "prev_club": "鳥棲砂岩",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "效力第3季",
-    "national_team_detail": "日本 U-23 亞運代表隊 🇯🇵（2018 雅加達亞運銀牌）",
-    "intro": "長沼洋一為浦和紅鑽邊路的萬能飛翼，具備充沛的體能、極強的縱向折返跑能力與多面手特質。",
-    "timeline": [
-      { "period": "2018", "team": "日本 U-23", "category": "亞運代表隊", "milestone": "代表日本出戰雅加達亞運會，奪得男足銀牌。" },
-      { "period": "2022–2024", "team": "鳥棲砂岩", "category": "J1職業隊", "milestone": "2023賽季作為翼衛攻入 10 球，獲選 J1 優秀選手。" },
-      { "period": "2024–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2024年夏季加盟浦和紅鑽，成為邊路不可或缺的戰術棋子。" }
-    ],
-    "honors": [
-      "1次 J1 聯賽優秀選手賞（2023 [鳥棲砂岩]）",
-      "1次 雅加達亞運會男足銀牌（2018 [日本 U-23]）"
-    ],
-    "milestones": [
-      "J1 聯賽極少數單季進球達雙位數（10球）的翼衛球員（2023賽季）"
-    ],
-    "tactical_traits": [
-      "廣島青訓翼衛基因：兼具極高防守回追積極度與進攻插上時機。",
-      "邊路帶球破防：擅長利用變速與衝刺撕裂對手邊路防線。"
-    ],
-    "quirky_trivia": "出自廣島三箭名門青訓，場上能勝任左右邊後衛、邊翼衛及邊鋒共5個位置，是名副其實的「戰術萬金油」。"
-  },
-  {
     "id": "team_fagiano_okayama",
     "type": "team_info",
     "club": "岡山綠雉",
     "club_en": "Fagiano Okayama",
-    "logo_url": "https://upload.wikimedia.org/wikipedia/en/e/e5/Fagiano_Okayama_logo.svg",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/en/7/70/Fagiano_Okayama_logo.svg",
     "hometown": "岡山縣岡山市",
     "hometown_population": "720,000人",
-    "name_history": "「Fagiano」為意大利語「雉雞」（Pheasant）之意。名稱源自岡山縣當地保育鳥類「綠雉」（Kiji），同時致敬岡山當地著名民間故事《桃太郎》中隨行的雉雞英雄。",
+    "name_history": "「Fagiano」源自義大利語的「雉雞」（Fagiano），取材自岡山當地著名傳說「桃太郎」隨從中的綠雉，象徵勇敢與團結。",
     "stadium_info": {
-      "name": "JFE 晴之國體育場 / City Light Stadium（ＪＦＥ晴れの国スタジアム）",
+      "name": "City Light 體育場（JFE 體育場）",
       "year_built": 1957,
       "year_renovated": 2003,
       "capacity": 15479,
-      "geo_location": "岡山縣岡山市北區（北緯34.6802°，東經133.9189°）",
       "interesting_facts": [
-        "座落於歷史悠久的岡山縣綜合運動公園內，距離 JR 岡山站僅需步行距離。",
-        "場館四周圍繞著壯觀的銀杏樹林，每逢秋季主場比賽皆呈現一片金黃美麗景致。",
-        "入口處設有岡山籍奧運傳奇人見絹枝（陸上）與有森裕子（馬拉松）的青銅雕像。"
+        "桃太郎傳說發源地之象徵球會。",
+        "主場擁有強烈的在地球迷支持度與熱烈觀賽氛圍。"
       ]
     },
-    "team_history": "2004年由當地球會 River Free Bulls (RFK) 重組，旨在為岡山縣打造首支職業足球隊。從中國地區聯賽、JFL 一步步穩健爬升，2009年升入 J2，並最終成功實現隊史首度升上頂級 J1 聯賽的壯舉。",
+    "team_history": "成立於1975年，前身為川崎製鐵水島足球部，2024年成功晉升 J1 聯賽。",
     "performance_history": [
-      "1次 J2 升級附加賽冠軍 (2024)",
-      "1次 日本足球聯賽（JFL）季軍 (2008 - 取得 J 聯賽參賽資格)",
-      "2次 中國地區足球聯賽冠軍 (2006, 2007)"
+      "1次 J2 聯賽升級附加賽冠軍 (2024)"
     ]
   },
   {
-    "id": "1657620",
+    "id": "okayama_mgr",
+    "club": "岡山綠雉",
+    "number": "HC",
+    "name_zh": "木山隆之",
+    "name_en": "Takashi Kiyama",
+    "position": "MANAGER",
+    "dob": "1972-02-18",
+    "age": 54,
+    "height": 178,
+    "weight": 75,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2022,
+    "prev_club": "仙台維加泰",
+    "registration_status": "總教練",
+    "tenure_status": "執教第5季",
+    "national_team_detail": "無",
+    "intro": "岡山綠雉掌舵者，帶領球隊成功建構嚴密防守體系並歷史性闖入 J1 聯賽。",
+    "timeline": [
+      { "period": "2022–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "帶領球隊闖入 J1 聯賽" }
+    ],
+    "honors": ["J2 升級附加賽冠軍 (2024)"],
+    "milestones": ["帶領隊史首次登陸 J1"],
+    "tactical_traits": ["高強度防守壓迫與快速反擊", "高凝聚力團隊體系"],
+    "quirky_trivia": "執教作風極其熱血，強調球員場上的戰鬥意志。"
+  },
+  {
+    "id": "okayama_1",
     "club": "岡山綠雉",
     "number": "1",
-    "name_zh": "莫沙",
-    "name_en": "Lennart Moser",
+    "name_zh": "布羅德森",
+    "name_en": "Svend Brodersen",
     "position": "GK",
-    "dob": "1999-12-06",
-    "age": 26,
-    "height": 196,
-    "weight": 88,
+    "dob": "1997-03-22",
+    "age": 29,
+    "height": 188,
+    "weight": 85,
     "foot": "右腳",
     "nationality": "德國",
-    "joined": 2026,
-    "prev_club": "歐本",
+    "joined": 2024,
+    "prev_club": "橫濱FC",
     "registration_status": "外援名額",
-    "tenure_status": "新加盟（2026首季）",
-    "national_team_detail": "德國 U-18 / U-19 青年國家代表隊 🇩🇪",
-    "intro": "莫沙為岡山綠雉防線最後一道門線塔台，出身德甲柏林聯青訓，具備 196 公分極佳身材與德系門將紮實的門線封擋技術。",
+    "tenure_status": "效力第3季",
+    "national_team_detail": "德國 U-23 國奧隊",
+    "intro": "德籍主力門將，反應敏捷且具備出色的門線撲救能力與制空範圍。",
     "timeline": [
-      { "period": "2010–2017", "team": "柏林聯 Youth", "category": "德甲青訓", "milestone": "接收正統德系門將培訓，建立極佳門前站位。" },
-      { "period": "2022–2025", "team": "歐本（KAS Eupen）", "category": "比甲聯賽", "milestone": "於高對抗聯賽中擔綱門線防守重任。" },
-      { "period": "2026–至今", "team": "岡山綠雉", "category": "J1職業隊", "milestone": "2026年登陸 J1 加盟岡山綠雉，迅速鎖定第一主力門將。" }
+      { "period": "2021–2023", "team": "橫濱FC", "category": "J1/J2職業隊", "milestone": "門前高頻率撲救打響名號" },
+      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "身披 1 號守護岡山門將防線" }
     ],
-    "honors": [
-      "德國 U-19 國家隊隊員"
-    ],
-    "milestones": [
-      "J1 聯賽身材最高大的門將之一（196cm）"
-    ],
-    "tactical_traits": [
-      "196cm 巨人制空：控制範圍極大，角球與定位球能輕鬆沒收。",
-      "德系門線反應與封擋：手腳並用封擋近距離射門能力優異。"
-    ],
-    "quirky_trivia": "精通德語、英語與法語，來到日本後僅用兩個月便學會了基本的日語防守喊話。"
+    "honors": ["J2 聯賽最佳門將候選"],
+    "milestones": ["代表德國出戰東京奧運"],
+    "tactical_traits": ["高空球高壓攔截", "門前近距離反應快速"],
+    "quirky_trivia": "曾代表德國國奧隊出戰東京奧運會。"
   },
   {
-    "id": "1634590",
+    "id": "okayama_4",
+    "club": "岡山綠雉",
+    "number": "4",
+    "name_zh": "阿部海大",
+    "name_en": "Kaito Abe",
+    "position": "DF",
+    "dob": "1999-09-18",
+    "age": 26,
+    "height": 182,
+    "weight": 77,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2018,
+    "prev_club": "初芝橋本高校",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第9季",
+    "national_team_detail": "日本 U-19 代表隊",
+    "intro": "防線主力中後衛，肢體對抗能力強，善於制空爭頂與解圍。",
+    "timeline": [
+      { "period": "2018–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "高中畢業後加入，逐步成為防線主力" }
+    ],
+    "honors": ["全國高校足球選手權大會優秀選手"],
+    "milestones": ["岡山青訓本土育成代表之一"],
+    "tactical_traits": ["正面一對一防守堅固", "角球進攻頭球威脅"],
+    "quirky_trivia": "高中畢業即加入岡山，是隊中效力時間最長的資深後衛之一。"
+  },
+  {
+    "id": "okayama_5",
     "club": "岡山綠雉",
     "number": "5",
-    "name_zh": "池戶 柊宇",
-    "name_en": "Shu Ikedo",
+    "name_zh": "柳育崇",
+    "name_en": "Yasutaka Yanagi",
     "position": "DF",
-    "dob": "2005-09-10",
-    "age": 21,
-    "height": 183,
-    "weight": 74,
+    "dob": "1994-06-22",
+    "age": 32,
+    "height": 188,
+    "weight": 80,
     "foot": "右腳",
     "nationality": "日本",
-    "joined": 2024,
-    "prev_club": "京都橘高中",
-    "registration_status": "U-21 青年球員",
-    "tenure_status": "效力第3季",
+    "joined": 2022,
+    "prev_club": "栃木SC",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第5季",
     "national_team_detail": "無",
-    "intro": "池戶柊宇為岡山防線的邊路新星，身材高大且具備優秀的縱向衝刺能力。",
+    "intro": "後防空中要塞，制空能力卓越，防守端制空頭球解圍率極高。",
     "timeline": [
-      { "period": "2021–2023", "team": "京都橘高中", "category": "高中校隊", "milestone": "關西名門京都橘主力後衛，防守果斷強悍。" },
-      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "高中畢業即加盟岡山，作為防線重點新人培訓。" }
+      { "period": "2020–2021", "team": "栃木SC", "category": "J2職業隊", "milestone": "展現得分型中後衛特質" },
+      { "period": "2022–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "擔綱後防核心" }
     ],
-    "honors": [
-      "關西名門京都橘高中防線核心"
-    ],
-    "milestones": [
-      "高中時期全國高校錦標賽登場"
-    ],
-    "tactical_traits": [
-      "身材優勢：兼具中後衛身材與邊後衛衝刺跑速。"
-    ],
-    "quirky_trivia": "高中時期曾創下校隊 100 米短跑最快紀錄（11.2秒）。"
+    "honors": ["J2 最佳防線候補"],
+    "milestones": ["單季以後衛身份攻入多球"],
+    "tactical_traits": ["高空球爭頂卡位", "防線語音指揮"],
+    "quirky_trivia": "角球進攻時是對方門前的極大噩夢。"
   },
   {
-    "id": "1634591",
+    "id": "okayama_6",
     "club": "岡山綠雉",
     "number": "6",
-    "name_zh": "大森 博",
-    "name_en": "Hiroshi Omori",
-    "position": "DF",
-    "dob": "2002-09-10",
-    "age": 24,
-    "height": 186,
-    "weight": 78,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2024,
-    "prev_club": "德島漩渦",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "效力第3季",
-    "national_team_detail": "無",
-    "intro": "大森博為具備優異解圍視野的高大中後衛，頭槌制空能力優異。",
-    "timeline": [
-      { "period": "2021–至今", "team": "德島漩渦 / 岡山綠雉", "category": "J2/J1職業隊", "milestone": "轉戰 J 聯賽，2024賽季加盟岡山綠雉。" }
-    ],
-    "honors": [
-      "東京名門修德高中防線核心"
-    ],
-    "milestones": [
-      "J2 單場頭槌爭頂成功率 85%"
-    ],
-    "tactical_traits": [
-      "正面解圍：空中爭頂落點判斷精準。"
-    ],
-    "quirky_trivia": "來自東京修德高中，與多位現役 J 聯賽球星為同門師兄弟。"
-  },
-  {
-    "id": "901123",
-    "club": "岡山綠雉",
-    "number": "7",
-    "name_zh": "竹內 涼",
-    "name_en": "Ryo Takeuchi",
+    "name_zh": "輪笠祐士",
+    "name_en": "Yuji Wakasa",
     "position": "MF",
-    "dob": "1991-03-08",
-    "age": 35,
-    "height": 173,
-    "weight": 67,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2024,
-    "prev_club": "清水心跳",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "效力第3季",
-    "national_team_detail": "日本 U-23 國家代表隊 🇯🇵",
-    "intro": "竹內涼為岡山綠雉中場的精神領袖與舵手，擁有超過 200 場 J1 聯賽經驗，長年擔任清水心跳隊長。",
-    "timeline": [
-      { "period": "2009–2023", "team": "清水心跳", "category": "J1/J2職業隊", "milestone": "效力清水長達 15 年，擔任隊長多年，累計出場超過 250 場。" },
-      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "2024年加盟岡山，帶領球隊成功實現 J1 升級夢想。" }
-    ],
-    "honors": [
-      "岡山綠雉歷史性衝甲功勳隊長（2024）",
-      "清水心跳功勳隊長（效力長達 15 年）"
-    ],
-    "milestones": [
-      "J1/J2 職業生涯累計出場突破 300 場里程碑"
-    ],
-    "tactical_traits": [
-      "靜岡王國正統中場：用簡單有效的一腳傳球梳理球隊攻守。",
-      "防守補位老道：依靠經驗預判對手傳球路線。"
-    ],
-    "quirky_trivia": "在清水心跳效力長達15年，被清水球迷親切稱為「Mr. S-Pulse」，加盟岡山後迅速成為精神領袖。"
-  },
-  {
-    "id": "1503341",
-    "club": "岡山綠雉",
-    "number": "8",
-    "name_zh": "江坂 任",
-    "name_en": "Ataru Esaka",
-    "position": "MF",
-    "dob": "1992-05-31",
-    "age": 34,
-    "height": 175,
-    "weight": 67,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2026,
-    "prev_club": "蔚山HD",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "新加盟（2026首季）",
-    "national_team_detail": "1次 代表日本國家隊大國腳 🇯🇵（國際友誼賽對南韓首秀即進球）",
-    "intro": "江坂任為日本頂級進攻指揮官與影鋒，具備頂級的半空間解讀能力、狹小空間發球智慧與門前冷靜終結力。",
-    "timeline": [
-      { "period": "2021–2022", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "接下 10 號球衣，率隊勇奪 2021 天皇盃冠軍及 2022 超級盃冠軍。" },
-      { "period": "2023–2025", "team": "蔚山HD", "category": "韓職 K1", "milestone": "旅韓加盟蔚山HD，率隊達成 K 聯賽 1 兩連霸。" },
-      { "period": "2026–至今", "team": "岡山綠雉", "category": "J1職業隊", "milestone": "2026年回國加盟岡山綠雉，擔任進攻體系總指揮。" }
-    ],
-    "honors": [
-      "1次 天皇盃冠軍（2021 [浦和紅鑽]）",
-      "2次 韓國 K 聯賽 1 冠軍（2023, 2024 [蔚山HD]）",
-      "1次 FUJIFILM SUPER CUP 冠軍（2022 [浦和紅鑽]）"
-    ],
-    "milestones": [
-      "日本國家隊首秀破門（2021對南韓）"
-    ],
-    "tactical_traits": [
-      "半空間靈魂：能在對手雙後腰與後防線之間的狹小地帶收球轉身。",
-      "冠軍級傳導視野：具備極強的直線穿透傳球能力。"
-    ],
-    "quirky_trivia": "大學畢業時未獲任何 J1 球會合約，從 J2 大群馬崛起一路打到國家隊與韓職冠軍，是極具勵志色彩的傳奇球員。"
-  },
-  {
-    "id": "1657622",
-    "club": "岡山綠雉",
-    "number": "9",
-    "name_zh": "高祖",
-    "name_en": "Léo Gaúcho",
-    "position": "FW",
-    "dob": "2001-08-03",
-    "age": 25,
-    "height": 187,
-    "weight": 81,
-    "foot": "右腳",
-    "nationality": "巴西",
-    "joined": 2026,
-    "prev_club": "外國球會",
-    "registration_status": "外援名額",
-    "tenure_status": "新加盟（2026首季）",
-    "national_team_detail": "無",
-    "intro": "高祖為岡山綠雉現役主力衝鋒型中鋒，作為岡山 3-4-2-1 戰術體系的高位支點，以頑強的高空球爭頂著稱。",
-    "timeline": [
-      { "period": "2021–2023", "team": "瓜拉尼 / 佩洛塔斯", "category": "巴西聯賽", "milestone": "征戰巴西南部州級聯賽，累積高強度禁區肉搏經驗。" },
-      { "period": "2026–至今", "team": "岡山綠雉", "category": "J1職業隊", "milestone": "2026年加盟升班馬岡山綠雉，承擔主力中鋒重任。" }
-    ],
-    "honors": [
-      "岡山綠雉主力中鋒登錄"
-    ],
-    "milestones": [
-      "2026/27 賽季目前以 3 次助攻暫居 J1 助攻榜第二名"
-    ],
-    "tactical_traits": [
-      "巴西南部高大中鋒風格：空戰能力極強，擅長做球給二線中場。",
-      "戰術迫擊壓迫者：作為第一道防線發起高位壓迫。"
-    ],
-    "quirky_trivia": "稱號中的「Gaúcho」代表他是來自巴西南部南里奧格蘭德州（Rio Grande do Sul）的悍將。"
-  },
-  {
-    "id": "1630001",
-    "club": "岡山綠雉",
-    "number": "10",
-    "name_zh": "羅相浩",
-    "name_en": "Na Sang-ho",
-    "position": "FW",
-    "dob": "1996-08-12",
+    "dob": "1996-02-09",
     "age": 30,
     "height": 173,
     "weight": 70,
     "foot": "右腳",
-    "nationality": "韓國",
-    "joined": 2026,
-    "prev_club": "町田澤維亞",
-    "registration_status": "外援名額",
-    "tenure_status": "新加盟（2026首季）",
-    "national_team_detail": "28次 代表韓國國家隊大國腳 🇰🇷（2022 卡達世界盃參賽成員、2018 亞運金牌）",
-    "intro": "羅相浩為韓國現役國腳邊鋒／影鋒，具備爆發力盤帶、狹小空間射門與高強度逼搶意識。",
-    "timeline": [
-      { "period": "2021–2023", "team": "FC首爾", "category": "韓職 K1", "milestone": "隊長與進攻核心，3 季打入 28 球，獲選 K1 最佳陣容。" },
-      { "period": "2026–至今", "team": "岡山綠雉", "category": "J1職業隊", "milestone": "2026年加盟岡山綠雉接下 10 號球衣。" }
-    ],
-    "honors": [
-      "1次 韓國 K2 神射手/MVP（2018 [光州FC]—16球）",
-      "1次 雅加達亞運會男足金牌（2018 [韓國 U-23]）",
-      "2022年卡達世界盃韓國代表隊成員"
-    ],
-    "milestones": [
-      "K聯賽最佳陣容獲選球員（2022）"
-    ],
-    "tactical_traits": [
-      "K聯賽頂級過人：狹小空間內步幅變速極快。",
-      "高壓逼搶：能90分鐘保持對敵方邊後衛的壓迫。"
-    ],
-    "quirky_trivia": "2022世界盃對陣烏拉圭一役先發表現驚艷全場，是FC首爾近年最受球迷愛戴的功勳隊長。"
-  },
-  {
-    "id": "1634592",
-    "club": "岡山綠雉",
-    "number": "13",
-    "name_zh": "松田 駿",
-    "name_en": "Shun Matsuda",
-    "position": "GK",
-    "dob": "2003-06-15",
-    "age": 23,
-    "height": 182,
-    "weight": 76,
-    "foot": "右腳",
     "nationality": "日本",
     "joined": 2022,
-    "prev_club": "青森山田高中",
-    "registration_status": "常規登錄（一隊）",
+    "prev_club": "秋田藍閃電",
+    "registration_status": "本國球員",
     "tenure_status": "效力第5季",
     "national_team_detail": "無",
-    "intro": "松田駿為岡山綠雉門線的新生代後備門將，出身青森山田名門，反應靈敏。",
+    "intro": "中場悍將，以高強度防守壓迫、鏟球斷球與覆蓋跑動著稱。",
     "timeline": [
-      { "period": "2019–2021", "team": "青森山田高中", "category": "高中校隊", "milestone": "隨隊勇奪全國高校錦標賽冠軍。" },
-      { "period": "2022–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "2022年加盟岡山綠雉。" }
+      { "period": "2020–2021", "team": "秋田藍閃電", "category": "J3/J2職業隊", "milestone": "協助球隊奪冠升級" },
+      { "period": "2022–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "中場核心防守鐵閘" }
     ],
-    "honors": [
-      "1次 全國高校足球錦標賽冠軍（2021 [青森山田]）"
-    ],
-    "milestones": [
-      "高中錦標賽冠軍主力門將"
-    ],
-    "tactical_traits": [
-      "青森山田名門血統：傳承青森山田極高標準的防守紀律。"
-    ],
-    "quirky_trivia": "在青森山田時期接受黑田剛教練（現町田主帥）嚴格叮嚀，精神抗壓面極佳。"
+    "honors": ["J3 聯賽冠軍 (2020)"],
+    "milestones": ["中場截球數長期名列前茅"],
+    "tactical_traits": ["中場高壓逼搶", "第二落點保護"],
+    "quirky_trivia": "全場奔跑不知疲倦，作風硬朗。"
   },
   {
-    "id": "1632774",
+    "id": "okayama_7",
     "club": "岡山綠雉",
-    "number": "14",
-    "name_zh": "田部井 涼",
+    "number": "7",
+    "name_zh": "田部井涼",
     "name_en": "Ryo Tabei",
     "position": "MF",
     "dob": "1999-06-25",
     "age": 27,
     "height": 172,
-    "weight": 66,
+    "weight": 68,
     "foot": "左腳",
     "nationality": "日本",
     "joined": 2023,
     "prev_club": "橫濱FC",
-    "registration_status": "常規登錄（一隊）",
+    "registration_status": "本國球員",
     "tenure_status": "效力第4季",
     "national_team_detail": "無",
-    "intro": "田部井涼為具備頂級左腳定位球發球與遠射能力的組織中場，曾勇奪高校錦標賽 MVP。",
+    "intro": "中場組織核心，左腳傳球極具精準度，掌控團隊攻守節奏。",
     "timeline": [
-      { "period": "2015–2017", "team": "前橋育英高中", "category": "高中校隊", "milestone": "率隊勇奪第96屆全國高校錦標賽冠軍，獲選 MVP。" },
-      { "period": "2023–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "2023年加盟岡山，為中場主要輪換發動機。" }
+      { "period": "2022", "team": "橫濱FC", "category": "J2職業隊", "milestone": "完成職業生涯首秀" },
+      { "period": "2023–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "接下 7 號中場樞紐重任" }
     ],
-    "honors": [
-      "1次 全國高校足球錦標賽冠軍 / MVP（2017 [前橋育英]）"
-    ],
-    "milestones": [
-      "全國高校錦標賽冠軍隊長"
-    ],
-    "tactical_traits": [
-      "左腳定位球專家：弧線弧度極深，能精準找到後點隊友。"
-    ],
-    "quirky_trivia": "有一個雙胞胎兄弟田部井悠亦為足球員，兩人曾一同在第96屆高中錦標賽決賽中並肩作戰奪冠。"
+    "honors": ["全日本大學足球錦標賽冠軍"],
+    "milestones": ["早稻田大學足球部隊長出身"],
+    "tactical_traits": ["定位球主罰者", "中場穿透性直塞傳球"],
+    "quirky_trivia": "雙胞胎兄弟田部井悠亦為職業足球員。"
   },
   {
-    "id": "1624853",
+    "id": "okayama_8",
+    "club": "岡山綠雉",
+    "number": "8",
+    "name_zh": "加藤潤也",
+    "name_en": "Junya Kato",
+    "position": "FW",
+    "dob": "1994-12-30",
+    "age": 31,
+    "height": 166,
+    "weight": 62,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2024,
+    "prev_club": "金澤薩維根",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第3季",
+    "national_team_detail": "無",
+    "intro": "靈巧型前鋒，跑位穿透力強，擅長在禁區前沿尋找射門空檔。",
+    "timeline": [
+      { "period": "2017–2021", "team": "鳥取飛翔", "category": "J3職業隊", "milestone": "主力進攻核心" },
+      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "前場破局重要攻擊手" }
+    ],
+    "honors": ["J3 聯賽最佳陣容候補"],
+    "milestones": ["職業生涯累積攻入超過 30 球"],
+    "tactical_traits": ["肋部走位鑽營", "禁區邊緣搶點"],
+    "quirky_trivia": "身材雖然矮小，但重心低且轉身速度極快。"
+  },
+  {
+    "id": "okayama_9",
+    "club": "岡山綠雉",
+    "number": "9",
+    "name_zh": "德里基·拉塞爾達",
+    "name_en": "Derik Lacerda",
+    "position": "FW",
+    "dob": "1999-09-27",
+    "age": 26,
+    "height": 190,
+    "weight": 84,
+    "foot": "右腳",
+    "nationality": "巴西",
+    "joined": 2025,
+    "prev_club": "庫亞巴",
+    "registration_status": "外援名額",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "無",
+    "intro": "巴西籍支點型前鋒，具備優異的門前助攻與分球視野。",
+    "timeline": [
+      { "period": "2023–2024", "team": "庫亞巴", "category": "巴甲職業隊", "milestone": "於巴甲展現前場對抗能力" },
+      { "period": "2025–至今", "team": "岡山綠雉", "category": "J1職業隊", "milestone": "2026 賽季以 3 次助攻並列 J1 助攻榜 2nd" }
+    ],
+    "honors": ["J1 賽季助攻榜第 2 名 (2026)"],
+    "milestones": ["單季 3 次關鍵助攻 (2026)"],
+    "tactical_traits": ["前場爭頂與二線助攻", "背身拿球分邊"],
+    "quirky_trivia": "190cm 高大身材卻擁有細膩的拿球做球視野。"
+  },
+  {
+    "id": "okayama_10",
+    "club": "岡山綠雉",
+    "number": "10",
+    "name_zh": "本山遙",
+    "name_en": "Haruka Motoyama",
+    "position": "MF",
+    "dob": "1999-04-03",
+    "age": 27,
+    "height": 171,
+    "weight": 67,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2022,
+    "prev_club": "關西學院大學",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第5季",
+    "national_team_detail": "全日本大學選拔",
+    "intro": "10號中場大腦，具備優異的攻守轉換移動能力與盤帶突破。",
+    "timeline": [
+      { "period": "2022–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "大學畢業即接下 10 號球衣" }
+    ],
+    "honors": ["關西學生足球聯賽 MVP"],
+    "milestones": ["岡山隊史最年輕 10 號指揮官之一"],
+    "tactical_traits": ["高強度中場逼搶", "短傳推進發動進攻"],
+    "quirky_trivia": "大學時期即獲得多支 J1/J2 球隊青睞。"
+  },
+  {
+    "id": "okayama_13",
+    "club": "岡山綠雉",
+    "number": "13",
+    "name_zh": "金山隼樹",
+    "name_en": "Junki Kanayama",
+    "position": "GK",
+    "dob": "1988-06-12",
+    "age": 38,
+    "height": 186,
+    "weight": 80,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2018,
+    "prev_club": "札幌岡薩多",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第9季",
+    "national_team_detail": "無",
+    "intro": "資深老將門將，經驗豐富，在休息室與防線上發揮安定作用。",
+    "timeline": [
+      { "period": "2014–2017", "team": "札幌岡薩多", "category": "J2/J1職業隊", "milestone": "幫助札幌成功升級 J1" },
+      { "period": "2018–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "老將門將守護防線" }
+    ],
+    "honors": ["J2 聯賽冠軍 (2016)"],
+    "milestones": ["J 聯賽生涯 200+ 場出場"],
+    "tactical_traits": ["防線心理安定器", "門前撲救經驗豐富"],
+    "quirky_trivia": "場下是球隊休息室的氣氛帶動者。"
+  },
+  {
+    "id": "okayama_14",
+    "club": "岡山綠雉",
+    "number": "14",
+    "name_zh": "竹內涼",
+    "name_en": "Ryo Takeuchi",
+    "position": "MF",
+    "dob": "1991-03-08",
+    "age": 35,
+    "height": 173,
+    "weight": 66,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2024,
+    "prev_club": "清水心跳",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第3季",
+    "national_team_detail": "日本 U-22 代表隊",
+    "intro": "經驗豐富的老將中場，擅長梳理後場球權與防守補位。",
+    "timeline": [
+      { "period": "2010–2023", "team": "清水心跳", "category": "J1/J2職業隊", "milestone": "長期擔任隊長，效力超過十載" },
+      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "轉會岡山注入老將經驗" }
+    ],
+    "honors": ["J.League 聯賽盃亞軍"],
+    "milestones": ["J1 聯賽 250+ 場出場"],
+    "tactical_traits": ["防守戰術意識極佳", "長短傳調度"],
+    "quirky_trivia": "曾長期效力清水心跳並擔任隊長。"
+  },
+  {
+    "id": "okayama_17",
     "club": "岡山綠雉",
     "number": "17",
-    "name_zh": "末吉 塁",
+    "name_zh": "末吉壘",
     "name_en": "Rui Sueyoshi",
     "position": "MF",
     "dob": "1996-07-26",
     "age": 30,
     "height": 166,
-    "weight": 62,
-    "foot": "右腳",
-    "nationality": "日本",
-    "joined": 2023,
-    "prev_club": "千葉市原",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "效力第4季",
-    "national_team_detail": "無",
-    "intro": "末吉塁為岡山邊路的突破快馬，擁有極強的瞬間加速度與爆發力，可勝任左右翼衛。",
-    "timeline": [
-      { "period": "2019–2022", "team": "山形山神 / 千葉市原", "category": "J2職業隊", "milestone": "作為 J2 頂級翼衛，累積超過 100 場出場。" },
-      { "period": "2023–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "加盟岡山，成為邊路反擊關鍵武器。" }
-    ],
-    "honors": [
-      "J2 聯賽百場出場記錄"
-    ],
-    "milestones": [
-      "單場 100 米折返衝刺超過 30 次"
-    ],
-    "tactical_traits": [
-      "低重心加速：瞬間爆發力極強，能在邊路直接擺脫防守。"
-    ],
-    "quirky_trivia": "身高僅 166 公分，但下肢力量驚人，是 J 聯賽低重心盤帶突破的代表人物。"
-  },
-  {
-    "id": "1600258",
-    "club": "岡山綠雉",
-    "number": "18",
-    "name_zh": "田上 大地",
-    "name_en": "Daichi Tagami",
-    "position": "DF",
-    "dob": "1993-06-16",
-    "age": 33,
-    "height": 180,
-    "weight": 76,
+    "weight": 64,
     "foot": "右腳",
     "nationality": "日本",
     "joined": 2024,
-    "prev_club": "新潟天鵝",
-    "registration_status": "常規登錄（一隊）",
+    "prev_club": "千葉市原",
+    "registration_status": "本國球員",
     "tenure_status": "效力第3季",
     "national_team_detail": "無",
-    "intro": "田上大地為經驗豐富的全能後衛與帶刀後衛，具備極強的門前防守解圍預判與定位球頭槌攻門威脅。",
+    "intro": "邊路爆發型翼衛，擁有驚人的瞬間加速度與底線傳中質量。",
     "timeline": [
-      { "period": "2016–2018", "team": "長崎成功丸", "category": "J2/J1職業隊", "milestone": "2017賽季以主力身份助球隊隊史首度升上 J1。" },
-      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "2024年加盟岡山，作為防線精神領袖助球隊首度衝上 J1。" }
+      { "period": "2019–2020", "team": "山形山神", "category": "J2職業隊", "milestone": "展現邊路快馬潛力" },
+      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "邊路攻守主力" }
     ],
-    "honors": [
-      "1次 J2 聯賽冠軍（2022 [新潟天鵝]）",
-      "3次 J2 升級 J1 功臣（長崎、新潟、岡山）"
-    ],
-    "milestones": [
-      "日本足壇少數協助過三支不同球隊成功升上 J1 的「升級幸運星」"
-    ],
-    "tactical_traits": [
-      "升級專家：生涯三次協助不同球會升上 J1，防線溝通極佳。",
-      "帶刀後衛：定位球爭頂時機能抓得很準。"
-    ],
-    "quirky_trivia": "堪稱 J2 升級錦囊，凡他加盟並擔任主力的球會（長崎、新潟、岡山）最終都實現了升甲夢想。"
+    "honors": ["J2 最佳衝刺次數榜前十"],
+    "milestones": ["單場多次完成高次數極速衝刺"],
+    "tactical_traits": ["邊路套邊傳中", "高頻率衝刺推進"],
+    "quirky_trivia": "極短距離內的加速度讓邊後衛難以招架。"
   },
   {
-    "id": "1632775",
+    "id": "okayama_18",
+    "club": "岡山綠雉",
+    "number": "18",
+    "name_zh": "神谷優太",
+    "name_en": "Yuta Kamiya",
+    "position": "FW",
+    "dob": "1997-08-11",
+    "age": 29,
+    "height": 176,
+    "weight": 67,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2024,
+    "prev_club": "清水心跳",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第3季",
+    "national_team_detail": "日本 U-23 國奧隊",
+    "intro": "攻擊型中場兼前鋒，腳下技術細膩，定位球直接射門威脅極大。",
+    "timeline": [
+      { "period": "2018–2019", "team": "愛媛FC", "category": "J2職業隊", "milestone": "核心指揮官打響知名度" },
+      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "前場多功能進攻刃" }
+    ],
+    "honors": ["U-23 亞洲盃代表"],
+    "milestones": ["精準直接自由球破門無數"],
+    "tactical_traits": ["遠射與弧線球攻擊", "前場肋部盤帶"],
+    "quirky_trivia": "青森山田高校出身，從小展現強大射門天賦。"
+  },
+  {
+    "id": "okayama_20",
     "club": "岡山綠雉",
     "number": "20",
-    "name_zh": "河野 孝汰",
-    "name_en": "Kota Kawano",
+    "name_zh": "川本梨譽",
+    "name_en": "Riyo Kawamoto",
     "position": "FW",
-    "dob": "2003-08-12",
-    "age": 23,
-    "height": 176,
+    "dob": "2001-06-11",
+    "age": 25,
+    "height": 178,
     "weight": 72,
     "foot": "右腳",
     "nationality": "日本",
     "joined": 2024,
-    "prev_club": "雷諾法山口",
-    "registration_status": "常規登錄（一隊）",
+    "prev_club": "清水心跳",
+    "registration_status": "本國球員",
     "tenure_status": "效力第3季",
-    "national_team_detail": "日本 U-18 國家代表隊 🇯🇵",
-    "intro": "河野孝汰為具備優異門前嗅覺的本土青年中鋒，創下過山口隊史最年輕進球紀錄。",
+    "national_team_detail": "日本 U-19 代表隊",
+    "intro": "衝擊力強的青年前鋒，勤於前場迫搶，爆發力優異。",
     "timeline": [
-      { "period": "2019–2023", "team": "雷諾法山口", "category": "J2職業隊", "milestone": "16歲7個月刷新 J2 最年輕進球紀錄，正賽登場超 50 場。" },
-      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "2024加盟岡山，作為前場鋒線預備力量。" }
+      { "period": "2019–2020", "team": "清水心跳", "category": "J1職業隊", "milestone": "完成 J1 聯賽首秀" },
+      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "前場反擊尖刀" }
     ],
-    "honors": [
-      "J2 隊史最年輕進球紀錄保持者之一（16歲7個月）"
-    ],
-    "milestones": [
-      "16歲完成 J2 職業首秀並進球"
-    ],
-    "tactical_traits": [
-      "門前刺客：無球跑位與第二落點捕捉敏銳。"
-    ],
-    "quirky_trivia": "16歲破門時因還在讀高中，比賽結束後翌日清晨還得趕搭新幹線回學校參加期中考試。"
+    "honors": ["清水心跳青訓最佳球員"],
+    "milestones": ["代表青年國家隊出戰國際賽"],
+    "tactical_traits": ["前場高壓壓迫", "禁區強行攻門"],
+    "quirky_trivia": "場上奔跑搶球極其兇猛，態度極佳。"
   },
   {
-    "id": "1600259",
+    "id": "okayama_22",
     "club": "岡山綠雉",
     "number": "22",
-    "name_zh": "一美 和成",
+    "name_zh": "一美和成",
     "name_en": "Kazunari Ichimi",
     "position": "FW",
     "dob": "1997-11-10",
     "age": 28,
-    "height": 181,
+    "height": 183,
     "weight": 77,
     "foot": "右腳",
     "nationality": "日本",
-    "joined": 2025,
-    "prev_club": "京都不死鳥",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "效力第2季",
-    "national_team_detail": "日本 U-22 國家代表隊 🇯🇵",
-    "intro": "一美和成為岡山綠雉前場的強悍本土中鋒，具備 181 公分與 77 公斤的強健體魄及優秀背身護球能力。",
+    "joined": 2024,
+    "prev_club": "京都帝王",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第3季",
+    "national_team_detail": "日本 U-22 代表隊",
+    "intro": "柱石型中鋒，做球能力強，能在禁區內扛住後衛轉身射門。",
     "timeline": [
-      { "period": "2019", "team": "京都不死鳥", "category": "J2職業隊", "milestone": "外借京都大爆發，單季 J2 轟入 17 球，名列射手榜前列。" },
-      { "period": "2025–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "2025年加盟岡山綠雉，為前場支點核心之一。" }
+      { "period": "2019", "team": "京都帝王", "category": "J2職業隊", "milestone": "單季攻入 17 球展現恐怖破門力" },
+      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "前場支點主力" }
     ],
-    "honors": [
-      "1次 J2 聯賽優秀選手（2019 [京都不死鳥]—單季17球）"
-    ],
-    "milestones": [
-      "J2 單季 17 球紀錄（2019賽季）"
-    ],
-    "tactical_traits": [
-      "強悍肉搏型中鋒：背身單打與護球能力極強。",
-      "爭頂頭槌霸主：定位球攻門與長傳二波落點控制的主要武器。"
-    ],
-    "quirky_trivia": "來自熊本縣足球名門大津高中，高中時期曾單場獨進 5 球，被譽為「九州第一怪獸中鋒」。"
+    "honors": ["J2 單季 17 球突破 (2019)"],
+    "milestones": ["J 聯賽生涯累積 40+ 進球"],
+    "tactical_traits": ["背身做球與支點", "禁區門前搶點"],
+    "quirky_trivia": "大津高校出身，身體軀幹力量極佳。"
   },
   {
-    "id": "1624854",
+    "id": "okayama_23",
     "club": "岡山綠雉",
     "number": "23",
-    "name_zh": "嘉雲・施華",
-    "name_en": "Kewin Silva",
-    "position": "GK",
-    "dob": "1995-01-25",
-    "age": 31,
-    "height": 190,
-    "weight": 85,
+    "name_zh": "嵯峨理久",
+    "name_en": "Riku Saga",
+    "position": "DF",
+    "dob": "1998-05-27",
+    "age": 28,
+    "height": 167,
+    "weight": 64,
     "foot": "右腳",
-    "nationality": "巴西",
+    "nationality": "日本",
     "joined": 2024,
-    "prev_club": "莫雷倫斯",
-    "registration_status": "外援名額",
+    "prev_club": "岩手盛岡仙鶴",
+    "registration_status": "本國球員",
     "tenure_status": "效力第3季",
     "national_team_detail": "無",
-    "intro": "嘉雲・施華為來自巴西的高大經驗型門將，身高達 190 公分，具備強大的翼側高空球摘球能力。",
+    "intro": "跑動型邊後衛，攻守轉換快速，具備良好的邊路防守覆蓋。",
     "timeline": [
-      { "period": "2020–2023", "team": "莫雷倫斯（Moreirense）", "category": "葡超/葡甲", "milestone": "旅歐效力葡萄牙聯賽，幫助球隊奪得葡甲冠軍成功升甲。" },
-      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "加盟岡山綠雉，為球隊衝上 J1 做出貢獻。" }
+      { "period": "2021–2023", "team": "岩手盛岡仙鶴", "category": "J3/J2職業隊", "milestone": "邊路主力出球後衛" },
+      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "戰術輪換邊後衛" }
     ],
-    "honors": [
-      "1次 葡萄牙甲組聯賽冠軍（2022-23 [莫雷倫斯]）"
-    ],
-    "milestones": [
-      "葡甲冠軍賽季主力門將"
-    ],
-    "tactical_traits": [
-      "葡超經驗巨人制空：高空球摘取落點極為穩定。"
-    ],
-    "quirky_trivia": "在葡萄牙聯賽效力多年，是岡山隊內拉美球員群體的領袖人物。"
+    "honors": ["J3 聯賽升級功臣"],
+    "milestones": ["仙鶴隊史邊路主力"],
+    "tactical_traits": ["高強度攻守往返", "邊路補位逼搶"],
+    "quirky_trivia": "體能極佳，經常在比賽末段進行邊路衝刺。"
   },
   {
-    "id": "1607142",
+    "id": "okayama_24",
     "club": "岡山綠雉",
     "number": "24",
-    "name_zh": "藤田 息吹",
+    "name_zh": "藤田息吹",
     "name_en": "Ibuki Fujita",
     "position": "MF",
     "dob": "1991-01-30",
@@ -1609,206 +483,545 @@
     "nationality": "日本",
     "joined": 2024,
     "prev_club": "山形山神",
-    "registration_status": "常規登錄（一隊）",
+    "registration_status": "本國球員",
     "tenure_status": "效力第3季",
     "national_team_detail": "無",
-    "intro": "藤田息吹為中場掃蕩與奪搶專家，具備充沛體能、極佳位置感與硬朗的逼搶作風。",
+    "intro": "防守型中場老將，搶斷預判精準，能維持防線前沿的安定感。",
     "timeline": [
-      { "period": "2013–2020", "team": "清水 / 愛媛 / 松本", "category": "J1/J2職業隊", "milestone": "職業生涯 J1/J2 登場突破 250 場。" },
-      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "2024加盟岡山，為中場後防線屏障。" }
+      { "period": "2021–2023", "team": "山形山神", "category": "J2職業隊", "milestone": "中場防守核心" },
+      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "經驗型防守後腰" }
     ],
-    "honors": [
-      "J1/J2 登場突破 250 場"
-    ],
-    "milestones": [
-      "J2 單季搶斷成功率前三名"
-    ],
-    "tactical_traits": [
-      "中場鎖鏈：下腳搶斷極度乾淨且覆蓋面廣。"
-    ],
-    "quirky_trivia": "出自慶應義塾大學名門，是 J 聯賽少數高學歷出身的硬派防守中場。"
+    "honors": ["慶應義塾大學足球部隊長"],
+    "milestones": ["J2 出場突破 300 場"],
+    "tactical_traits": ["精準防守攔截", "簡單有效短傳轉移"],
+    "quirky_trivia": "名校慶應義塾大學畢業的高智商中場。"
   },
   {
-    "id": "1630002",
+    "id": "okayama_26",
+    "club": "岡山綠雉",
+    "number": "26",
+    "name_zh": "西野陽太",
+    "name_en": "Yota Nishino",
+    "position": "MF",
+    "dob": "2002-04-10",
+    "age": 24,
+    "height": 174,
+    "weight": 66,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "京都橘大學",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "無",
+    "intro": "年輕中場新秀，控球技術良好，在二隊與一隊間積極爭取機會。",
+    "timeline": [
+      { "period": "2025–至今", "team": "岡山綠雉", "category": "J1職業隊", "milestone": "簽署職業合約" }
+    ],
+    "honors": ["關西學生足球聯賽最佳陣容"],
+    "milestones": ["完成職業聯賽首秀"],
+    "tactical_traits": ["短傳銜接", "空間預判"],
+    "quirky_trivia": "腳下細膩，被視為中場潛力新星。"
+  },
+  {
+    "id": "okayama_27",
+    "club": "岡山綠雉",
+    "number": "27",
+    "name_zh": "河野諒祐",
+    "name_en": "Ryosuke Kawano",
+    "position": "DF",
+    "dob": "1994-12-24",
+    "age": 31,
+    "height": 177,
+    "weight": 72,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2021,
+    "prev_club": "水戶蜀葵",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第6季",
+    "national_team_detail": "無",
+    "intro": "助攻型右後衛，精準傳中是球隊邊路發動攻擊的主要手段之一。",
+    "timeline": [
+      { "period": "2021–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "右邊路傳中主力" }
+    ],
+    "honors": ["J2 單季傳中成功率前三"],
+    "milestones": ["岡山隊史右路傳中數第一"],
+    "tactical_traits": ["右路弧線傳中", "戰術犯規破壞"],
+    "quirky_trivia": "右腳弧線傳中落點極佳，助攻效率極高。"
+  },
+  {
+    "id": "okayama_28",
+    "club": "岡山綠雉",
+    "number": "28",
+    "name_zh": "藤井葉大",
+    "name_en": "Yuto Fujii",
+    "position": "DF",
+    "dob": "2006-01-16",
+    "age": 20,
+    "height": 182,
+    "weight": 74,
+    "foot": "左腳",
+    "nationality": "日本",
+    "joined": 2024,
+    "prev_club": "飯塚高校",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第3季",
+    "national_team_detail": "日本 U-19 代表隊",
+    "intro": "左腳潛力後衛，身材條件好，防守一對一成長迅速。",
+    "timeline": [
+      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "高中畢業即加盟" }
+    ],
+    "honors": ["高校選手權大會優秀選手"],
+    "milestones": ["入選日本 U-19 國家隊"],
+    "tactical_traits": ["左腳防線出球", "高空爭頂潛力"],
+    "quirky_trivia": "日本少見的高大左腳後衛新星。"
+  },
+  {
+    "id": "okayama_30",
+    "club": "岡山綠雉",
+    "number": "30",
+    "name_zh": "井川空",
+    "name_en": "Sora Igawa",
+    "position": "MF",
+    "dob": "2000-01-15",
+    "age": 26,
+    "height": 180,
+    "weight": 74,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2023,
+    "prev_club": "北海道高知大學",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第4季",
+    "national_team_detail": "無",
+    "intro": "高大身材中場，爭頭球與拼搶硬朗，提供中場物理對抗強度。",
+    "timeline": [
+      { "period": "2023–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "中場對抗主力" }
+    ],
+    "honors": ["北海道大學聯賽 MVP"],
+    "milestones": ["完成職業聯賽首破門"],
+    "tactical_traits": ["高空球二次搶點", "身體對抗防守"],
+    "quirky_trivia": "體格壯碩，提供中場強大的防守屏障。"
+  },
+  {
+    "id": "okayama_31",
+    "club": "岡山綠雉",
+    "number": "31",
+    "name_zh": "谷口璃成",
+    "name_en": "Risei Taniguchi",
+    "position": "GK",
+    "dob": "2003-06-08",
+    "age": 23,
+    "height": 190,
+    "weight": 82,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2022,
+    "prev_club": "明秀日立高校",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第5季",
+    "national_team_detail": "日本 U-20 代表隊",
+    "intro": "年輕高大門將，臂展極長，防守高空球優勢顯著。",
+    "timeline": [
+      { "period": "2022–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "門將重點育成" }
+    ],
+    "honors": ["高校選手權大會最佳門將候補"],
+    "milestones": ["入選 U-20 國家隊名單"],
+    "tactical_traits": ["高空球制空摘球", "反應迅速"],
+    "quirky_trivia": "190cm 身高讓他在門前極具威壓感。"
+  },
+  {
+    "id": "okayama_33",
+    "club": "岡山綠雉",
+    "number": "33",
+    "name_zh": "神谷一樹",
+    "name_en": "Kazuki Kamiya",
+    "position": "MF",
+    "dob": "2002-02-14",
+    "age": 24,
+    "height": 175,
+    "weight": 68,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2024,
+    "prev_club": "東海大學",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第3季",
+    "national_team_detail": "無",
+    "intro": "前場機動型中場，走位靈活，善於連結中前場傳球通道。",
+    "timeline": [
+      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "投入一隊訓練輪換" }
+    ],
+    "honors": ["關東大學聯賽助攻王候補"],
+    "milestones": ["完成職業聯賽首秀"],
+    "tactical_traits": ["靈敏走位接應", "快速短傳發動"],
+    "quirky_trivia": "無球跑位極為聰明。"
+  },
+  {
+    "id": "okayama_40",
+    "club": "岡山綠雉",
+    "number": "40",
+    "name_zh": "馬場晴也",
+    "name_en": "Seiya Baba",
+    "position": "DF",
+    "dob": "2001-10-24",
+    "age": 24,
+    "height": 181,
+    "weight": 76,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "札幌岡薩多",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "日本 U-23 國奧隊",
+    "intro": "年輕國腳級防守多面手，可勝任中後衛與後腰，具有極佳防守天賦。",
+    "timeline": [
+      { "period": "2020–2022", "team": "東京綠景", "category": "J2職業隊", "milestone": "青訓出身快速躋身主力" },
+      { "period": "2025–至今", "team": "岡山綠雉", "category": "J1職業隊", "milestone": "後防主力心臟" }
+    ],
+    "honors": ["巴黎奧運預選日本國奧代表"],
+    "milestones": ["U-23 亞洲盃冠軍 (2024)"],
+    "tactical_traits": ["前插攔截搶斷", "後場冷靜縱深出球"],
+    "quirky_trivia": "防守搶斷凶悍且具備優異的腳下傳球技術。"
+  },
+  {
+    "id": "okayama_41",
     "club": "岡山綠雉",
     "number": "41",
-    "name_zh": "宮本 英治",
+    "name_zh": "宮本英治",
     "name_en": "Eiji Miyamoto",
     "position": "MF",
     "dob": "1998-08-03",
     "age": 28,
     "height": 173,
-    "weight": 68,
+    "weight": 70,
     "foot": "右腳",
     "nationality": "日本",
     "joined": 2024,
-    "prev_club": "磐城FC",
-    "registration_status": "常規登錄（一隊）",
+    "prev_club": "岩手盛岡仙鶴",
+    "registration_status": "本國球員",
     "tenure_status": "效力第3季",
     "national_team_detail": "無",
-    "intro": "宮本英治為岡山綠雉中場的防守屏障與奪搶之王，本賽季以高達 119.54 分的奪搶點數（Gain Points）位居 J1 聯賽第一名。",
+    "intro": "中場掃盪屏障，2026 賽季以 119.54 奪取點數位居全 J1 聯賽第一。",
     "timeline": [
-      { "period": "2021–2023", "team": "磐城FC", "category": "J3/J2職業隊", "milestone": "隨隊完成 J3 奪冠升 J2 壯舉。" },
-      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "作為後腰核心率隊成功衝上 J1，並登上 J1 奪搶榜榜首。" }
+      { "period": "2021–2023", "team": "岩手盛岡仙鶴", "category": "J3/J2職業隊", "milestone": "中場防守核心" },
+      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "以 119.54 奪取點位居 2026 J1 第一" }
     ],
-    "honors": [
-      "1次 J1 奪搶點數榜首（119.54分—2026/27賽季進行中）",
-      "1次 J3 聯賽冠軍（2022 [磐城FC]）"
-    ],
-    "milestones": [
-      "2026/27 賽季 J1 全聯賽奪搶點數（Gain Points）第1名"
-    ],
-    "tactical_traits": [
-      "極致奪搶能力：下腳果斷且乾淨，為 J1 最強後腰屏障之一。",
-      "JFA 學院精英：擅長在大範圍移動中精準攔截。"
-    ],
-    "quirky_trivia": "出自 JFA 福島學院精英培訓體系，在高強度健身房鍛鍊下擁有極強的肢體核心抗衡力。"
+    "honors": ["J1 奪取點榜冠軍 (119.54 pts, 2026)"],
+    "milestones": ["全 J1 最頂級中場防守搶斷王"],
+    "tactical_traits": ["高效率防守奪球", "體能覆蓋面積大"],
+    "quirky_trivia": "2026 賽季防守奪球數據冠絕全 J1 聯賽。"
   },
   {
-    "id": "1607144",
+    "id": "okayama_43",
     "club": "岡山綠雉",
     "number": "43",
-    "name_zh": "鈴木 喜丈",
-    "name_en": "Yoshitake Suzuki",
-    "position": "DF",
-    "dob": "1998-07-06",
+    "name_zh": "吉尾海夏",
+    "name_en": "Kaina Yoshio",
+    "position": "MF",
+    "dob": "1998-06-28",
     "age": 28,
-    "height": 183,
-    "weight": 76,
+    "height": 168,
+    "weight": 64,
     "foot": "左腳",
     "nationality": "日本",
-    "joined": 2023,
-    "prev_club": "水戶水手",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "效力第4季",
-    "national_team_detail": "日本 U-19 國家代表隊 🇯🇵",
-    "intro": "鈴木喜丈為具備頂級出球能力的左腳中後衛／防守中場，出身 FC東京名門青訓，為後場發動組織攻勢的核心樞紐。",
+    "joined": 2025,
+    "prev_club": "橫濱F水手",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "無",
+    "intro": "左腳攻擊型中場，控球與遠射技術精湛，創造力豐富。",
     "timeline": [
-      { "period": "2011–2016", "team": "FC東京 U-18", "category": "名門梯隊", "milestone": "率 FC東京 U-18 勇奪 J 青年盃與日本俱樂部青年錦標賽雙冠王。" },
-      { "period": "2023–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "2023年加盟岡山，作為主力左中後衛幫助球隊成功衝上 J1。" }
+      { "period": "2017–2024", "team": "橫濱F水手", "category": "J1職業隊", "milestone": "隨隊奪得 J1 聯賽冠軍" },
+      { "period": "2025–至今", "team": "岡山綠雉", "category": "J1職業隊", "milestone": "前場核心進攻發動機" }
     ],
-    "honors": [
-      "1次 日本俱樂部青年錦標賽冠軍（2016 [FC東京 U-18]）",
-      "1次 J 青年盃冠軍（2016 [FC東京 U-18]）"
-    ],
-    "milestones": [
-      "青訓雙冠王時期主力隊長"
-    ],
-    "tactical_traits": [
-      "名門雙冠王核心：具備極佳的現代中後衛出球素養。",
-      "左腳精準長傳：擅長斜長傳直接連結邊翼衛與前鋒。"
-    ],
-    "quirky_trivia": "少年時期被譽為「FC東京梯隊十年一遇的左腳天才」，攻守兼備。"
+    "honors": ["J1 聯賽冠軍 (2022)"],
+    "milestones": ["亞冠盃決賽出場經驗"],
+    "tactical_traits": ["左腳禁區外遠射", "前場關鍵傳球"],
+    "quirky_trivia": "水手青訓出身，遠射弧線非常漂亮。"
   },
   {
-    "id": "1607145",
+    "id": "okayama_44",
+    "club": "岡山綠雉",
+    "number": "44",
+    "name_zh": "仙波大志",
+    "name_en": "Taishi Semba",
+    "position": "MF",
+    "dob": "1999-08-19",
+    "age": 27,
+    "height": 165,
+    "weight": 62,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2022,
+    "prev_club": "廣島三箭",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第5季",
+    "national_team_detail": "無",
+    "intro": "腳下靈巧的中場指揮塔，盤帶控球穩定，節奏掌控力佳。",
+    "timeline": [
+      { "period": "2022–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "中場傳控主力" }
+    ],
+    "honors": ["流通經濟大學隊長"],
+    "milestones": ["岡山中場傳球成功率前三"],
+    "tactical_traits": ["小範圍盤帶突破", "中場傳接過渡"],
+    "quirky_trivia": "廣島三箭青訓出身，腳下技術極其紮實。"
+  },
+  {
+    "id": "okayama_48",
     "club": "岡山綠雉",
     "number": "48",
-    "name_zh": "立田 悠悟",
-    "name_en": "Yugo Tatsuta",
+    "name_zh": "新井光",
+    "name_en": "Hikaru Arai",
+    "position": "MF",
+    "dob": "1999-04-14",
+    "age": 27,
+    "height": 174,
+    "weight": 65,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2023,
+    "prev_club": "湘南比馬",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第4季",
+    "national_team_detail": "無",
+    "intro": "速度型邊路選手，擅長利用跑位拉開對方後防線。",
+    "timeline": [
+      { "period": "2018–2022", "team": "湘南比馬", "category": "J1職業隊", "milestone": "完成 J1 首秀" },
+      { "period": "2023–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "邊路反擊尖刀" }
+    ],
+    "honors": ["市立長野高校隊長"],
+    "milestones": ["J 聯賽盃首秀進球"],
+    "tactical_traits": ["縱深跑位切入", "邊路高頻次無球衝刺"],
+    "quirky_trivia": "無球衝刺拉開防線效果顯著。"
+  },
+  {
+    "id": "okayama_51",
+    "club": "岡山綠雉",
+    "number": "51",
+    "name_zh": "川前陽斗",
+    "name_en": "Haruto Kawamae",
     "position": "DF",
-    "dob": "1998-06-21",
-    "age": 28,
-    "height": 191,
+    "dob": "2002-04-14",
+    "age": 24,
+    "height": 180,
+    "weight": 73,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "飯塚高校",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "無",
+    "intro": "年輕後衛，防守果斷，具備優異的單打對抗對峙心態。",
+    "timeline": [
+      { "period": "2025–至今", "team": "岡山綠雉", "category": "J1職業隊", "milestone": "加入職業隊輪換" }
+    ],
+    "honors": ["九州高校大會最佳後衛"],
+    "milestones": ["一隊首秀零封對手"],
+    "tactical_traits": ["正面下腳搶斷", "貼身盯防"],
+    "quirky_trivia": "一對一搶斷下手狠準。"
+  },
+  {
+    "id": "okayama_52",
+    "club": "岡山綠雉",
+    "number": "52",
+    "name_zh": "小川空",
+    "name_en": "Sora Ogawa",
+    "position": "MF",
+    "dob": "1999-10-18",
+    "age": 26,
+    "height": 176,
+    "weight": 70,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "大阪體育大學",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "無",
+    "intro": "攻守兼備的中場，跑動能力優異，在中場各個區域積極防守。",
+    "timeline": [
+      { "period": "2025–至今", "team": "岡山綠雉", "category": "J1職業隊", "milestone": "進入一隊名單" }
+    ],
+    "honors": ["全日本大學選拔"],
+    "milestones": ["職業首勝參與者"],
+    "tactical_traits": ["中場卡位補防", "二次進攻壓制"],
+    "quirky_trivia": "體能極為充沛。"
+  },
+  {
+    "id": "okayama_55",
+    "club": "岡山綠雉",
+    "number": "55",
+    "name_zh": "藤井葉大",
+    "name_en": "Hayata Fujii",
+    "position": "DF",
+    "dob": "2003-08-20",
+    "age": 23,
+    "height": 184,
+    "weight": 77,
+    "foot": "左腳",
+    "nationality": "日本",
+    "joined": 2024,
+    "prev_club": "常葉大學",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第3季",
+    "national_team_detail": "無",
+    "intro": "青年左後衛，身體素質優良，左路防守穩健。",
+    "timeline": [
+      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "投入職業聯賽鍛鍊" }
+    ],
+    "honors": ["東海學生聯賽最佳防線"],
+    "milestones": ["完成 J 聯賽盃登場"],
+    "tactical_traits": ["左路邊線封堵", "卡位爭頭球"],
+    "quirky_trivia": "身高體格在左後衛位置上頗具優勢。"
+  },
+  {
+    "id": "okayama_66",
+    "club": "岡山綠雉",
+    "number": "66",
+    "name_zh": "南雄太",
+    "name_en": "Yuta Minami",
+    "position": "GK",
+    "dob": "1979-09-30",
+    "age": 46,
+    "height": 185,
     "weight": 83,
     "foot": "右腳",
     "nationality": "日本",
-    "joined": 2026,
-    "prev_club": "柏雷素爾",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "新加盟（2026首季）",
-    "national_team_detail": "1次 代表日本國家隊大國腳 🇯🇵（2019 美洲國家盃陣容、2018 亞運銀牌）",
-    "intro": "立田悠悟為日本國家級高大中後衛，身高達 191 公分，具備頂級高空爭頂力與強悍的正面攔截能力。",
+    "joined": 2025,
+    "prev_club": "大宮松鼠",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "日本青年代表隊 (世青盃亞軍)",
+    "intro": "傳奇門將老將，為門將群提供寶貴的頂級賽事戰術指引。",
     "timeline": [
-      { "period": "2018–2021", "team": "日本奧運代表隊", "category": "青年國家隊", "milestone": "雅加達亞運銀牌主力，入選 2020 東京奧運日本男足 18 人大名單。" },
-      { "period": "2026–至今", "team": "岡山綠雉", "category": "J1職業隊", "milestone": "2026年加盟岡山綠雉，擔綱防線後防司令塔。" }
+      { "period": "1998–2009", "team": "柏太陽王", "category": "J1職業隊", "milestone": "長期主戰門將" },
+      { "period": "2025–至今", "team": "岡山綠雉", "category": "J1職業隊", "milestone": "以傳奇老將身份輔佐陣容" }
     ],
-    "honors": [
-      "1次 雅加達亞運會男足銀牌（2018 [日本 U-23]）",
-      "2020 東京奧運日本代表隊成員"
-    ],
-    "milestones": [
-      "21歲代表日本出戰巴西美洲國家盃"
-    ],
-    "tactical_traits": [
-      "191cm 頂級國腳天賦：空中爭頂能力極具壓制力。",
-      "大範圍覆蓋：長途補位衝刺速度快。"
-    ],
-    "quirky_trivia": "身高 191 公分，是日本近年極為少見的高大長人中後衛，曾於2019年代表日本出戰美洲盃。"
+    "honors": ["世青盃亞軍 (1999)", "J1 歷史出場前列"],
+    "milestones": ["職業生涯出場突破 600 場"],
+    "tactical_traits": ["經驗傳承", "門前指揮體系"],
+    "quirky_trivia": "日本職業足球長青樹之一。"
   },
   {
-    "id": "1500295",
+    "id": "okayama_77",
     "club": "岡山綠雉",
-    "number": "51",
-    "name_zh": "白井 康介",
-    "name_en": "Kosuke Shirai",
+    "number": "77",
+    "name_zh": "黃錫鎬",
+    "name_en": "Hwang Seok-ho",
     "position": "DF",
-    "dob": "1994-05-01",
-    "age": 32,
-    "height": 167,
-    "weight": 63,
+    "dob": "1989-06-27",
+    "age": 37,
+    "height": 183,
+    "weight": 80,
+    "foot": "右腳",
+    "nationality": "韓國",
+    "joined": 2024,
+    "prev_club": "清水心跳",
+    "registration_status": "外援名額",
+    "tenure_status": "效力第3季",
+    "national_team_detail": "韓國國家隊 (倫敦奧運銅牌)",
+    "intro": "韓籍資深中後衛，防守經驗豐富，對抗作風極其頑強。",
+    "timeline": [
+      { "period": "2012–2014", "team": "廣島三箭", "category": "J1職業隊", "milestone": "隨廣島奪得 J1 兩連霸" },
+      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "防線經驗鎮守者" }
+    ],
+    "honors": ["倫敦奧運銅牌 (2012)", "2次 J1 聯賽冠軍"],
+    "milestones": ["J1 聯賽 200+ 場出場"],
+    "tactical_traits": ["強攻下腳卡位", "禁區高空球解圍"],
+    "quirky_trivia": "會說流利日語，防守喊話極具威嚴。"
+  },
+  {
+    "id": "okayama_79",
+    "club": "岡山綠雉",
+    "number": "79",
+    "name_zh": "川野拓海",
+    "name_en": "Takumi Kawano",
+    "position": "FW",
+    "dob": "2003-02-11",
+    "age": 23,
+    "height": 177,
+    "weight": 71,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "專修大學",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "無",
+    "intro": "衝鋒型前鋒，前場逼搶速度快，具有良好的邊路切入破門能力。",
+    "timeline": [
+      { "period": "2025–至今", "team": "岡山綠雉", "category": "J1職業隊", "milestone": "開始職業生涯" }
+    ],
+    "honors": ["關東大學二部得分王"],
+    "milestones": ["職業首秀登場"],
+    "tactical_traits": ["前場反搶", "前插補射"],
+    "quirky_trivia": "反擊時的前插速度非常快。"
+  },
+  {
+    "id": "okayama_80",
+    "club": "岡山綠雉",
+    "number": "80",
+    "name_zh": "植田直通",
+    "name_en": "Naomichi Ueda",
+    "position": "DF",
+    "dob": "1994-10-24",
+    "age": 31,
+    "height": 186,
+    "weight": 79,
     "foot": "右腳",
     "nationality": "日本",
     "joined": 2026,
-    "prev_club": "FC東京",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "新加盟（2026夏季）",
-    "national_team_detail": "無",
-    "intro": "白井康介為岡山綠雉右路的速度魔王，具備驚人的爆發力、極高縱向折返跑耐力與高頻率傳中能力。",
+    "prev_club": "鹿島鹿角",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第1季",
+    "national_team_detail": "日本國家隊 (16 場)",
+    "intro": "防線鐵閘，具備歐旅經驗與日本國家隊背景，制空能力頂級。",
     "timeline": [
-      { "period": "2021–2023", "team": "京都不死鳥", "category": "J1/J2職業隊", "milestone": "助京都升甲，2022賽季 J1 出場 34 場全勤。" },
-      { "period": "2026–至今", "team": "岡山綠雉", "category": "J1職業隊", "milestone": "2026年夏季加盟岡山綠雉，鎖定右邊翼衛主力。" }
+      { "period": "2013–2018", "team": "鹿島鹿角", "category": "J1職業隊", "milestone": "奪得 J1 冠軍與 ACL 冠軍" },
+      { "period": "2018–2022", "team": "比甲/法甲", "category": "歐洲聯賽", "milestone": "旅歐加盟瑟蘭與尼姆" },
+      { "period": "2026–至今", "team": "岡山綠雉", "category": "J1職業隊", "milestone": "重磅加盟鞏固岡山後防" }
     ],
-    "honors": [
-      "J1 聯賽累計登場突破 150 場"
-    ],
-    "milestones": [
-      "J1 單季全勤 34 場紀錄（2022賽季）"
-    ],
-    "tactical_traits": [
-      "極致體能與爆發力：單場衝刺次數頂尖，能90分鐘不間斷套外插上。"
-    ],
-    "quirky_trivia": "在 J 聯賽以「跑不死的超級右後衛」著稱，單場衝刺次數曾高達 40 次以上。"
+    "honors": ["ACL 冠軍 (2018)", "J1 聯賽冠軍 (2016)", "世界杯日本隊名單 (2018)"],
+    "milestones": ["國家隊 16 場出場"],
+    "tactical_traits": ["制空霸權頭球", "正面強硬卡位"],
+    "quirky_trivia": "跆拳道黑帶出身，身體對抗強度驚人。"
   },
   {
-    "id": "1624852",
+    "id": "okayama_88",
     "club": "岡山綠雉",
-    "number": "66",
-    "name_zh": "西川 潤",
-    "name_en": "Jun Nishikawa",
+    "number": "88",
+    "name_zh": "加布里埃爾·薩維爾",
+    "name_en": "Gabriel Xavier",
     "position": "MF",
-    "dob": "2002-02-21",
-    "age": 24,
-    "height": 180,
-    "weight": 70,
+    "dob": "1993-03-02",
+    "age": 33,
+    "height": 170,
+    "weight": 68,
     "foot": "左腳",
-    "nationality": "日本",
-    "joined": 2026,
-    "prev_club": "磐田山葉",
-    "registration_status": "常規登錄（一隊）",
-    "tenure_status": "新加盟（2026首季）",
-    "national_team_detail": "日本 U-20 國家代表隊 🇯🇵（U-16 亞錦賽 MVP）",
-    "intro": "西川潤為日本頂級左腳天才攻擊中場，曾榮獲 U-16 亞洲錦標賽 MVP，具備極高的盤帶節奏感與優雅的左腳傳球。",
+    "nationality": "巴西",
+    "joined": 2024,
+    "prev_club": "名古屋鯨魚",
+    "registration_status": "外援名額",
+    "tenure_status": "效力第3季",
+    "national_team_detail": "無",
+    "intro": "巴西籍魔術師前腰，盤帶突破能力頂尖，擅長劃破防線的致命直塞。",
     "timeline": [
-      { "period": "2018", "team": "日本 U-16", "category": "青年國家隊", "milestone": "率日本隊奪得 U-16 亞錦賽冠軍，個人榮膺大會 MVP 殊榮。" },
-      { "period": "2026–至今", "team": "岡山綠雉", "category": "J1職業隊", "milestone": "2026年加盟岡山綠雉，成為前場輪換重要尖刀。" }
+      { "period": "2017–2021", "team": "名古屋鯨魚", "category": "J1職業隊", "milestone": "核心 10 號大腦" },
+      { "period": "2024–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "掌控岡山前場進攻" }
     ],
-    "honors": [
-      "1次 U-16 亞洲錦標賽 MVP/冠軍（2018 [日本 U-16]）"
-    ],
-    "milestones": [
-      "17歲即代表西甲名門巴塞隆拿前往試訓"
-    ],
-    "tactical_traits": [
-      "名門桐光左腳基因：步幅變速與內切射門極具威脅。",
-      "狹小空間靈動性：擅長在禁區前沿撞牆突破。"
-    ],
-    "quirky_trivia": "高中時期就讀中村俊輔的母校桐光學園，高中時即曾獲得西甲豪門巴塞隆拿的關注與邀請。"
+    "honors": ["J.League 聯賽盃冠軍 (2021)"],
+    "milestones": ["J1 助攻數突破 30 次"],
+    "tactical_traits": ["前場靈巧過人", "致命關鍵傳球"],
+    "quirky_trivia": "左腳傳球充滿巴西球員的靈氣與想像力。"
   },
   {
-    "id": "1630003",
+    "id": "okayama_90",
     "club": "岡山綠雉",
-    "number": "99",
+    "number": "90",
     "name_zh": "魯卡奧",
     "name_en": "Lucão",
     "position": "FW",
@@ -1823,20 +1036,933 @@
     "registration_status": "外援名額",
     "tenure_status": "效力第4季",
     "national_team_detail": "無",
-    "intro": "魯卡奧為巴西籍超級魔獸衝鋒型中鋒，身高 191 公分、體重高達 92 公斤，具備極度恐怖的肢體碾壓力量與門前彈頭重炮。",
+    "intro": "超級衝鋒型中鋒，具備恐怖的身體碾壓力量與門前重炮。",
     "timeline": [
-      { "period": "2019–2022", "team": "鹿兒島 / 金澤 / 松本", "category": "J2/J3職業隊", "milestone": "單季在 J2 展現碾壓級單打能力，累積打入 20 球。" },
-      { "period": "2023–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "作為破密集防守第一重炮衝鋒槍，助隊衝上 J1。" }
+      { "period": "2019–2022", "team": "鹿兒島/金澤/松本", "category": "J2/J3職業隊", "milestone": "單季 J2 累積攻入 20 球" },
+      { "period": "2023–至今", "team": "岡山綠雉", "category": "J2/J1職業隊", "milestone": "衝鋒重炮助隊衝上 J1" }
+    ],
+    "honors": ["岡山綠雉升級功臣 (2024)"],
+    "milestones": ["J 聯賽體重最重的中鋒之一 (92kg)"],
+    "tactical_traits": ["背身單打無人能擋", "破密集防守第一衝鋒槍"],
+    "quirky_trivia": "體格極度魁梧，下半場替補登場對對方後衛是「噩夢級衝擊力」。"
+  },
+  {
+    "id": "team_urawa_reds",
+    "type": "team_info",
+    "club": "浦和紅鑽",
+    "club_en": "Urawa Red Diamonds",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/en/d/d0/Urawa_Red_Diamonds_logo.svg",
+    "hometown": "埼玉県埼玉市",
+    "hometown_population": "1,340,000人",
+    "name_history": "隊名「Red Diamonds」源自母公司三菱集團的紅色三顆鑽石標誌，象徵堅固團結與熱血霸氣。",
+    "stadium_info": {
+      "name": "埼玉2002體育場（Saitama Stadium 2002）",
+      "year_built": 2001,
+      "year_renovated": 2019,
+      "capacity": 63700,
+      "interesting_facts": [
+        "日本最大的專用足球場之一，亦是 2002 年世界盃準決賽舉辦地。",
+        "亞洲最具震撼力的主場聲浪，紅鑽球迷看台「熱狂南看台」聞名遐邇。"
+      ]
+    },
+    "team_history": "前身為1950年成立的三菱重工足球部，1992年成為 J 聯賽創始球隊之一。",
+    "performance_history": [
+      "1次 J1 聯賽冠軍 (2006)",
+      "3次 亞冠盃 (ACL) 冠軍 (2007, 2017, 2022)",
+      "8次 天皇盃冠軍",
+      "2次 J.League 聯賽盃冠軍"
+    ]
+  },
+  {
+    "id": "urawa_mgr",
+    "club": "浦和紅鑽",
+    "number": "HC",
+    "name_zh": "黑格摩",
+    "name_en": "Per-Mathias Høgmo",
+    "position": "MANAGER",
+    "dob": "1959-12-01",
+    "age": 66,
+    "height": 180,
+    "weight": 78,
+    "foot": "右腳",
+    "nationality": "挪威",
+    "joined": 2024,
+    "prev_club": "黑肯",
+    "registration_status": "總教練",
+    "tenure_status": "執教第3季",
+    "national_team_detail": "前挪威國家隊總教練",
+    "intro": "挪威籍名帥，重視現代戰術體系與邊路傳中效率，打造紅鑽鐵血戰術結構。",
+    "timeline": [
+      { "period": "2013–2016", "team": "挪威國家隊", "category": "國際足壇", "milestone": "掌舵挪威國家一隊" },
+      { "period": "2024–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "執教浦和紅鑽" }
+    ],
+    "honors": ["瑞典甲級聯賽冠軍 (2022)"],
+    "milestones": ["率隊奪得瑞典雙冠王"],
+    "tactical_traits": ["歐式全攻全守戰術", "強調高壓逼搶與快速邊路推進"],
+    "quirky_trivia": "擁有豐富的歐洲國家隊與歐戰執教履歷。"
+  },
+  {
+    "id": "urawa_1",
+    "club": "浦和紅鑽",
+    "number": "1",
+    "name_zh": "西川周作",
+    "name_en": "Shusaku Nishikawa",
+    "position": "GK",
+    "dob": "1986-06-18",
+    "age": 40,
+    "height": 183,
+    "weight": 81,
+    "foot": "左腳",
+    "nationality": "日本",
+    "joined": 2014,
+    "prev_club": "廣島三箭",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第13季",
+    "national_team_detail": "日本國家隊 (31 場)",
+    "intro": "浦和紅鑽傳奇門將，J1 出場次數突破 600 場大關，為日本現代「清道夫門將」典範。",
+    "timeline": [
+      { "period": "2005–2009", "team": "大分三神", "category": "J1職業隊", "milestone": "2005 完成 J1 首秀，奪 2008 聯賽盃冠軍" },
+      { "period": "2010–2013", "team": "廣島三箭", "category": "J1職業隊", "milestone": "達成 J1 聯賽兩連霸（2012、2013）" },
+      { "period": "2014–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "奪兩次亞冠冠軍（2017、2022），600+ J1 出場" }
     ],
     "honors": [
-      "岡山綠雉 J1 升級關鍵功臣（2024）"
+      "6次 J1 最佳陣容 (2012, 2013, 2014, 2015, 2016, 2023)",
+      "2次 亞冠盃冠軍 (2017, 2022)"
     ],
-    "milestones": [
-      "J 聯賽體重最重的中鋒之一（92kg）"
+    "milestones": ["J1 出場突破 600 場大關"],
+    "tactical_traits": ["左腳精準長傳發動進攻", "門前指揮與戰術防守"],
+    "quirky_trivia": "小學三年級踢外場、四年級轉門將，擁有優秀的外場腳下傳控功力。"
+  },
+  {
+    "id": "urawa_2",
+    "club": "浦和紅鑽",
+    "number": "2",
+    "name_zh": "宮本優太",
+    "name_en": "Yuta Miyamoto",
+    "position": "DF",
+    "dob": "1999-12-15",
+    "age": 26,
+    "height": 170,
+    "weight": 68,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2022,
+    "prev_club": "流通經濟大學",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第5季",
+    "national_team_detail": "日本 U-23 國奧隊",
+    "intro": "高跑動量邊後衛，一對一盯防與邊路攻守往返能力出色。",
+    "timeline": [
+      { "period": "2022–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "大學畢業加盟並躋身一隊輪換" }
     ],
-    "tactical_traits": [
-      "怪獸級軀幹力量：背身單打無人能擋，替補登場破局效果極佳。"
+    "honors": ["全日本大學錦標賽冠軍"],
+    "milestones": ["流通經濟大學隊長出身"],
+    "tactical_traits": ["邊路高頻率攻守往返", "貼身防守迫搶"],
+    "quirky_trivia": "大學時期即展現強大領導力與體能能耗優勢。"
+  },
+  {
+    "id": "urawa_3",
+    "club": "浦和紅鑽",
+    "number": "3",
+    "name_zh": "達尼洛·博扎",
+    "name_en": "Danilo Boza",
+    "position": "DF",
+    "dob": "1998-05-06",
+    "age": 28,
+    "height": 184,
+    "weight": 78,
+    "foot": "右腳",
+    "nationality": "巴西",
+    "joined": 2025,
+    "prev_club": "瓦斯科達伽馬",
+    "registration_status": "外援名額",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "無",
+    "intro": "巴西籍防線硬漢，卡位果斷且高空爭頂搶斷卡位極佳。",
+    "timeline": [
+      { "period": "2022–2024", "team": "瓦斯科達伽馬", "category": "巴甲職業隊", "milestone": "巴甲防線主力" },
+      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "鎮守浦和中後衛位置" }
     ],
-    "quirky_trivia": "體格極為魁梧，下半場替補上陣時對對方疲憊的後衛群簡直是「噩夢級的衝擊力」。"
+    "honors": ["巴甲最佳防線輪換候補"],
+    "milestones": ["巴甲出場超過 50 場"],
+    "tactical_traits": ["正面強硬下腳搶斷", "空中爭頂解圍"],
+    "quirky_trivia": "肢體對抗作風頑強，能給予對方前鋒極大的正面壓迫感。"
+  },
+  {
+    "id": "urawa_5",
+    "club": "浦和紅鑽",
+    "number": "5",
+    "name_zh": "霍布羅騰",
+    "name_en": "Marius Høibråten",
+    "position": "DF",
+    "dob": "1995-01-23",
+    "age": 31,
+    "height": 184,
+    "weight": 77,
+    "foot": "左腳",
+    "nationality": "挪威",
+    "joined": 2023,
+    "prev_club": "博多格林特",
+    "registration_status": "外援名額",
+    "tenure_status": "效力第4季",
+    "national_team_detail": "挪威 U-21 國青隊",
+    "intro": "挪威籍後防核心，高空球爭頂勝率極高，左腳出球穩定。",
+    "timeline": [
+      { "period": "2020–2022", "team": "博多格林特", "category": "挪超職業隊", "milestone": "奪得挪超聯賽冠軍" },
+      { "period": "2023–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "加盟首季即奪亞冠冠軍" }
+    ],
+    "honors": ["亞冠盃冠軍 (2022)", "J1 最佳陣容 (2023)"],
+    "milestones": ["挪超冠軍與 J1 最佳陣容雙料榮譽"],
+    "tactical_traits": ["防線卡位與空中優勢", "左腳後場出球"],
+    "quirky_trivia": "加盟首季即幫助浦和紅鑽奪得 2022 亞冠盃冠軍。"
+  },
+  {
+    "id": "urawa_6",
+    "club": "浦和紅鑽",
+    "number": "6",
+    "name_zh": "山根視來",
+    "name_en": "Miki Yamane",
+    "position": "DF",
+    "dob": "1993-12-22",
+    "age": 32,
+    "height": 178,
+    "weight": 72,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "洛杉磯銀河",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "日本國家隊 (16 場 2 球)",
+    "intro": "經驗豐富的國腳級右後衛，具備優異的攻守感知與右路傳中助攻能力。",
+    "timeline": [
+      { "period": "2020–2023", "team": "川崎前鋒", "category": "J1職業隊", "milestone": "達成 J1 聯賽兩連霸" },
+      { "period": "2024", "team": "洛杉磯銀河", "category": "MLS 美職聯", "milestone": "旅美征戰 MLS 賽場" },
+      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "重返 J1 注入頂級國腳防守戰力" }
+    ],
+    "honors": ["2次 J1 聯賽冠軍 (2020, 2021)", "3次 J1 最佳陣容"],
+    "milestones": ["代表日本出戰 2022 卡達世界盃"],
+    "tactical_traits": ["右路內切傳中發動", "高靈敏戰術站位"],
+    "quirky_trivia": "曾代表日本國家隊出戰世界盃，右路進攻參與度極高。"
+  },
+  {
+    "id": "urawa_7",
+    "club": "浦和紅鑽",
+    "number": "7",
+    "name_zh": "金子拓郎",
+    "name_en": "Takuro Kaneko",
+    "position": "MF",
+    "dob": "1997-07-30",
+    "age": 29,
+    "height": 178,
+    "weight": 75,
+    "foot": "左腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "薩格勒布迪納摩",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "無",
+    "intro": "邊路突破爆發型中場，2026 賽季以 4 次助攻獨佔 J1 助攻王寶座。",
+    "timeline": [
+      { "period": "2019–2023", "team": "札幌岡薩多", "category": "J1職業隊", "milestone": "J1 盤帶過人王" },
+      { "period": "2023–2024", "team": "薩格勒布迪納摩", "category": "歐戰克甲", "milestone": "旅歐出戰歐冠與歐聯" },
+      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2026 賽季以 4 助攻獨佔 J1 助攻王" }
+    ],
+    "honors": ["J1 賽季助攻王 (4 Assists, 2026)", "克羅地亞聯賽冠軍 (2024)"],
+    "milestones": ["單季 4 次助攻冠絕全 J1 聯賽"],
+    "tactical_traits": ["右路內切射門與傳中", "一對一過人成功率極高"],
+    "quirky_trivia": "旅歐加盟克羅地亞豪門後重返 J1 聯賽展現過人實力。"
+  },
+  {
+    "id": "urawa_8",
+    "club": "浦和紅鑽",
+    "number": "8",
+    "name_zh": "馬修斯·薩維奧",
+    "name_en": "Matheus Sávio",
+    "position": "MF",
+    "dob": "1997-04-15",
+    "age": 29,
+    "height": 175,
+    "weight": 74,
+    "foot": "右腳",
+    "nationality": "巴西",
+    "joined": 2025,
+    "prev_club": "柏太陽王",
+    "registration_status": "外援名額",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "巴西 U-20 代表隊",
+    "intro": "巴西籍進攻核心，腳下技術極其華麗，具備遠射與前場破局傳球能力。",
+    "timeline": [
+      { "period": "2019–2024", "team": "柏太陽王", "category": "J1職業隊", "milestone": "柏太陽王前場進攻大腦" },
+      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "接掌 8 號成為浦和前場新樞紐" }
+    ],
+    "honors": ["J1 聯賽單月 MVP"],
+    "milestones": ["J1 聯賽累積 20+ 進球 30+ 助攻"],
+    "tactical_traits": ["禁區外弧線遠射", "前場關鍵傳球調度"],
+    "quirky_trivia": "弗拉門戈青訓出身，傳控具備極高桑巴靈氣。"
+  },
+  {
+    "id": "urawa_10",
+    "club": "浦和紅鑽",
+    "number": "10",
+    "name_zh": "中島翔哉",
+    "name_en": "Shoya Nakajima",
+    "position": "MF",
+    "dob": "1994-08-23",
+    "age": 32,
+    "height": 164,
+    "weight": 64,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2023,
+    "prev_club": "安塔利亞體育",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第4季",
+    "national_team_detail": "日本國家隊 (19 場 5 球)",
+    "intro": "10號靈魂進攻核心，擁有極具靈氣的盤帶與禁區前沿致命一傳。",
+    "timeline": [
+      { "period": "2017–2019", "team": "波蒂莫嫩塞", "category": "葡超聯賽", "milestone": "旅歐大放異彩震撼葡超" },
+      { "period": "2019–2021", "team": "波爾圖", "category": "葡超豪門", "milestone": "身披波爾圖 10 號出戰歐冠" },
+      { "period": "2023–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "接掌浦和紅鑽 10 號球衣" }
+    ],
+    "honors": ["葡超單月 MVP", "日本國家隊 10 號"],
+    "milestones": ["國家隊 19 場 5 進球"],
+    "tactical_traits": ["靈巧盤帶過人", "前場自由度與進攻創造力"],
+    "quirky_trivia": "曾身披日本國家隊 10 號球衣，盤帶風格極具個人特色。"
+  },
+  {
+    "id": "urawa_11",
+    "club": "浦和紅鑽",
+    "number": "11",
+    "name_zh": "古斯塔夫森",
+    "name_en": "Samuel Gustafson",
+    "position": "MF",
+    "dob": "1995-01-11",
+    "age": 31,
+    "height": 187,
+    "weight": 81,
+    "foot": "右腳",
+    "nationality": "瑞典",
+    "joined": 2024,
+    "prev_club": "黑肯",
+    "registration_status": "外援名額",
+    "tenure_status": "效力第3季",
+    "national_team_detail": "瑞典國家隊 (13 場)",
+    "intro": "瑞典國腳級防守型中場，節奏控球與長傳調度能力頂尖。",
+    "timeline": [
+      { "period": "2021–2023", "team": "黑肯", "category": "瑞超聯賽", "milestone": "隊長身份奪得瑞超冠軍" },
+      { "period": "2024–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "中場核心掌控者" }
+    ],
+    "honors": ["瑞典超聯賽冠軍 (2022)"],
+    "milestones": ["現役瑞典國家隊成員"],
+    "tactical_traits": ["後腰位置梳理全場進攻", "高空抗壓與護球"],
+    "quirky_trivia": "瑞典國家隊現役成員，為浦和中場提供強大戰術支點。"
+  },
+  {
+    "id": "urawa_12",
+    "club": "浦和紅鑽",
+    "number": "12",
+    "name_zh": "蒂亞戈·桑塔納",
+    "name_en": "Thiago Santana",
+    "position": "FW",
+    "dob": "1993-02-04",
+    "age": 33,
+    "height": 184,
+    "weight": 80,
+    "foot": "左腳",
+    "nationality": "巴西",
+    "joined": 2024,
+    "prev_club": "清水心跳",
+    "registration_status": "外援名額",
+    "tenure_status": "效力第3季",
+    "national_team_detail": "無",
+    "intro": "前 J1 金靴得主，左腳射門力量極大，門前得分嗅覺極強。",
+    "timeline": [
+      { "period": "2021–2023", "team": "清水心跳", "category": "J1職業隊", "milestone": "榮獲 J1 聯賽最佳射手 (金靴獎)" },
+      { "period": "2024–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "浦和前場射手支柱" }
+    ],
+    "honors": ["J1 聯賽金靴獎 (2022)"],
+    "milestones": ["J1 聯賽單季打入 14 球"],
+    "tactical_traits": ["左腳門前爆射", "禁區支點背身保護"],
+    "quirky_trivia": "擁有過人的門前抓機會能力與強大頭球天賦。"
+  },
+  {
+    "id": "urawa_13",
+    "club": "浦和紅鑽",
+    "number": "13",
+    "name_zh": "渡邊凌磨",
+    "name_en": "Ryoma Watanabe",
+    "position": "MF",
+    "dob": "1996-10-02",
+    "age": 29,
+    "height": 176,
+    "weight": 70,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2024,
+    "prev_club": "FC東京",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第3季",
+    "national_team_detail": "日本 U-17 代表隊",
+    "intro": "多功能攻擊手，2026 賽季以 3 次助攻並列 J1 助攻榜第二名。",
+    "timeline": [
+      { "period": "2021–2023", "team": "FC東京", "category": "J1職業隊", "milestone": "前場主力萬金油" },
+      { "period": "2024–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "2026 賽季 3 次助攻並列 J1 助攻榜 2nd" }
+    ],
+    "honors": ["J1 賽季助攻榜第 2 名 (2026)"],
+    "milestones": ["單季 3 次關鍵助攻 (2026)"],
+    "tactical_traits": ["二線跑位插上", "前場多位置靈活切換"],
+    "quirky_trivia": "戰術適應力極強，能勝任中場、邊鋒與邊後衛。"
+  },
+  {
+    "id": "urawa_15",
+    "club": "浦和紅鑽",
+    "number": "15",
+    "name_zh": "工藤孝太",
+    "name_en": "Kota Kudo",
+    "position": "DF",
+    "dob": "2003-08-13",
+    "age": 23,
+    "height": 180,
+    "weight": 72,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2022,
+    "prev_club": "藤枝MYFC",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第5季",
+    "national_team_detail": "日本 U-20 代表隊",
+    "intro": "浦和青訓中後衛，防守預判好且具備優異的短傳出球能力。",
+    "timeline": [
+      { "period": "2022–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "青訓升一隊並外租累積戰術經驗" }
+    ],
+    "honors": ["浦和青訓最佳後衛"],
+    "milestones": ["入選日本 U-20 國家隊"],
+    "tactical_traits": ["正面補位預判", "後線傳球推進"],
+    "quirky_trivia": "冷靜沉著，是青訓體系重點栽培的防線新星。"
+  },
+  {
+    "id": "urawa_17",
+    "club": "浦和紅鑽",
+    "number": "17",
+    "name_zh": "小森飛絢",
+    "name_en": "Hiiro Komori",
+    "position": "FW",
+    "dob": "2000-08-06",
+    "age": 26,
+    "height": 178,
+    "weight": 74,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "千葉市原",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "無",
+    "intro": "高產鋒線神射手，門前搶點與第一時間射門把握度極高。",
+    "timeline": [
+      { "period": "2023–2024", "team": "千葉市原", "category": "J2職業隊", "milestone": "連續兩季進球雙位數" },
+      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "加盟浦和挑戰 J1 得分榜" }
+    ],
+    "honors": ["J2 最佳陣容 (2024)"],
+    "milestones": ["J2 單季打入 13+ 球"],
+    "tactical_traits": ["門前第一時間搶點射門", "敏捷無球跑位"],
+    "quirky_trivia": "門前進球嗅覺極高，被譽為新一代本土射手代表。"
+  },
+  {
+    "id": "urawa_18",
+    "club": "浦和紅鑽",
+    "number": "18",
+    "name_zh": "水沼宏太",
+    "name_en": "Kota Mizunuma",
+    "position": "MF",
+    "dob": "1990-02-22",
+    "age": 36,
+    "height": 176,
+    "weight": 70,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "橫濱F水手",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "日本國家隊 (2 場)",
+    "intro": "傳奇資深邊路大師，右路精準傳中與定位球腳法極具品質。",
+    "timeline": [
+      { "period": "2020–2024", "team": "橫濱F水手", "category": "J1職業隊", "milestone": "奪得 J1 冠軍並入選國家隊" },
+      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "轉會加盟為浦和提供老將邊路傳中經驗" }
+    ],
+    "honors": ["J1 聯賽冠軍 (2022)", "J1 單季助攻王候補"],
+    "milestones": ["J1 出場突破 350 場"],
+    "tactical_traits": ["右路大弧線高質量傳中", "前場精神領袖"],
+    "quirky_trivia": "傳中準確度高，是 J 聯賽最頂尖的邊路傳中專家之一。"
+  },
+  {
+    "id": "urawa_23",
+    "club": "浦和紅鑽",
+    "number": "23",
+    "name_zh": "福井光輝",
+    "name_en": "Koki Fukui",
+    "position": "GK",
+    "dob": "1995-11-04",
+    "age": 30,
+    "height": 187,
+    "weight": 82,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "町田澤維亞",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "無",
+    "intro": "高大身材門將，高空球摘球範圍大，反應敏捷。",
+    "timeline": [
+      { "period": "2018–2024", "team": "町田澤維亞", "category": "J2/J1職業隊", "milestone": "町田升級功臣門將" },
+      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "加盟浦和鞏固門將位置" }
+    ],
+    "honors": ["J2 聯賽冠軍 (2023)"],
+    "milestones": ["J 聯賽 150+ 場出場"],
+    "tactical_traits": ["高空球封鎖", "長傳前場組織"],
+    "quirky_trivia": "門前高空球摘球非常穩健。"
+  },
+  {
+    "id": "urawa_25",
+    "club": "浦和紅鑽",
+    "number": "25",
+    "name_zh": "安居海渡",
+    "name_en": "Kaito Yasui",
+    "position": "MF",
+    "dob": "2000-02-09",
+    "age": 26,
+    "height": 174,
+    "weight": 69,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2022,
+    "prev_club": "流通經濟大學",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第5季",
+    "national_team_detail": "無",
+    "intro": "中後場萬金油，擁有極高的防守反搶效率與後插上射門能力。",
+    "timeline": [
+      { "period": "2022–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "大學畢業加盟並奪得亞冠" }
+    ],
+    "honors": ["亞冠盃冠軍 (2022)", "全日本大學總理大臣盃冠軍"],
+    "milestones": ["亞冠賽事關鍵進球者"],
+    "tactical_traits": ["中場前插二次進攻", "積極拼搶與對抗"],
+    "quirky_trivia": "在亞冠賽場多次打入關鍵進球。"
+  },
+  {
+    "id": "urawa_28",
+    "club": "浦和紅鑽",
+    "number": "28",
+    "name_zh": "根本健太",
+    "name_en": "Kenta Nemoto",
+    "position": "DF",
+    "dob": "2002-12-13",
+    "age": 23,
+    "height": 184,
+    "weight": 81,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "流通經濟大學",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "全日本大學選拔",
+    "intro": "大學出身的高大中後衛，身體對抗與高空爭頂優勢明顯。",
+    "timeline": [
+      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "大學畢業加盟浦和紅鑽" }
+    ],
+    "honors": ["全日本大學錦標賽最佳防線"],
+    "milestones": ["完成 J 聯賽盃賽事登場"],
+    "tactical_traits": ["高空爭頂頭球解圍", "正面肢體卡位"],
+    "quirky_trivia": "身體對抗能力極強，為浦和中後衛位置提供充沛的輪換深度。"
+  },
+  {
+    "id": "urawa_29",
+    "club": "浦和紅鑽",
+    "number": "29",
+    "name_zh": "堀內陽太",
+    "name_en": "Yota Horiuchi",
+    "position": "MF",
+    "dob": "2004-07-08",
+    "age": 22,
+    "height": 171,
+    "weight": 66,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2023,
+    "prev_club": "FC琉球",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第4季",
+    "national_team_detail": "日本 U-19 代表隊",
+    "intro": "青訓出身的中場防守攔截手，跑動覆蓋大且反搶意識強。",
+    "timeline": [
+      { "period": "2023–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "青訓升一隊並經外租歷練重返一隊" }
+    ],
+    "honors": ["浦和青訓優秀選手"],
+    "milestones": ["完成 J1 聯賽一隊登場"],
+    "tactical_traits": ["中場貼身防守迫搶", "短傳保護球權"],
+    "quirky_trivia": "戰術執行力高，在中場防守扮演默搶工蜂的角色。"
+  },
+  {
+    "id": "urawa_31",
+    "club": "浦和紅鑽",
+    "number": "31",
+    "name_zh": "稻垣篤志",
+    "name_en": "Atsushi Inagaki",
+    "position": "DF",
+    "dob": "2005-02-18",
+    "age": 21,
+    "height": 178,
+    "weight": 71,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "明治大學",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "無",
+    "intro": "年輕潛力邊後衛，跑動速度快，具備出色的單打卡位防守爆發力。",
+    "timeline": [
+      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "完成職業合同簽約" }
+    ],
+    "honors": ["全日本大學足球聯賽最佳新人候補"],
+    "milestones": ["完成一隊盃賽登場"],
+    "tactical_traits": ["邊路極速卡位", "短傳推進"],
+    "quirky_trivia": "體能與爆發力均屬同齡球員頂尖。"
+  },
+  {
+    "id": "urawa_32",
+    "club": "浦和紅鑽",
+    "number": "32",
+    "name_zh": "片山瑛一",
+    "name_en": "Eiichi Katayama",
+    "position": "DF",
+    "dob": "1991-11-30",
+    "age": 34,
+    "height": 184,
+    "weight": 79,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "柏太陽王",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "無",
+    "intro": "萬能防守型老將，可勝任後防線所有位置，並以驚人的手拋球重炮 (Long Throw) 聞名。",
+    "timeline": [
+      { "period": "2014–2017", "team": "岡山綠雉", "category": "J2職業隊", "milestone": "主力邊後衛/前鋒" },
+      { "period": "2021–2024", "team": "清水心跳 / 柏太陽王", "category": "J1職業隊", "milestone": "後防主力萬金油" },
+      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "加盟浦和增加後防深度與手拋球戰術" }
+    ],
+    "honors": ["J2 升級附加賽決賽經驗"],
+    "milestones": ["J1/J2 累積出場超過 300 場"],
+    "tactical_traits": ["大力手拋球威脅 (Long Throw)", "後防線多位置無縫切換"],
+    "quirky_trivia": "擁有 J 聯賽最遠的手拋球距離之一，邊線球可直接拋入禁區中路製造戰術混亂。"
+  },
+  {
+    "id": "urawa_33",
+    "club": "浦和紅鑽",
+    "number": "33",
+    "name_zh": "佐佐修太",
+    "name_en": "Shuta Sasa",
+    "position": "MF",
+    "dob": "2006-05-15",
+    "age": 20,
+    "height": 175,
+    "weight": 67,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "昌平高校",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "日本 U-18 代表隊",
+    "intro": "高天賦青年中場，傳球細膩且具備優異的前場轉身擺脫能力。",
+    "timeline": [
+      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "高中畢業加盟一隊" }
+    ],
+    "honors": ["高校選手權大會優秀選手"],
+    "milestones": ["入選 U-18 國家隊"],
+    "tactical_traits": ["狹小空間轉身傳球", "前場肋部短傳"],
+    "quirky_trivia": "昌平高校主力指揮官，腳下視野開闊。"
+  },
+  {
+    "id": "urawa_34",
+    "club": "浦和紅鑽",
+    "number": "34",
+    "name_zh": "佐藤亮太",
+    "name_en": "Ryota Sato",
+    "position": "MF",
+    "dob": "2006-08-20",
+    "age": 20,
+    "height": 173,
+    "weight": 65,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "浦和紅鑽 U-18",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "無",
+    "intro": "青訓體系攻擊型中場，走位靈活，前場逼搶十分積極。",
+    "timeline": [
+      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "青訓晉升一隊名單" }
+    ],
+    "honors": ["高円宮盃 U-18 聯賽最佳中場候補"],
+    "milestones": ["完成一隊盃賽登場"],
+    "tactical_traits": ["前場逼搶反搶", "無球跑位切入"],
+    "quirky_trivia": "場上奔跑極其賣力，技術風格踏實。"
+  },
+  {
+    "id": "urawa_36",
+    "club": "浦和紅鑽",
+    "number": "36",
+    "name_zh": "肥田野蓮治",
+    "name_en": "Renji Hidano",
+    "position": "FW",
+    "dob": "2003-12-01",
+    "age": 22,
+    "height": 181,
+    "weight": 75,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "桐蔭橫濱大學",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "無",
+    "intro": "大學出身衝擊型中鋒，身體素質優良，擅長強行攻門。",
+    "timeline": [
+      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "大學畢業加盟" }
+    ],
+    "honors": ["全日本大學錦標賽最佳射手"],
+    "milestones": ["完成職業聯賽首進球"],
+    "tactical_traits": ["禁區內轉身抽射", "正面爭頂高空球"],
+    "quirky_trivia": "門前起腳果斷，遠射勁道十足。"
+  },
+  {
+    "id": "urawa_37",
+    "club": "浦和紅鑽",
+    "number": "37",
+    "name_zh": "植木颯空",
+    "name_en": "Hayate Ueki",
+    "position": "MF",
+    "dob": "2003-11-10",
+    "age": 22,
+    "height": 176,
+    "weight": 70,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "拓殖大學",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "無",
+    "intro": "中場防守逼搶手，拼搶兇悍，提供強烈的中場防守覆蓋。",
+    "timeline": [
+      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "進入一隊陣容" }
+    ],
+    "honors": ["關東大學聯賽最佳攔截中場"],
+    "milestones": ["完成一隊登場"],
+    "tactical_traits": ["下腳搶斷", "第二落點爭搶"],
+    "quirky_trivia": "跑動覆蓋範圍大，對抗意識強。"
+  },
+  {
+    "id": "urawa_39",
+    "club": "浦和紅鑽",
+    "number": "39",
+    "name_zh": "早川隼平",
+    "name_en": "Jumpei Hayakawa",
+    "position": "MF",
+    "dob": "2005-12-05",
+    "age": 20,
+    "height": 163,
+    "weight": 65,
+    "foot": "左腳",
+    "nationality": "日本",
+    "joined": 2023,
+    "prev_club": "浦和紅鑽 U-18",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第4季",
+    "national_team_detail": "日本 U-20 代表隊",
+    "intro": "浦和自主培養的高智商左腳攻擊型中場，曾創下隊史亞冠最年輕破門紀錄。",
+    "timeline": [
+      { "period": "2023–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "17 歲完成一隊首秀並於亞冠賽事破門" }
+    ],
+    "honors": ["亞冠盃冠軍 (2022)"],
+    "milestones": ["浦和紅鑽隊史亞冠最年輕進球者"],
+    "tactical_traits": ["小範圍控球轉身", "肋部穿透性直塞"],
+    "quirky_trivia": "17 歲時即在亞冠淘汰賽與聯賽盃展現驚人膽識與腳下傳控天賦。"
+  },
+  {
+    "id": "urawa_40",
+    "club": "浦和紅鑽",
+    "number": "40",
+    "name_zh": "盧卡·狄度利卡",
+    "name_en": "Luka Didulica",
+    "position": "DF",
+    "dob": "2007-09-14",
+    "age": 18,
+    "height": 186,
+    "weight": 78,
+    "foot": "右腳",
+    "nationality": "澳洲",
+    "joined": 2025,
+    "prev_club": "墨爾本勝利",
+    "registration_status": "外援名額",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "澳洲 U-18 代表隊",
+    "intro": "澳洲籍年輕中後衛新星，身體對抗條件優越，制空頭球解圍出色。",
+    "timeline": [
+      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "加盟浦和青年育成體系" }
+    ],
+    "honors": ["澳洲 U-17 全國錦標賽冠軍"],
+    "milestones": ["入選澳洲青年國家隊"],
+    "tactical_traits": ["制空頭球爭頂", "身體對抗卡位"],
+    "quirky_trivia": "高大強壯，防守潛力十分被看好。"
+  },
+  {
+    "id": "urawa_42",
+    "club": "浦和紅鑽",
+    "number": "42",
+    "name_zh": "南野遙海",
+    "name_en": "Harumi Minamino",
+    "position": "FW",
+    "dob": "2004-05-13",
+    "age": 22,
+    "height": 176,
+    "weight": 71,
+    "foot": "左腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "栃木SC",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "日本 U-20 代表隊",
+    "intro": "左腳前鋒新星，爆發力優異，擁有極佳的射門精準度。",
+    "timeline": [
+      { "period": "2023–2024", "team": "栃木SC", "category": "J2職業隊", "milestone": "單季打入多球展現得分潛力" },
+      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "轉會浦和爭取進攻主力" }
+    ],
+    "honors": ["J2 最佳青年選手候補"],
+    "milestones": ["代表日本 U-20 出戰國際賽"],
+    "tactical_traits": ["左腳射門爆發力", "肋部穿插走位"],
+    "quirky_trivia": "左腳抽射力道極強，門前把握度高。"
+  },
+  {
+    "id": "urawa_43",
+    "club": "浦和紅鑽",
+    "number": "43",
+    "name_zh": "和田健士",
+    "name_en": "Takeshi Wada",
+    "position": "MF",
+    "dob": "2008-11-20",
+    "age": 17,
+    "height": 174,
+    "weight": 66,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "浦和紅鑽 U-18",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "日本 U-17 代表隊",
+    "intro": "青訓體系極具天賦的防守型中場，攔截節奏感佳。",
+    "timeline": [
+      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "登錄一隊受備受矚目" }
+    ],
+    "honors": ["日本 U-17 國家隊成員"],
+    "milestones": ["隊史最年輕登錄一隊球員之一"],
+    "tactical_traits": ["中場預判攔截", "安全短傳分球"],
+    "quirky_trivia": "17 歲即入選一隊登錄名單，被視為中場防守未來支柱。"
+  },
+  {
+    "id": "urawa_44",
+    "club": "浦和紅鑽",
+    "number": "44",
+    "name_zh": "新井榮聰",
+    "name_en": "Yoshiaki Arai",
+    "position": "GK",
+    "dob": "1995-09-27",
+    "age": 30,
+    "height": 188,
+    "weight": 84,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "大分三神",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "無",
+    "intro": "身材高大的門將，反應快，門線撲救能力優異。",
+    "timeline": [
+      { "period": "2021–2024", "team": "大分三神", "category": "J2職業隊", "milestone": "主力門將之一" },
+      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "加強門將輪換深度" }
+    ],
+    "honors": ["J2 最佳門將候補"],
+    "milestones": ["職業生涯 80+ 場登場"],
+    "tactical_traits": ["近距離撲救反應", "門前高空摘球"],
+    "quirky_trivia": "身高與臂展優勢明顯，發球長傳精準。"
+  },
+  {
+    "id": "urawa_45",
+    "club": "浦和紅鑽",
+    "number": "45",
+    "name_zh": "阿道·歐奈烏",
+    "name_en": "Ado Onaiwu",
+    "position": "FW",
+    "dob": "1995-11-08",
+    "age": 30,
+    "height": 180,
+    "weight": 75,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2025,
+    "prev_club": "歐塞爾",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第2季",
+    "national_team_detail": "日本國家隊 (3 場 3 球)",
+    "intro": "旅歐重炮國腳前鋒，衝擊力與頭球爭頂得分能力極強。",
+    "timeline": [
+      { "period": "2021", "team": "橫濱F水手", "category": "J1職業隊", "milestone": "單季打入 12 球入選國家隊" },
+      { "period": "2021–2024", "team": "圖盧茲 / 歐塞爾", "category": "法甲/法乙", "milestone": "旅法協助圖盧茲與歐塞爾奪冠升級" },
+      { "period": "2025–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "重返 J1 加盟浦和擔任中鋒頭號衝鋒槍" }
+    ],
+    "honors": ["法乙聯賽冠軍 (2022, 2024)", "法國盃冠軍 (2023)"],
+    "milestones": ["國家隊代表作上演戴帽 (Hat-trick)"],
+    "tactical_traits": ["頭球爭頂門前轟門", "強悍前場壓迫"],
+    "quirky_trivia": "曾在日本國家隊比賽中僅用 6 分鐘即上演「帽子戲法」。"
+  },
+  {
+    "id": "urawa_88",
+    "club": "浦和紅鑽",
+    "number": "88",
+    "name_zh": "長沼洋一",
+    "name_en": "Yoichi Naganuma",
+    "position": "MF",
+    "dob": "1997-04-14",
+    "age": 29,
+    "height": 178,
+    "weight": 70,
+    "foot": "右腳",
+    "nationality": "日本",
+    "joined": 2024,
+    "prev_club": "鳥棲砂岩",
+    "registration_status": "本國球員",
+    "tenure_status": "效力第3季",
+    "national_team_detail": "日本 U-23 國奧隊",
+    "intro": "攻守兼備的多功能邊路萬金油，擁有極高的邊路攻守往返體能與後插頭球得分能力。",
+    "timeline": [
+      { "period": "2022–2024", "team": "鳥棲砂岩", "category": "J1職業隊", "milestone": "邊路得分手，單季攻入 10 球" },
+      { "period": "2024–至今", "team": "浦和紅鑽", "category": "J1職業隊", "milestone": "邊路全能主力" }
+    ],
+    "honors": ["雅加達亞運會銀牌 (2018)"],
+    "milestones": ["J1 單季 10 球突破 (2023)"],
+    "tactical_traits": ["後插上頭球攻門", "高強度邊路攻守往返"],
+    "quirky_trivia": "雖為邊後衛/翼衛出身，卻擁有極強的門前爭頂與後插上進球嗅覺。"
   }
 ]
