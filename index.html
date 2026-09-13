@@ -392,57 +392,73 @@
 
   <script>
     const ALL_J1_TEAMS = [
-      "柏太陽王", "浦和紅鑽", "岡山綠雉", "神戶勝利船", "鹿島鹿角",
-      "川崎前鋒", "橫濱水手", "FC 東京", "廣島三箭", "大阪鋼巴",
-      "大阪櫻花", "名古屋鯨魚", "町田澤維亞", "福岡黃蜂", "京都帝王",
-      "湘南比馬", "新潟天鵝", "磐田喜悅", "東京綠景", "橫濱FC"
+      "鹿島鹿角", "水戶蜀葵", "浦和紅鑽", "千葉市原JEF聯", "柏太陽王",
+      "FC東京", "町田澤維亞", "東京綠茵", "川崎前鋒", "名古屋鯨魚",
+      "橫濱水手", "清水心跳", "京都不死鳥", "大阪飛腳", "大阪櫻花",
+      "神戶勝利船", "岡山綠雉", "廣島三箭", "福岡黃蜂", "長崎成功丸"
     ];
 
     // J1 Home Kit Colors Matrix
     const TEAM_COLORS = {
-      "柏太陽王": { bg: "#fff100", text: "#111827" },
-      "浦和紅鑽": { bg: "#e6002d", text: "#ffffff" },
-      "岡山綠雉": { bg: "#b6003d", text: "#ffffff" },
-      "神戶勝利船": { bg: "#a9002e", text: "#ffffff" },
       "鹿島鹿角": { bg: "#b8193f", text: "#ffffff" },
-      "川崎前鋒": { bg: "#38a1db", text: "#ffffff" },
-      "橫濱水手": { bg: "#004098", text: "#ffffff" },
-      "FC 東京": { bg: "#11216c", text: "#ffffff" },
-      "廣島三箭": { bg: "#51318f", text: "#ffffff" },
-      "大阪鋼巴": { bg: "#00458d", text: "#ffffff" },
-      "大阪櫻花": { bg: "#da005c", text: "#ffffff" },
-      "名古屋鯨魚": { bg: "#e6002d", text: "#ffffff" },
+      "水戶蜀葵": { bg: "#005bac", text: "#ffffff" },
+      "浦和紅鑽": { bg: "#e6002d", text: "#ffffff" },
+      "千葉市原JEF聯": { bg: "#ffe100", text: "#111827" },
+      "柏太陽王": { bg: "#fff100", text: "#111827" },
+      "FC東京": { bg: "#11216c", text: "#ffffff" },
       "町田澤維亞": { bg: "#0054a7", text: "#ffffff" },
+      "東京綠茵": { bg: "#006d30", text: "#ffffff" },
+      "川崎前鋒": { bg: "#38a1db", text: "#ffffff" },
+      "名古屋鯨魚": { bg: "#e6002d", text: "#ffffff" },
+      "橫濱水手": { bg: "#004098", text: "#ffffff" },
+      "清水心跳": { bg: "#f39800", text: "#111827" },
+      "京都不死鳥": { bg: "#750069", text: "#ffffff" },
+      "大阪飛腳": { bg: "#00458d", text: "#ffffff" },
+      "大阪櫻花": { bg: "#da005c", text: "#ffffff" },
+      "神戶勝利船": { bg: "#a9002e", text: "#ffffff" },
+      "岡山綠雉": { bg: "#b6003d", text: "#ffffff" },
+      "廣島三箭": { bg: "#51318f", text: "#ffffff" },
       "福岡黃蜂": { bg: "#001b5b", text: "#ffffff" },
-      "京都帝王": { bg: "#750069", text: "#ffffff" },
-      "湘南比馬": { bg: "#82c039", text: "#ffffff" },
-      "新潟天鵝": { bg: "#ea5504", text: "#ffffff" },
-      "磐田喜悅": { bg: "#6c9bd2", text: "#ffffff" },
-      "東京綠景": { bg: "#006d30", text: "#ffffff" },
-      "橫濱FC": { bg: "#00a0e9", text: "#ffffff" },
+      "長崎成功丸": { bg: "#005bac", text: "#ffffff" },
       "DEFAULT": { bg: "#0284c7", text: "#ffffff" }
     };
 
     // File name mapping for local logos in logos/ directory
     const TEAM_LOGOS = {
-      "柏太陽王": "logos/japan_kashiwa-reysol.football-logos.cc.svg",
-      "浦和紅鑽": "logos/japan_urawa-reds.football-logos.cc.svg",
-      "岡山綠雉": "logos/japan_fagiano-okayama.football-logos.cc.svg",
-      "神戶勝利船": "logos/japan_vissel-kobe.football-logos.cc.svg",
       "鹿島鹿角": "logos/japan_kashima-antlers.football-logos.cc.svg",
-      "川崎前鋒": "logos/japan_kawasaki-frontale.football-logos.cc.svg",
-      "橫濱水手": "logos/japan_yokohama-f-marinos.football-logos.cc.svg",
-      "FC 東京": "logos/japan_fc-tokyo.football-logos.cc.svg",
-      "廣島三箭": "logos/japan_sanfrecce-hiroshima.football-logos.cc.svg",
-      "大阪鋼巴": "logos/japan_gamba-osaka.football-logos.cc.svg",
-      "大阪櫻花": "logos/japan_cerezo-osaka.football-logos.cc.svg",
-      "名古屋鯨魚": "logos/japan_nagoya-grampus.football-logos.cc.svg",
+      "水戶蜀葵": "logos/japan_mito-hollyhock.football-logos.cc.svg",
+      "浦和紅鑽": "logos/japan_urawa-reds.football-logos.cc.svg",
+      "千葉市原JEF聯": "logos/japan_jef-united-chiba.football-logos.cc.svg",
+      "柏太陽王": "logos/japan_kashiwa-reysol.football-logos.cc.svg",
+      "FC東京": "logos/japan_fc-tokyo.football-logos.cc.svg",
       "町田澤維亞": "logos/japan_machida-zelvia.football-logos.cc.svg",
+      "東京綠茵": "logos/japan_tokyo-verdy.football-logos.cc.svg",
+      "川崎前鋒": "logos/japan_kawasaki-frontale.football-logos.cc.svg",
+      "名古屋鯨魚": "logos/japan_nagoya-grampus.football-logos.cc.svg",
+      "橫濱水手": "logos/japan_yokohama-f-marinos.football-logos.cc.svg",
+      "清水心跳": "logos/japan_shimizu-s-pulse.football-logos.cc.svg",
+      "京都不死鳥": "logos/japan_kyoto-sanga.football-logos.cc.svg",
+      "大阪飛腳": "logos/japan_gamba-osaka.football-logos.cc.svg",
+      "大阪櫻花": "logos/japan_cerezo-osaka.football-logos.cc.svg",
+      "神戶勝利船": "logos/japan_vissel-kobe.football-logos.cc.svg",
+      "岡山綠雉": "logos/japan_fagiano-okayama.football-logos.cc.svg",
+      "廣島三箭": "logos/japan_sanfrecce-hiroshima.football-logos.cc.svg",
       "福岡黃蜂": "logos/japan_avispa-fukuoka.football-logos.cc.svg",
-      "京都帝王": "logos/japan_kyoto-sanga.football-logos.cc.svg",
-      "湘南比馬": "logos/japan_jef-united-chiba.football-logos.cc.svg",
-      "東京綠景": "logos/japan_tokyo-verdy.football-logos.cc.svg"
+      "長崎成功丸": "logos/japan_v-varen-nagasaki.football-logos.cc.svg"
     };
+
+    // Keep completed database records stable while showing TVB's preferred team names.
+    const TEAM_DATA_KEYS = {
+      "FC東京": "FC 東京"
+    };
+
+    const TEAM_DISPLAY_NAMES = {
+      "FC 東京": "FC東京"
+    };
+
+    function getTeamDisplayName(databaseName) {
+      return TEAM_DISPLAY_NAMES[databaseName] || databaseName;
+    }
 
     let globalDatabase = [];
     let activeTeamSlot = 'A';
@@ -503,7 +519,8 @@
       const currentTeamName = document.getElementById(activeTeamSlot === 'A' ? 'select-team-a' : 'select-team-b').value;
       const sidebarContainer = document.getElementById('sidebar-nav-list');
 
-      const teamItems = globalDatabase.filter(item => item.club === currentTeamName);
+      const databaseTeamName = TEAM_DATA_KEYS[currentTeamName] || currentTeamName;
+      const teamItems = globalDatabase.filter(item => item.club === databaseTeamName);
 
       if (teamItems.length === 0) {
         sidebarContainer.innerHTML = `<div style="padding:16px; color:var(--text-muted); text-align:center;">⚠️ 陣容資料建置中</div>`;
@@ -570,7 +587,8 @@
       const detailContainer = document.getElementById('main-card-container');
       if (!item) return;
 
-      const logoUrl = TEAM_LOGOS[item.club] || '';
+      const displayClubName = getTeamDisplayName(item.club);
+      const logoUrl = TEAM_LOGOS[displayClubName] || TEAM_LOGOS[item.club] || '';
 
       // Team Info Card
       if (item.type === "team_info") {
@@ -579,7 +597,7 @@
             <div class="card-banner">
               <div class="banner-left">
                 <div class="banner-top">
-                  <h2>${item.club} (${item.club_en})</h2>
+                  <h2>${displayClubName} (${item.club_en})</h2>
                 </div>
                 <div class="banner-subtext">J1 聯賽球會檔案 • 隊名由來與場館數據</div>
               </div>
@@ -609,7 +627,7 @@
                 <h2>#${item.number || '-'} ${item.name_zh || item.name_en} (${item.name_en})</h2>
                 <span class="badge-reg">${item.registration_status || '本國球員'}</span>
               </div>
-              <div class="banner-subtext">${item.position} • ${item.club} &nbsp;&nbsp;<span style="opacity:0.6;">[ID: ${item.id}]</span></div>
+              <div class="banner-subtext">${item.position} • ${displayClubName} &nbsp;&nbsp;<span style="opacity:0.6;">[ID: ${item.id}]</span></div>
             </div>
             ${logoUrl ? `<img src="${logoUrl}" alt="${item.club} Logo" class="team-logo-banner" onerror="this.style.display='none';">` : ''}
           </div>
